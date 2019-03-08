@@ -32,10 +32,10 @@
         </div>
         <div class='row'>
             <div class="input-field col s6">
-                <input id="Add_New_Task" type="text" class="validate">
-                <label for="Add_New_Task">Add New Task</label>
-            </div>
-            <a class="btn-floating btn-large waves-effect waves-light red col s6"><i class="material-icons">add</i></a>
+                <input id="new_task" type="text" class="validate">
+                <label for="new_task">Add New Task</label>
+        </div>
+            <a class="btn-floating btn-large waves-effect waves-light #2B2D4A"><i class="material-icons">add</i></a>
         </div>
 		
 
