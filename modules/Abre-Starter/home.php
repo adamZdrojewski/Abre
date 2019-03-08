@@ -26,7 +26,17 @@
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 		<div class='row'>
-			<div style='padding:56px; text-align:center; width:100%;'><span style='font-size: 22px; font-weight:700'>-=-=-=-=-=- Planner -=-=-=-=-=-</span><br><p style='font-size:16px; margin:20px 0 0 0;'>This is a simple app format for creating Abre Apps! Click <a href='#starter/elements' style='color:<?php echo getSiteColor() ?>;'>here</a> to see elements to use!</p></div>
+			<div style='padding:56px; text-align:center; width:100%;'>
+                <span style='font-size: 22px; font-weight:700'>Planner</span>
+            </div>
+        </div>
+        <div class='row'>
+            <div class="input-field col s6">
+                <input id="Add_New_Task" type="text" class="validate">
+                <label for="Add_New_Task">Add New Task</label>
+            </div>
+            <a class="btn-floating btn-large waves-effect waves-light red col s6"><i class="material-icons">add</i></a>
+        </div>
 		
 
 		</div>
