@@ -36,6 +36,7 @@
         </div>
 			<?
             echo "<a class="btn-floating btn-large waves-effect waves-light s2" $siteColor ""><i class="material-icons">add</i></a>"
+			?>
         </div>
 		
 
