@@ -34,7 +34,8 @@
             <div class="input-field col s10 #2b2d4a">
             <input placeholder="Add New Task" id="new_task" type="text" class="validate">
         </div>
-            <a class="btn-floating btn-large waves-effect waves-light s2 #2b2d4a"><i class="material-icons">add</i></a>
+			<?
+            echo "<a class="btn-floating btn-large waves-effect waves-light s2" $siteColor ""><i class="material-icons">add</i></a>"
         </div>
 		
 
