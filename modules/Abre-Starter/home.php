@@ -21,26 +21,23 @@
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
 	require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
 
-?>
 
-<div class='page_container mdl-shadow--4dp'>
-	<div class='page'>
-		<div class='row'>
-			<div style='padding:56px; text-align:center; width:100%;'>
-                <span style='font-size: 32px; font-weight:700'>Planner</span>
-            </div>
-        </div>
-        <div class='row'>
-            <?
+
+echo "<div class='page_container mdl-shadow--4dp'>"
+	echo "<div class='page'>"
+		echo "<div class='row'>"
+			echo "<div style='padding:56px; text-align:center; width:100%;'>
+                <span style='font-size: 32px; font-weight:700'>Planner</span>"
+            echo "</div>"
+        echo "</div>"
+        echo "<div class='row'>"
                 echo "<div class='input-field col s6".$siteColor."'>"
                 echo "<input placeholder='Add New Task' id='new_task' type='text' class='validate'>"
-            ?>
-        </div>
-            <?
+        echo "</div>"
                 echo "<a class='btn-floating btn-large waves-effect waves-light ".$siteColor."'><i class='material-icons'>add</i></a>"
-            ?>
-        </div>
+        echo "</div>"
 		
 
-	</div>
-</div>
+	echo "</div>"
+echo "</div>"
+?>
