@@ -32,12 +32,9 @@
         </div>
         <div class='row'>
             <div class='input-field col s10'>
-                <?php
-                echo "<meta name='theme-color' content='".$siteColor."'>";
-				?>
                 <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
             </div>
-            <a class='btn-floating btn-large waves-effect waves-light'><i class='material-icons'>add</i></a>
+            <a class='btn-floating btn-large waves-effect waves-light' style='background-color: <?php echo $siteColor; ?>;'><i class='material-icons'>add</i></a>
         </div>
 		
 
