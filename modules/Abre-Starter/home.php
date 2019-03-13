@@ -34,7 +34,7 @@
             <div class='input-field col s10'>
                 <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
             </div>
-            <a class='btn-floating btn-large waves-effect waves-light' style='background-color: <?php echo $siteColor; ?>;'><i class='material-icons'>add</i></a>
+            <a href='elements.php'><a class='btn-floating btn-large waves-effect waves-light'><i class='material-icons'>add</i></a></a>
         </div>
 		
 
