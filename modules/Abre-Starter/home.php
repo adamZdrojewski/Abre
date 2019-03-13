@@ -31,14 +31,13 @@
             </div>
         </div>
         <div class='row'>
-                <div class='input-field col s10'>
-                    <div class='blue'>
-                        <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
-                    </div>
-        </div>
-            <div class='blue'>
-                <a class='btn-floating btn-large waves-effect waves-light'><i class='material-icons'>add</i></a>
+            <div class='input-field col s10'>
+                <?php
+                echo "<meta name='theme-color' content='".$siteColor."'>";
+				?>
+                <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
             </div>
+            <a class='btn-floating btn-large waves-effect waves-light'><i class='material-icons'>add</i></a>
         </div>
 		
 
