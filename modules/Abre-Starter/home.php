@@ -37,7 +37,7 @@
 				?>
                 <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
             </div>
-            <a class='btn-floating btn-large waves-effect waves-light'><i class='material-icons'>add</i></a>
+            <a class='btn-floating btn-large waves-effect waves-light mdc-button-container-fill-color(theme-color)'><i class='material-icons'>add</i></a>
         </div>
 		
 
