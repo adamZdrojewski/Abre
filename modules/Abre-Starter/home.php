@@ -31,14 +31,10 @@
             </div>
         </div>
         <div class='row'>
-            <?php
-                echo "<div class='input-field col s6".$siteColor."'>";
-                echo "<input placeholder='Add New Task' id='new_task' type='text' class='validate'>";
-            ?>
+                <div class='input-field col s10' style='background-color:<?php echo $siteColor; ?>;>
+                <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
         </div>
-            <?php
-                echo "<a class='btn-floating btn-large waves-effect waves-light ".$siteColor."'><i class='material-icons'>add</i></a>";
-            ?>
+                <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>;><i class='material-icons'>add</i></a>
         </div>
 		
 
