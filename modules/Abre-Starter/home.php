@@ -19,7 +19,8 @@
 	//Required configuration files
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
-	require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
+    require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
+    $siteColor = getSiteColor();
 
 ?>
 
@@ -34,7 +35,7 @@
             <div class='input-field col s10'>
                 <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
             </div>
-            <a href='elements.php'><a class='btn-floating btn-large waves-effect waves-light' style='background-color: <?php echo $siteColor; ?>'><i class='material-icons'>add</i></a></a>
+            <a href='elements.php'><a class='btn-floating btn-large waves-effect waves-light' style='theme-color: <?php echo $siteColor; ?>'><i class='material-icons'>add</i></a></a>
         </div>
 		
 
