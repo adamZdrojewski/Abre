@@ -31,10 +31,10 @@
             </div>
         </div>
         <div class='row'>
-            <div class='input-field col s6' style='#FFFFFF; left:20px;'>
+            <div class='input-field col s9' style='#FFFFFF; left:20px;'>
                 <form class="" id="planner" method="post" action="" >   
                     <input placeholder='Add New Task' id='new_task'  type='text' class='validate' name='newTask'>
-                    <button type="submit" class="modal-action waves-effect btn-flat white-text s6" style='background-color: <?php echo $siteColor; ?>;'>Submit</button>
+                    <button type="submit" class="modal-action waves-effect btn-flat white-text " style='background-color: <?php echo $siteColor; ?>;'></button><i class='material-icons'>add</i></a>
                 </form>
             </div>
             <h5 id='tasks'></h5>
