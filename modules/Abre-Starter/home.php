@@ -21,7 +21,7 @@
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
-
+    $tasks = array('Math HW','English HW','Computer Science HW'); 
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
@@ -34,13 +34,14 @@
         <div class='row'>
             <div class='input-field col s10' style='#FFFFFF; left:20px;'>
                 <form class="" id="subject" method="post" action="" >   
-                    <input placeholder='Add New Task' id='new_task'  type='text' class='validate' name='tasks[]'>
-                    <select name="tasks[]" multiple="yes">
-                    <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
+                    <input placeholder='Add New Task' id='new_task'  type='text' class='validate' name='newTask'>
                 </form>
+                <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
             </div>
         </div>
-        <?php echo $_POST['tasks[]']?>
+        <b><?php foreach ($tasks as $task ) {
+            echo '\n' . $task;
+        }?></b>
 
 	</div>
 </div>
