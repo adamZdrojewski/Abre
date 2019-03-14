@@ -34,14 +34,14 @@
         <div class='row'>
             <div class='input-field col s10' style='#FFFFFF; left:20px;'>
                 <form class="" id="subject" method="post" action="" >   
+                    <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
                     <input placeholder='Add New Task' id='new_task'  type='text' class='validate' name='newTask'>
                 </form>
-                <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
             </div>
         </div>
         <?php  ?>
         <b><?php foreach ($tasks as $task ) {
-            echo "$task\r\n";
+            echo $task;
         }?></b>
 
 	</div>
