@@ -34,7 +34,7 @@
             <div class='input-field col s10' style='#FFFFFF; left:20px;'>
                 <form class="" id="planner" method="post" action="" >   
                     <input placeholder='Add New Task' id='new_task' type='text' class='validate' name='newTask'>
-                    <button type="submit" class="modal-action waves-effect btn-floating btn-large waves-light s2" style='background-color: <?php echo $siteColor; ?>;'><i class='material-icons'>add</i></button>
+                    <a class='btn-floating btn-large waves-effect waves-light' type='submit' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
                 </form>
             </div>
         </div>
