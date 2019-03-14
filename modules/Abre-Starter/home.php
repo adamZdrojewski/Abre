@@ -40,22 +40,11 @@
     
 <?php $tasks = array("Math", "Science", "Computer Science");?>
 
-<?php if (count($tasks) > 0): ?>
-<table>
-  <thead>
-    <tr>
-      <th><?php echo implode('</th><th>', array_keys(current($tasks))); ?></th>
-    </tr>
-  </thead>
-  <tbody>
-<?php foreach ($tasks as $row): array_map('htmlentities', $row); ?>
-    <tr>
-      <td><?php echo implode('</td><td>', $row); ?></td>
-    </tr>
-<?php endforeach; ?>
-  </tbody>
-</table>
-<?php endif; ?>
+<?php
+foreach ($tasks as &$task) {
+    echo "<h3>".$task."</h3>";
+}
+?>
     
     
 </div>
