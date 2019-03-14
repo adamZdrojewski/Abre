@@ -33,16 +33,53 @@
         </div>
         <div class='row'>
             <div class='input-field col s12' style='#FFFFFF; left:20px;'>
-                <form class="" id="subject" method="post" action="" >   
+                <form class="" id="planner" method="post" action="" >   
                     <input placeholder='Add New Task' id='new_task'  type='text' class='validate' name='newTask'>
                 </form>
             </div>
+            <h5 id='tasks'></h5>
         </div>
-        <?php  ?>
-        <b><?php foreach ($tasks as $task ) {
-            echo $task;
-        }?></b>
-
 	</div>
 </div>
 
+<script>
+
+	$(function(){
+
+    $('select').material_select();
+
+		$('.modal-startermodal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
+
+		$(document).on("click", ".modal-startermodal", function () {
+			var info = $(this).data('info');
+			$(".modal-content #infoHolder").text(info);
+		});
+
+    //you can use this code to send data to the server or another page if needed
+    // var formStarter = $('#form-starter');
+    //
+    // $(formStarter).submit(function(event) {
+    //   event.preventDefault();
+    //   var formData = $(formStarter).serialize();
+    //   $.ajax({
+    //     type: 'POST',
+    //     url: $(formStarter).attr('action'),
+    //     data: formData
+    //   })
+    //
+    //   //Show the notification
+    //   .done(function(responseprocess) {
+    //     //do something after the ajax call has sent data successfully
+    //   })
+    // });
+
+    var formStarter = $("#planner");
+    $(formStarter).submit(function(event){
+      event.preventDefault();
+      results += $(formStarter).serialize();
+      $("#tasks").text(results);
+    });
+
+	});
+
+</script>
