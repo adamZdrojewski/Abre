@@ -33,7 +33,7 @@
         </div>
         <div class='row'>
             <div class='input-field col s10' style='background-color:<?php echo $siteColor; ?>; left:20px;'>
-                <form class="" id="subject" method="post" action="">   
+                <form class="" id="subject" method="post" action="" style='#BADA55'>   
                     <input placeholder='Add New Task' id='new_task' type='text' class='validate' name='tasks[]'>
                     <!--<select name="tasks[]" multiple="yes">-->
                 </form>
