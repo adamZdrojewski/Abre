@@ -30,13 +30,11 @@
                 <span style='font-size: 32px; font-weight:700'>Planner</span>
             </div>
         </div>
-        <div class="row">
-            <div class='input-field col s10' style='#FFFFFF; left:20px;'>
-                <form class="" id="planner" method="post" action="" >   
-                    <input placeholder='Add New Task' id='new_task' type='text' class='validate' name='newTask'>
-                    <a class='btn-floating btn-large waves-effect waves-light' type='submit' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
-                </form>
+        <div class='row'>
+            <div class='input-field col s10'>
+                <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
             </div>
+		    <a class='btn-floating btn-large waves-effect waves-light' onclick='addNew();' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
         </div>
 	</div>
 </div>
