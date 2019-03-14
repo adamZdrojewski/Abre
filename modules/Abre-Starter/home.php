@@ -31,9 +31,9 @@
             </div>
         </div>
         <div class='row'>
-            <div class='input-field col s10' style='#FFFFFF; left:20px;'>
+            <div class='input-field col' style='#FFFFFF; left:20px;'>
                 <form class="" id="planner" method="post" action="" >   
-                    <input placeholder='Add New Task' id='new_task'  type='text' class='validate' name='newTask'>
+                    <input placeholder='Add New Task' id='new_task'  type='text' class='validate s10' name='newTask'>
                     <button type="submit" class="modal-action waves-effect btn-floating btn-large waves-light s2" style='background-color: <?php echo $siteColor; ?>;'><i class='material-icons'>add</i></button>
                 </form>
             </div>
