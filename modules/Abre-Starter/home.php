@@ -37,15 +37,14 @@
 		    <a class='btn-floating btn-large waves-effect waves-light' onclick='addNew();' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
         </div>
 	</div>
-</div>
-
+    
 <?php $tasks = array("Math", "Science", "Computer Science");?>
 
 <?php if (count($tasks) > 0): ?>
 <table>
   <thead>
     <tr>
-      <th><?php echo implode('</th><th>', array_keys(current($shop))); ?></th>
+      <th><?php echo implode('</th><th>', array_keys(current($tasks))); ?></th>
     </tr>
   </thead>
   <tbody>
@@ -57,6 +56,10 @@
   </tbody>
 </table>
 <?php endif; ?>
+    
+    
+</div>
+
 
 
 <script>
