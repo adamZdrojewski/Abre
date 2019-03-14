@@ -39,8 +39,9 @@
                 <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
             </div>
         </div>
+        <?php ?>
         <b><?php foreach ($tasks as $task ) {
-            echo '\n' . $task;
+            echo "\r\n" . $task;
         }?></b>
 
 	</div>
