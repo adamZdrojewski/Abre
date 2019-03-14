@@ -37,7 +37,6 @@
                     <button type="submit" class="modal-action waves-effect btn-floating btn-large waves-light s2" style='background-color: <?php echo $siteColor; ?>;'><i class='material-icons'>add</i></button>
                 </form>
             </div>
-            <h5 id='tasks'></h5>
         </div>
 	</div>
 </div>
