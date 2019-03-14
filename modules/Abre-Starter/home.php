@@ -35,10 +35,10 @@
             <div class='input-field col s10' style='#FFFFFF; left:20px;'>
                 <form class="" id="subject" method="post" action="" >   
                     <input placeholder='Add New Task' id='new_task'  type='text' class='validate' name='tasks[]'>
-                    <!--<select name="tasks[]" multiple="yes">-->
+                    <select name="tasks[]" multiple="yes">
+                    <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
                 </form>
             </div>
-		    <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
         </div>
         <?php echo $_POST['tasks[]']?>
 
