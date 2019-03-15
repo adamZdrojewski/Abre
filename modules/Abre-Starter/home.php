@@ -21,6 +21,7 @@
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
+    $tasks = array();
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
@@ -32,9 +33,9 @@
         </div>
         <div class='row'>
             <form class='input-field col s10' method = "post" id="planner">
-                <input placeholder='Add New Task' id='new_plan' type='text' class='validate'>
+                <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
             </form>
-		    <a class='btn-floating btn-large waves-effect waves-light' onclick="addNew($new_task);" style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
+		    <a class='btn-floating btn-large waves-effect waves-light' onclick='addNew($new_task);' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
         </div>
 	</div>
     
