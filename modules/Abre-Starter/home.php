@@ -41,6 +41,7 @@
 <?php $tasks = array("Math", "Science", "Computer Science");
     function addNew($task) {
         array_push($tasks , $task);
+        echo "<h4>".$task."</h4>";
     }
 ?>
 
