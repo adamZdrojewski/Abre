@@ -31,18 +31,22 @@
             </div>
         </div>
         <div class='row'>
-            <div class='input-field col s10'>
-                <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
-            </div>
+            <form class='input-field col s10' method = "post" id="planner">
+                <input placeholder='Add New Task' id='new_plan' type='text' class='validate'>
+            </form>
 		    <a class='btn-floating btn-large waves-effect waves-light' onclick='addNew();' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
         </div>
 	</div>
     
-<?php $tasks = array("Math", "Science", "Computer Science");?>
+<?php $tasks = array("Math", "Science", "Computer Science");
+    function addNew() {
+        array_push($tasks , $new_task);
+    }
+?>
 
 <?php
 foreach ($tasks as &$task) {
-    echo "<h3>".$task."</h3>";
+    echo "<h4>".$task."</h4>";
 }
 ?>
     
@@ -85,10 +89,10 @@ foreach ($tasks as &$task) {
     var formStarter = $("#planner");
     $(formStarter).submit(function(event){
       event.preventDefault();
-      results += $(formStarter).serialize();
-      $("#tasks").text(results);
+      var results = $(formStarter).serialize();
+      results = results.replace(/&/g, ", ");
+      results = results.replace(/=/g, " = ");
+      $("#new_task").text(results);
     });
-
-	});
 
 </script>
