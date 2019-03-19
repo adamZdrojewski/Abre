@@ -40,6 +40,16 @@
 						document.title = 'Starter';
 					$('#content_holder').load('modules/".basename(__DIR__)."/elements.php', function() { init_page(); });
 					$( '#modal_holder' ).load( 'modules/".basename(__DIR__)."/modals.php' );
-				},";
+				},
+                'starter': function()
+				{
+				    $('#navigation_top').hide();
+				    $('#content_holder').hide();
+				    $('#loader').show();
+				    $('#titletext').text('Starter');
+				    document.title = 'Starter';
+					$('#content_holder').load('modules/".basename(__DIR__)."/display.php', function() { init_page(); });
+					$( '#modal_holder' ).load( 'modules/".basename(__DIR__)."/modals.php' );
+			  },";
 		}
 ?>
