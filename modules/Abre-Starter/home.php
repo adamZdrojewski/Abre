@@ -38,7 +38,7 @@
 		    <a class='btn-floating btn-large waves-effect waves-light' onclick='addNew($new_task);' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
         </div>
 	</div>
-    <a class='waves-effect waves-light btn' style='background-color: <?php echo $siteColor; ?>' onClick="document.location.href='/display.php'">button</a>
+    <a class='waves-effect waves-light btn' style='background-color: <?php echo $siteColor; ?>' onClick="document.location.href='display.php'">button</a>
     
     
 <?php $tasks = array("Math", "Science", "Computer Science");
