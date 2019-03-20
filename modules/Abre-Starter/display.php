@@ -21,7 +21,7 @@
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
-    $tasks = $_COOKIE['tasks'];
+    $tasks = $_COOKIE["tasklist"];
 ?>
 
 <div class='page_container mdl-shadow--4dp'>

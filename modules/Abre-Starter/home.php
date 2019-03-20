@@ -22,7 +22,7 @@
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
     $tasks = array("math", "science");
-    $_COOKIE['tasks'] = $var_value;
+    setcookie("tasklist","$tasks");
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
