@@ -42,11 +42,11 @@
     <a href='#starter/display'><p>Click Here</p></a>
     
     
-<?php /*$tasks = array("Math", "Science", "Computer Science");
+<?php $tasks = array("Math", "Science", "Computer Science");
     function addNew($task) {
         array_push($tasks , $task);
         echo "<h4>".$task."</h4>";
-        $_SESSION['tasks'] = $tasks;*/
+        $_SESSION['tasks'] = $tasks;
     }
 ?>
 
