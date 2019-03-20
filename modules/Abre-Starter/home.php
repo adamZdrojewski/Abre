@@ -45,7 +45,7 @@
     function addNew($task) {
         array_push($tasks , $task);
         echo "<h4>".$task."</h4>";
-        $_COOKIE['tasklist'] = $tasks;
+        $_SESSION['tasks'] = $tasks;
     }
 ?>
 
