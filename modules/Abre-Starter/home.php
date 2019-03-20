@@ -21,7 +21,8 @@
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
-    $tasks = array();
+    $tasks = array("math", "science");
+    $_COOKIE['tasks'] = $var_value;
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
@@ -41,11 +42,11 @@
     <a href='#starter/display'><p>Click Here</p></a>
     
     
-<?php $tasks = array("Math", "Science", "Computer Science");
+<?php /*$tasks = array("Math", "Science", "Computer Science");
     function addNew($task) {
         array_push($tasks , $task);
         echo "<h4>".$task."</h4>";
-        $_SESSION['tasks'] = $tasks;
+        $_SESSION['tasks'] = $tasks;*/
     }
 ?>
 
