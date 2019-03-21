@@ -23,6 +23,7 @@
     $siteColor = getSiteColor();
     $tasks = array("math", "science");
     setcookie("tasklist","$tasks");
+    session_start();
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
