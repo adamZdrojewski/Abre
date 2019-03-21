@@ -47,7 +47,7 @@
     function addNew($task) {
         array_push($tasks , $task);
         echo "<h4>".$task."</h4>";
-        $_SESSION['tasks'] = $tasks;
+        $_POST['id'] = $tasks;
     }
 ?>
 
