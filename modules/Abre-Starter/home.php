@@ -40,20 +40,14 @@
             </div>
         </div>
         <div class='row'>
-            <form class='input-field col s10' method = "post" id="planner">
-                <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
+            <form class='input-field col s10' method = "post" id="planner" action="addtask.php">
+                <input placeholder='Add New Task' id='new_task' type='text' class='validate' name='task'>
+				<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
             </form>
-		    <a class='btn-floating btn-large waves-effect waves-light' onclick='addNew($new_task);' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
         </div>
 	</div>
     
     
-<?php
-    function addNew($task) {
-        array_push($tasks , $task);
-        $_SESSION['tasks'] = $tasks;
-    }
-?>
 
 <?php
 foreach ($tasks as &$task) {
