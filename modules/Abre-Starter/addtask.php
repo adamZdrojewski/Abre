@@ -1,5 +1,4 @@
 <?php
-
 	/*
 	* Copyright (C) 2016-2017 Abre.io LLC
 	*
@@ -15,23 +14,22 @@
     * You should have received a copy of the Affero General Public License
     * version 3 along with this program.  If not, see https://www.gnu.org/licenses/agpl-3.0.en.html.
     */
-
 	//Required configuration files
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
-	session_start();
+    session_start();
+    $tasks = $_POST['id'];
     $siteColor = getSiteColor();
-
-echo "<h5>1</h5>";
-/*$tasks = $_SESSION['tasks'];
-$task = $_POST['task'];
-echo "<h5>2</h5>";
-array_push($tasks , $task);
-echo "<h5>3</h5>";
-$_SESSION['tasks'] = $tasks;
-echo "<h5>4</h5>";
-header("location: home.php");*/
-
 ?>
-<h1>Hello!</h1>
+
+<div class='page_container mdl-shadow--4dp'>
+	<div class='page'>
+        <h1>Display</h1>
+        <?php
+foreach ($tasks as &$task) {
+    echo "<h4>".$task."</h4>";
+}
+?>
+    </div>
+</div>
