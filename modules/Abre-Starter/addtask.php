@@ -23,13 +23,4 @@
     $siteColor = getSiteColor();
 ?>
 
-<div class='page_container mdl-shadow--4dp'>
-	<div class='page'>
-        <h1>Display</h1>
-        <?php
-foreach ($tasks as &$task) {
-    echo "<h4>".$task."</h4>";
-}
-?>
-    </div>
-</div>
+<h1>Display</h1>
