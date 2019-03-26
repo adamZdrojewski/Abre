@@ -22,13 +22,13 @@
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
 	session_start();
     $siteColor = getSiteColor();
-	if(!isset($_SESSION['tasks']))
+	if(!isset($_SESSION['tasks0']))
 	{
 		$tasks = array("math", "science");
 	}
 	else
 	{
-		$tasks = $_SESSION['tasks'];
+		$tasks = $_SESSION['tasks0'];
 	}
 ?>
 
