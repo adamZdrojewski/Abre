@@ -34,3 +34,4 @@ echo "<h5>4</h5>";
 header("location: home.php");*/
 
 ?>
+<h1>Hello!</h1>
