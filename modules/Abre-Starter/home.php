@@ -20,10 +20,16 @@
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
+	session_start();
     $siteColor = getSiteColor();
-    $tasks = array("math", "science");
-    setcookie("tasklist","$tasks");
-    session_start();
+	if(!isset($_SESSION['tasks']))
+	{
+		$tasks = array("math", "science");
+	}
+	else
+	{
+		$tasks = $_SESSION['tasks'];
+	}
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
@@ -42,11 +48,10 @@
 	</div>
     
     
-<?php $tasks = array("Math", "Science", "Computer Science");
+<?php
     function addNew($task) {
         array_push($tasks , $task);
-        echo "<h4>".$task."</h4>";
-        $_POST['id'] = $tasks;
+        $_SESSION['tasks'] = $tasks;
     }
 ?>
 
