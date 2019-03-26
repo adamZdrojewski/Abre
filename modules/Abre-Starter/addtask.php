@@ -2,6 +2,7 @@
 
 echo "<h5>1</h5>";
 $tasks = $_SESSION['tasks'];
+$task = $_POST['task'];
 echo "<h5>2</h5>";
 array_push($tasks , $task);
 echo "<h5>3</h5>";
