@@ -19,7 +19,6 @@
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     session_start();
-    $tasks = $_POST['id'];
     $siteColor = getSiteColor();
 ?>
 
