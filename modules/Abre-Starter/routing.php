@@ -1,5 +1,4 @@
 <?php
-
 	/*
 	* Copyright (C) 2016-2017 Abre.io LLC
 	*
@@ -15,10 +14,8 @@
     * You should have received a copy of the Affero General Public License
     * version 3 along with this program.  If not, see https://www.gnu.org/licenses/agpl-3.0.en.html.
     */
-
     //Required configuration files
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
-
 		if($_SESSION['usertype'] == "staff"){
 			echo "
 				'starter': function()
@@ -41,15 +38,15 @@
 					$('#content_holder').load('modules/".basename(__DIR__)."/elements.php', function() { init_page(); });
 					$( '#modal_holder' ).load( 'modules/".basename(__DIR__)."/modals.php' );
 				},
-				'starter/addtask': function()
+                'starter/addtask': function()
 				{
-						$('#navigation_top').hide();
-						$('#content_holder').hide();
-						$('#loader').show();
-						$('#titletext').text('Starter');
-						document.title = 'Starter';
+				    $('#navigation_top').hide();
+				    $('#content_holder').hide();
+				    $('#loader').show();
+				    $('#titletext').text('Starter');
+				    document.title = 'Starter';
 					$('#content_holder').load('modules/".basename(__DIR__)."/addtask.php', function() { init_page(); });
 					$( '#modal_holder' ).load( 'modules/".basename(__DIR__)."/modals.php' );
-				},";
+			  },";
 		}
 ?>
