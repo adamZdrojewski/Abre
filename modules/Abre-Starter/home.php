@@ -40,14 +40,14 @@
             </div>
         </div>
         <div class='row'>
-            <form class='input-field col s10' method = "post" id="planner" action="#addtask.php">
+            <form class='input-field col s10' method = "post" id="planner" action="#display.php">
                 <input placeholder='Add New Task' id='new_task' type='text' class='validate' name='task'>
 				<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
             </form>
         </div>
 	</div>
     
-    <a href="#addtask.php"><h5>Hello!</h5></a>
+    <a href="#display.php"><h5>Hello!</h5></a>
 
 <?php
 foreach ($tasks as &$task) {
