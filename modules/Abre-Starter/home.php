@@ -20,7 +20,7 @@
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
-	//session_start();
+	session_start();
     $siteColor = getSiteColor();
 	if(!isset($_SESSION['tasks0']))
 	{
@@ -40,10 +40,10 @@
             </div>
         </div>
         <div class='row'>
-            <form class='input-field col s10' method = "post" id="planner" action="#addtask.php">
+            <!--form class='input-field col s10' method = "post" id="planner" action="#addtask.php">
                 <input placeholder='Add New Task' id='new_task' type='text' class='validate' name='task'>
 				<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
-            </form>
+            </form-->
         </div>
 	</div>
     
