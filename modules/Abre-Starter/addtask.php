@@ -1,4 +1,5 @@
 <?php
+
 	/*
 	* Copyright (C) 2016-2017 Abre.io LLC
 	*
@@ -14,12 +15,20 @@
     * You should have received a copy of the Affero General Public License
     * version 3 along with this program.  If not, see https://www.gnu.org/licenses/agpl-3.0.en.html.
     */
+
 	//Required configuration files
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
-    session_start();
     $siteColor = getSiteColor();
 ?>
 
-<h1>Display</h1>
+<div class='page_container mdl-shadow--4dp'>
+	<div class='page'>
+		<div class='row'>
+            <h1>Addtask</h1>
+        </div>
+	</div>
+    
+    
+</div>
