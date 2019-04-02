@@ -36,6 +36,7 @@ foreach ($tasks as &$task) {
     echo "<h4>".$task."</h4>";
 }
 ?>
+    <?php echo"<h2>".$tasktoadd."</h2>";?>
 	</div>
     
     
