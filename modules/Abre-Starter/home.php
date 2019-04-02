@@ -42,10 +42,10 @@
             </div>
         </div>
         <div class='row'>
-            <form class='input-field col s10' method="post" id="planner" action="#starter/addtask">
+            <!--form class='input-field col s10' method="post" id="planner" action="#starter/addtask">
                 <input id="tta" type="text" class="validate" name="tasktoadd">
 				<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
-            </form>
+            </form-->
         </div>
 	</div>
 
