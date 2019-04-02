@@ -22,7 +22,7 @@
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
     session_start();
-    $tasktoadd = $_POST['task'];
+    $tasktoadd = $_POST['tasktoadd'];
     $tasks = $_SESSION['tasks'];
     array_push($tasks, $tasktoadd);
     $_SESSION['tasks'] = $tasks;
@@ -36,7 +36,7 @@ foreach ($tasks as &$task) {
     echo "<h4>".$task."</h4>";
 }
 ?>
-    <?php echo"<h2>".$tasktoadd."</h2>";?>
+    <?php echo"<h2>".$_POST['tasktoadd']."</h2>";?>
 	</div>
     
     
