@@ -25,7 +25,8 @@
 ?>
 <?php
 
-$tasktoadd = $_POST['tasktoadd'];
+    $tasktoadd = $_POST['tasktoadd'];
+    $hello = "hi";
     $tasks = $_SESSION['tasks'];
     array_push($tasks, $tasktoadd);
     $_SESSION['tasks'] = $tasks;
@@ -33,15 +34,10 @@ $tasktoadd = $_POST['tasktoadd'];
 
 ?>
 
-<!--div class='page_container mdl-shadow--4dp'>
+<div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
-		<?php
-/*foreach ($tasks as &$task) {
-    echo "<h4>".$task."</h4>";
-}
-*/?>
-    <?//php echo"<h2>".$_POST['tasktoadd']."</h2>";?>
+    <?php echo"<h2>".$hello."</h2>";?>
 	</div>
     
     
-</div-->
+</div>
