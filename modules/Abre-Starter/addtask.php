@@ -36,7 +36,9 @@
 
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
-        <h2>hello</h2>
+        <div class='row'>
+            <h2>hello</h2>
+        </div>
 	</div>
     
     
