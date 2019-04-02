@@ -32,7 +32,8 @@
 	}
     $_SESSION['tasks'] = $tasks;
 ?>
-
+<html>
+    <body>
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 		<div class='row'>
@@ -100,3 +101,5 @@ foreach ($tasks as &$task) {
     });
 
 </script>
+    </body>
+</html>
