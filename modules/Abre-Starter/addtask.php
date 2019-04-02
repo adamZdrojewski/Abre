@@ -36,7 +36,7 @@
 
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
-    <?php echo"<h2>hello</h2>";?>
+        <h2>hello</h2>
 	</div>
     
     
