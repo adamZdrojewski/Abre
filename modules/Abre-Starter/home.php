@@ -17,10 +17,10 @@
     */
 
 	//Required configuration files
+    session_start();
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
-    require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
-	session_start();
+    require_once(dirname(__FILE__) . '/../../core/abre_functions.php')
     $siteColor = getSiteColor();
 	if(!isset($_SESSION['tasks']))
 	{
@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class='row'>
-            <form class='input-field col s10' method="post" id="planner" action="#starter/addtask">
+            <form method="post" action="#starter/addtask">
                 <input id="tta" type="text" class="validate" name="tasktoadd">
 				<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
             </form>
