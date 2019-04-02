@@ -21,13 +21,16 @@
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
+    session_start();
+    $tasktoadd = $_POST['task'];
+    $tasks = $_SESSION['tasks'];
+    array_push($tasks, $tasktoadd);
+    $_SESSION['tasks'] = $tasks;
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
-		<div class='row'>
-            <h1>Addtask</h1>
-        </div>
+		
 	</div>
     
     
