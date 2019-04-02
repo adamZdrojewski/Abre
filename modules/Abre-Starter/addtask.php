@@ -26,12 +26,16 @@
     $tasks = $_SESSION['tasks'];
     array_push($tasks, $tasktoadd);
     $_SESSION['tasks'] = $tasks;
-    header('location: #starter');
+    //header('location: #starter');
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
-		
+		<?php
+foreach ($tasks as &$task) {
+    echo "<h4>".$task."</h4>";
+}
+?>
 	</div>
     
     
