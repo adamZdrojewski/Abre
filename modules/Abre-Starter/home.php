@@ -47,8 +47,6 @@
             </form>
         </div>
 	</div>
-    
-    <a href="#addtask"><h5>Hello!</h5></a>
 
 <?php
 foreach ($tasks as &$task) {

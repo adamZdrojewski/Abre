@@ -26,6 +26,7 @@
     $tasks = $_SESSION['tasks'];
     array_push($tasks, $tasktoadd);
     $_SESSION['tasks'] = $tasks;
+    header('location: #starter');
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
