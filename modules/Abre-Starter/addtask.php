@@ -25,19 +25,27 @@
 ?>
 <?php
 
-    $tasktoadd = $_POST['tasktoadd'];
-    $hello = "hi";
+    /*$tasktoadd = $_POST['tasktoadd'];
     $tasks = $_SESSION['tasks'];
     array_push($tasks, $tasktoadd);
     $_SESSION['tasks'] = $tasks;
-    //header('location: #starter');
+    //header('location: #starter');*/
 
 ?>
-
+<?php    
+if(isset($_POST['SubmitButton'])){ //check if form was submitted
+  $input = $_POST['inputText']; //get input text
+  $message = "Success! You entered: ".$input;
+}    
+?>
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
         <div class='row'>
-            <?php echo"<h1>".$tasktoadd."</h1>";?>
+            <form action="" method="post">
+<?php echo $message; ?>
+  <input type="text" name="inputText"/>
+  <input type="submit" name="SubmitButton"/>
+</form>
         </div>
 	</div>
     
