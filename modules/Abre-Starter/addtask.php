@@ -37,7 +37,7 @@
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
         <div class='row'>
-            <?php echo"<h1>".$hello."</h1>";?>
+            <?php echo"<h1>".$tasktoadd."</h1>";?>
         </div>
 	</div>
     
