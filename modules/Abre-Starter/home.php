@@ -1,5 +1,4 @@
 <?php
-
 	/*
 	* Copyright (C) 2016-2017 Abre.io LLC
 	*
@@ -15,25 +14,13 @@
     * You should have received a copy of the Affero General Public License
     * version 3 along with this program.  If not, see https://www.gnu.org/licenses/agpl-3.0.en.html.
     */
-
 	//Required configuration files
-    session_start();
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
-	if(!isset($_SESSION['tasks']))
-	{
-		$tasks = array("math", "science");
-	}
-	else
-	{
-		$tasks = $_SESSION['tasks'];
-	}
-    $_SESSION['tasks'] = $tasks;
 ?>
-<html>
-    <body>
+
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 		<div class='row'>
@@ -42,65 +29,12 @@
             </div>
         </div>
         <div class='row'>
-            <h1>It is fixed</h1>
-            <!--form class='input-field col s10' method="post" id="planner" action="#starter/addtask">
-                <input id="tta" type="text" class="validate" name="tasktoadd">
-				<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
-            </form-->
+            <div class='input-field col s10'>
+                <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
+            </div>
+		    <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
         </div>
+		
+
 	</div>
-
-<?php
-foreach ($tasks as &$task) {
-    echo "<h4>".$task."</h4>";
-}
-?>
-    
-    
 </div>
-
-
-
-<script>
-
-	$(function(){
-
-    $('select').material_select();
-
-		$('.modal-startermodal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
-
-		$(document).on("click", ".modal-startermodal", function () {
-			var info = $(this).data('info');
-			$(".modal-content #infoHolder").text(info);
-		});
-
-    //you can use this code to send data to the server or another page if needed
-    // var formStarter = $('#form-starter');
-    //
-    // $(formStarter).submit(function(event) {
-    //   event.preventDefault();
-    //   var formData = $(formStarter).serialize();
-    //   $.ajax({
-    //     type: 'POST',
-    //     url: $(formStarter).attr('action'),
-    //     data: formData
-    //   })
-    //
-    //   //Show the notification
-    //   .done(function(responseprocess) {
-    //     //do something after the ajax call has sent data successfully
-    //   })
-    // });
-
-    var formStarter = $("#planner");
-    $(formStarter).submit(function(event){
-      event.preventDefault();
-      var results = $(formStarter).serialize();
-      results = results.replace(/&/g, ", ");
-      results = results.replace(/=/g, " = ");
-      $("#new_task").text(results);
-    });
-
-</script>
-    </body>
-</html>

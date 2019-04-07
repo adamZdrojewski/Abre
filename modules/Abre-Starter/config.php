@@ -1,5 +1,4 @@
 <?php
-
 	/*
 	* Copyright (C) 2016-2017 Abre.io LLC
 	*
@@ -15,16 +14,13 @@
     * You should have received a copy of the Affero General Public License
     * version 3 along with this program.  If not, see https://www.gnu.org/licenses/agpl-3.0.en.html.
     */
-
 	//Required configuration files
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
-
 	if(superadmin()){
 		//Check for installation
 		require('installer.php');
 	}
-
 	$pageview=1;
 	$drawerhidden=1;
 	$pageorder=10;

@@ -1,5 +1,4 @@
 <?php
-
 	/*
 	* Copyright (C) 2016-2017 Abre.io LLC
 	*
@@ -15,14 +14,11 @@
     * You should have received a copy of the Affero General Public License
     * version 3 along with this program.  If not, see https://www.gnu.org/licenses/agpl-3.0.en.html.
     */
-
 	//Required configuration files
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
 	require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
-
 	$siteColor = getSiteColor();
-
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
@@ -128,18 +124,13 @@
 </div>
 
 <script>
-
 	$(function(){
-
     $('select').material_select();
-
 		$('.modal-startermodal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
-
 		$(document).on("click", ".modal-startermodal", function () {
 			var info = $(this).data('info');
 			$(".modal-content #infoHolder").text(info);
 		});
-
     //you can use this code to send data to the server or another page if needed
     // var formStarter = $('#form-starter');
     //
@@ -157,7 +148,6 @@
     //     //do something after the ajax call has sent data successfully
     //   })
     // });
-
     var formStarter = $("#form-starter");
     $(formStarter).submit(function(event){
       event.preventDefault();
@@ -166,7 +156,5 @@
       results = results.replace(/=/g, " = ");
       $("#formResults").text(results);
     });
-
 	});
-
 </script>

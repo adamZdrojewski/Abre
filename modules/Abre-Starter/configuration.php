@@ -1,5 +1,4 @@
 <?php
-
 $portal_root = "http://localhost";
 $portal_private_root = "private_html";
 if(!defined('SITE_GAFE_DOMAIN')){ define('SITE_GAFE_DOMAIN', '@'); }
@@ -19,5 +18,4 @@ $portal_path_root = $_SERVER['DOCUMENT_ROOT'];
 if(!defined('GOOGLE_REDIRECT')){ define('GOOGLE_REDIRECT', $portal_root.'/index.php'); }
 if(!defined('GOOGLE_SCOPES')){ define('GOOGLE_SCOPES', serialize (array('https://www.googleapis.com/auth/userinfo.email','https://www.googleapis.com/auth/plus.login', 'https://www.googleapis.com/auth/gmail.modify', 'https://www.googleapis.com/auth/drive.readonly', 'https://www.googleapis.com/auth/calendar.readonly', 'https://www.googleapis.com/auth/classroom.courses.readonly', 'https://www.googleapis.com/auth/classroom.rosters.readonly'))); }
 if(!defined('STREAM_CACHE')){ define('STREAM_CACHE', 'true'); }
-
 ?>
