@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class='row'>
-            <form action="#addtask" method="post">
+            <form action="#starter/addtask" method="post">
             <div class='input-field col s10'>
                 <input placeholder='Add New Task' id='new_task' type='text' class='validate' name='newtask'>
             </div>
