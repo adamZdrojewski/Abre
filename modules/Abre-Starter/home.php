@@ -18,6 +18,14 @@
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
+    if(isset($_SESSION['tasklist']))
+    {
+        $tasks = $_SESSION['tasklist'];
+    }
+    else
+    {
+        $tasks = array('english', 'math');
+    }
     $siteColor = getSiteColor();
 ?>
 
@@ -29,13 +37,21 @@
             </div>
         </div>
         <div class='row'>
-            <form action="#starter/addtask" method="post">
+            <form action="#starter/addtask" method="POST">
             <div class='input-field col s10'>
-                <input placeholder='Add New Task' id='new_task' type='text' class='validate' name='newtask'>
+                <input placeholder='newtask' id='newtask' type='text' name='newtask'>
             </div>
 		    <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
         </div>
-		
+            
+		<?php echo $tasks; ?>
 
 	</div>
 </div>
+<?php
+  
+    function addtask(){
+           
+    }
+    
+?>
