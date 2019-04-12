@@ -44,14 +44,14 @@
 		    <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
         </div>
             
-		<?php echo $tasks; ?>
+		<?php
+            
+            foreach($tasks as $task)
+            {
+                echo "<h4>".$task."</h4>";
+            }
+            
+        ?>
 
 	</div>
 </div>
-<?php
-  
-    /*function addtask(){
-        $_SESSION['tasktoadd'] = 
-    }*/
-    
-?>
