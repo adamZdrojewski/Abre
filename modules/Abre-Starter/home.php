@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class='row'>
-            <form action="newaddtask.php" method="POST">
+            <form action="addtask.php" method="POST">
             <div class='input-field col s10'>
                 <input placeholder='newtask' id='newtask' type='text' name='newtask'>
             </div>
