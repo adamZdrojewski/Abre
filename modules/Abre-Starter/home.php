@@ -39,7 +39,7 @@
         <div class='row'>
             <form action="#starter/addtask" method="POST">
             <div class='input-field col s10'>
-                <input placeholder='newtask' id='newtask' type='text' name='newtask'>
+                <input id="newtask" type="text" class="validate" name="newtask">
             </div>
 		    <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
             </form>
