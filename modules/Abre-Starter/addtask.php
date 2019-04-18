@@ -9,5 +9,4 @@
 
     echo "<h5>".$newtask."</h5>";
 
-    header('location:home.php');
 ?>
