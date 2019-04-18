@@ -42,6 +42,7 @@
                 <input placeholder='newtask' id='newtask' type='text' name='newtask'>
             </div>
 		    <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
+            </form>
         </div>
             
 		<?php
