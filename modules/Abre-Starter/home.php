@@ -56,3 +56,20 @@
 
 	</div>
 </div>
+
+<script>
+var formStarter = $('#addtask');
+    $(formStarter).submit(function(event) {
+        event.preventDefault();
+        var formData = $(newtask).serialize();
+        $.ajax({
+            type: 'POST',
+            url: $(newtask).attr('action'),
+            data: formData
+        })
+          //Show the notification
+        .done(function(responseprocess) {     
+        //do something after the ajax call has sent data successfully
+       })
+    });
+</script>
