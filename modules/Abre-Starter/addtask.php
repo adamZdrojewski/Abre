@@ -1,10 +1,13 @@
-<?
+<?php
+    require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
+	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
+    require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
 
-session_start();
+    session_start();
 
-$newtask = $_POST['newtask'];
+    $newtask = $_POST['newtask'];
 
-echo $newtask;
+    echo "<h5>".$newtask."</h5>";
 
-header('location:home.php');
+    header('location:home.php');
 ?>
