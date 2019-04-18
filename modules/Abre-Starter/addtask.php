@@ -1,7 +1,10 @@
 <?
 
+session_start();
+
 $newtask = $_POST['newtask'];
 
-header('location:home.php');
+echo $newtask;
 
+header('location:home.php');
 ?>
