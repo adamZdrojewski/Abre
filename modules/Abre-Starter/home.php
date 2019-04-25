@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class='row'>
-            <form action="#addtask.php" method="POST">
+            <form action="#addtask.php" method="REQUEST">
             <div class='input-field col s10'>
                 <input id="newtask" type="text" class="validate" name="newtask">
             </div>
@@ -52,6 +52,15 @@
                 echo "<h4>".$task."</h4>";
             }
             
+        ?>
+        <?php
+        
+            /*function saveNewTask(){
+                
+
+            return $valuereturn;
+        }*/
+        
         ?>
 
 	</div>

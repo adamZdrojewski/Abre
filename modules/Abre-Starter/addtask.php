@@ -5,7 +5,7 @@
 
     session_start();
 
-    $newtask = $_POST['newtask'];
+    $newtask = $_REQUEST['newtask'];
 
     echo "<h5>".$newtask."</h5>";
 
