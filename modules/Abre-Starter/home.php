@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class='row'>
-            <form action="testfile.php" method="post">
+            <form action="#testfile" method="post">
             <div class='input-field col s10'>
                 <input id="newtask" type="text" class="validate" name="newtask">
             </div>
