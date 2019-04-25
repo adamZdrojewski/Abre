@@ -33,7 +33,7 @@
 	<div class='page'>
 		<div class='row'>
 			<div style='padding:56px; text-align:center; width:100%;'>
-                <span style='font-size: 32px; font-weight:700'>Planner</span>
+                <span style='font-size: 32px; font-weight:700'>Planner . </span>
             </div>
         </div>
         <div class='row'>
