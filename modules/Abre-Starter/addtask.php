@@ -5,7 +5,7 @@
 
     session_start();
 
-    $newtask = $_REQUEST['newtask'];
+    $newtask = $_GET["newtask"];
     //$newtask = "Hello";
 
 ?>

@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class='row'>
-            <form action="#addtask" method="post">
+            <form action="#addtask" method="get">
             <div class='input-field col s10'>
                 <input id="newtask" type="text" class="validate" name="newtask">
             </div>
