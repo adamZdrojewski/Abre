@@ -28,9 +28,6 @@
     }
     $siteColor = getSiteColor();
 ?>
-<!DOCTYPE>
-<html>
-    <body>
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 		<div class='row'>
@@ -65,5 +62,3 @@
 
 	</div>
 </div>
-    </body>
-</html>
