@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class='row'>
-            <form action="#addtask.php" method="REQUEST">
+            <form action="#addtask" method="REQUEST">
             <div class='input-field col s10'>
                 <input id="newtask" type="text" class="validate" name="newtask">
             </div>
