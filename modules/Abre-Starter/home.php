@@ -20,7 +20,7 @@
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     if(isset($_SESSION['tasklist']))
     {
-        $tasks = $_SESSION['tasklist'];
+        //$tasks = $_SESSION['tasklist'];
     }
     else
     {
@@ -28,7 +28,9 @@
     }
     $siteColor = getSiteColor();
 ?>
-
+<!DOCTYPE>
+<html>
+    <body>
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 		<div class='row'>
@@ -37,7 +39,7 @@
             </div>
         </div>
         <div class='row'>
-            <form action="#addtask" method="get">
+            <form action="testfile.php" method="post">
             <div class='input-field col s10'>
                 <input id="newtask" type="text" class="validate" name="newtask">
             </div>
@@ -55,13 +57,13 @@
         ?>
         <?php
         
-            /*function saveNewTask(){
-                
-
-            return $valuereturn;
-        }*/
+            function saveNewTask(){
+                array_push($tasks, $newtask);
+        }
         
         ?>
 
 	</div>
 </div>
+    </body>
+</html>
