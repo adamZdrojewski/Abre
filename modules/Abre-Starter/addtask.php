@@ -5,8 +5,8 @@
 
     session_start();
 
-    //$newtask = $_REQUEST['newtask'];
-    $newtask = "Hello";
+    $newtask = $_REQUEST['newtask'];
+    //$newtask = "Hello";
 
 ?>
 <div class='page_container mdl-shadow--4dp'>
