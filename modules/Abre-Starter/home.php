@@ -32,7 +32,7 @@
         echo "<div class='row'>";
             echo "<form id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>";
                 echo "<div class='input-field col s10'>";
-                    echo "<input placeholder='Add New Task' id='newtask' type='text' class='validate'>";
+                    echo "<input placeholder='Add New Task' id='new_task' type='text' class='validate'>";
                 echo "</div>";
                 echo "<a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>";
             echo "</form>";	
@@ -42,18 +42,30 @@
 
 <script>
     $(function(){
-
+            
+            //when clicking pagination button reload table with next page's results
+			$('#newtask').off('.pagebutton').on('click', '.pagebutton', function(){
+				event.preventDefault();
+				$('.mdl-layout__content').animate({scrollTop:0}, 0);
+				var currentPage = $(this).data('page');
+				var searchQuery = $('#new_task').val();
+				$.post( "modules/directory/searchresults.php", {page: currentPage, searchquery: searchQuery})
+				.done(function(data){
+					$("#newtask").html(data);
+				});
+			});
+        
 			//Press the search data
 			var form = $('#add-task');
 			$(form).submit(function(event) {
 				event.preventDefault();
-				var searchQuery = $('#newtask').val();
+				var searchQuery = $('#new_task').val();
 				$.ajax({
 				    type: 'POST',
 				    data: {newtask: newtask},
 				    url: $(form).attr('action'),
 				    success: function(data) {
-				    	$('modules/Abre-Starter/newtask.php').html(data);
+				    	$('#newtask').html(data);
 				    }
 				});
 			});
