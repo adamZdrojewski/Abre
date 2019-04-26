@@ -41,15 +41,15 @@
 </div>
 
 <script>
-    /*$(function(){
+    $(function(){
             
             //when clicking pagination button reload table with next page's results
 			$('#newtask').off('.pagebutton').on('click', '.pagebutton', function(){
 				event.preventDefault();
 				$('.mdl-layout__content').animate({scrollTop:0}, 0);
 				var currentPage = $(this).data('page');
-				var searchQuery = $('#new_task').val();
-				$.post( "modules/directory/searchresults.php", {page: currentPage, searchquery: searchQuery})
+				var new_task = $('#new_task').val();
+				$.post( "modules/directory/searchresults.php", {page: currentPage, new_task: new_task})
 				.done(function(data){
 					$("#newtask").html(data);
 				});
@@ -59,7 +59,7 @@
 			var form = $('#add-task');
 			$(form).submit(function(event) {
 				event.preventDefault();
-				var searchQuery = $('#new_task').val();
+				var new_task = $('#new_task').val();
 				$.ajax({
 				    type: 'POST',
 				    data: {newtask: newtask},
@@ -70,5 +70,5 @@
 				});
 			});
 
-		});*/
+		});
 </script>
