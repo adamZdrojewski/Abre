@@ -44,7 +44,7 @@ echo "</div>";
     $(function(){
             
             //when clicking pagination button reload table with next page's results
-			$('#newtask').off('.pagebutton').on('click', '.pagebutton', function(){
+			/*$('#newtask').off('.pagebutton').on('click', '.pagebutton', function(){
 				event.preventDefault();
 				$('.mdl-layout__content').animate({scrollTop:0}, 0);
 				var currentPage = $(this).data('page');
@@ -53,7 +53,7 @@ echo "</div>";
 				.done(function(data){
 					$("#newtask").html(data);
 				});
-			});
+			});*/
 
 			//Press the search data
 			var form = $('#add-task');
