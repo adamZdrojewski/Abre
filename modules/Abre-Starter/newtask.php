@@ -26,6 +26,7 @@
 		<div class='row'>
 			<div style='padding:56px; text-align:center; width:100%;'>
                 <span style='font-size: 32px; font-weight:700'>Hello?</span>
+                <?php echo "<h3>".$_POST['newtask']."</h3>"; ?>
             </div>
         </div>
 	 </div>

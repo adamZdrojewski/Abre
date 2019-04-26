@@ -32,7 +32,7 @@
         echo "<div class='row'>";
             echo "<form id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>";
                 echo "<div class='input-field col s10'>";
-                    echo "<input placeholder='Add New Task' id='new_task' type='text' class='validate'>";
+                    echo "<input placeholder='Add New Task' id='newtask' type='text' class='validate'>";
                 echo "</div>";
                 echo "<a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>";
             echo "</form>";	
