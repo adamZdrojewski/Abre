@@ -53,7 +53,7 @@ echo "</div>";
 				.done(function(data){
 					$("#newtask").html(data);
 				});
-			});*/
+			});
 
 			//Press the search data
 			var form = $('#add-task');
@@ -68,9 +68,9 @@ echo "</div>";
 				    	$('#newtask').html(data);
 				    }
 				});
-			});
+			});*/
         
-           /*var addtask = $('#add-task');
+           var addtask = $('#add-task');
     $(addtask).submit(function(event) {
        event.preventDefault();
        var formData = $(addtask).serialize();
