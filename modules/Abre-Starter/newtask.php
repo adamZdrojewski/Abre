@@ -26,7 +26,7 @@
 		<div class='row'>
 			<div style='padding:56px; text-align:center; width:100%;'>
                 <span style='font-size: 32px; font-weight:700'>Hello?</span>
-                <?php echo "<h3>".$_REQUEST['new_task']."</h3>"; ?>
+                <?php echo "<h3>".$_GET['new_task']."</h3>"; ?>
             </div>
         </div>
 	 </div>
