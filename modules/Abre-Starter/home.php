@@ -70,15 +70,24 @@
 				});
 			});*/
         
-           var formStarter = $('#form-starter');
-    $(add-task).submit(function(event) {
+           var addtask = $('#add-task');
+    $(addtask).submit(function(event) {
        event.preventDefault();
-       var formData = $(add-task).serialize();
+       var formData = $(addtask).serialize();
        $.ajax({
          type: 'POST',
-         url: $(add-task).attr('action'),
+         url: $(addtask).attr('action'),
          data: formData
        }) 
+        
+        /*var formStarter = $("#form-starter");
+    $(formStarter).submit(function(event){
+      event.preventDefault();
+      var results = $(formStarter).serialize();
+      results = results.replace(/&/g, ", ");
+      results = results.replace(/=/g, " = ");
+      $("#formResults").text(results);
+    });*/
 
 		});
 </script>
