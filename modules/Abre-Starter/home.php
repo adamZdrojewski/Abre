@@ -20,15 +20,15 @@
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
 ?>
-
-<div class='page_container mdl-shadow--4dp'>
-	<div class='page'>
-		<div class='row'>
-			<div style='padding:56px; text-align:center; width:100%;'>
-                <span style='font-size: 32px; font-weight:700'>Planner</span>
-            </div>
-        </div>
-        <?php
+<?php
+echo "<div class='page_container mdl-shadow--4dp'>";
+	echo "<div class='page'>";
+		echo "<div class='row'>";
+			echo "<div style='padding:56px; text-align:center; width:100%;'>";
+                echo "<span style='font-size: 32px; font-weight:700'>Planner</span>";
+            echo "</div>";
+        echo "</div>";
+        
         echo "<div class='row'>";
             echo "<form id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>";
                 echo "<div class='input-field col s10'>";
@@ -36,15 +36,15 @@
                 echo "</div>";
                 /*echo "<a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>";*/
             echo "</form>";	
-        ?>
-	       </div>
-</div>
-
+        
+	       echo "</div>";
+echo "</div>";
+?>
 <script>
     $(function(){
             
             //when clicking pagination button reload table with next page's results
-			/*$('#newtask').off('.pagebutton').on('click', '.pagebutton', function(){
+			$('#newtask').off('.pagebutton').on('click', '.pagebutton', function(){
 				event.preventDefault();
 				$('.mdl-layout__content').animate({scrollTop:0}, 0);
 				var currentPage = $(this).data('page');
@@ -68,9 +68,9 @@
 				    	$('#newtask').html(data);
 				    }
 				});
-			});*/
+			});
         
-           var addtask = $('#add-task');
+           /*var addtask = $('#add-task');
     $(addtask).submit(function(event) {
        event.preventDefault();
        var formData = $(addtask).serialize();
@@ -80,10 +80,10 @@
          data: formData
        }) 
         
-        /*var formStarter = $("#form-starter");
-    $(formStarter).submit(function(event){
+        var addtask = $("#add-task");
+    $(addtask).submit(function(event){
       event.preventDefault();
-      var results = $(formStarter).serialize();
+      var results = $(addtask).serialize();
       results = results.replace(/&/g, ", ");
       results = results.replace(/=/g, " = ");
       $("#formResults").text(results);
