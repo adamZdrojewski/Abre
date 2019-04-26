@@ -18,47 +18,23 @@
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
-    if(isset($_SESSION['tasklist']))
-    {
-        //$tasks = $_SESSION['tasklist'];
-    }
-    else
-    {
-        $tasks = array('english', 'math');
-    }
     $siteColor = getSiteColor();
 ?>
+
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 		<div class='row'>
 			<div style='padding:56px; text-align:center; width:100%;'>
-                <span style='font-size: 32px; font-weight:700'>Planner . </span>
+                <span style='font-size: 32px; font-weight:700'>Planner</span>
             </div>
         </div>
         <div class='row'>
-            <form action="#newtask" method="post">
             <div class='input-field col s10'>
-                <input id="newtask" type="text" class="validate" name="newtask">
+                <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
             </div>
 		    <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
-            </form>
         </div>
-            
-		<?php
-            
-            foreach($tasks as $task)
-            {
-                echo "<h4>".$task."</h4>";
-            }
-            
-        ?>
-        <?php
-        
-            function saveNewTask(){
-                array_push($tasks, $newtask);
-        }
-        
-        ?>
+		
 
 	</div>
 </div>

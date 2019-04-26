@@ -37,16 +37,6 @@
 						document.title = 'Starter';
 					$('#content_holder').load('modules/".basename(__DIR__)."/elements.php', function() { init_page(); });
 					$( '#modal_holder' ).load( 'modules/".basename(__DIR__)."/modals.php' );
-				},
-                'addtask': function()
-				{
-						$('#navigation_top').hide();
-						$('#content_holder').hide();
-						$('#loader').show();
-						$('#titletext').text('Starter');
-						document.title = 'Starter';
-					$('#content_holder').load('modules/".basename(__DIR__)."/addtask.php', function() { init_page(); });
-					$( '#modal_holder' ).load( 'modules/".basename(__DIR__)."/modals.php' );
-				}";
+				},";
 		}
 ?>
