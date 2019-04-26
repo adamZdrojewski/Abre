@@ -39,3 +39,24 @@
         ?>
 	       </div>
 </div>
+
+<script>
+    $(function(){
+
+			//Press the search data
+			var form = $('#add-task');
+			$(form).submit(function(event) {
+				event.preventDefault();
+				var searchQuery = $('#newtask').val();
+				$.ajax({
+				    type: 'POST',
+				    data: {newtask: newtask},
+				    url: $(form).attr('action'),
+				    success: function(data) {
+				    	$('#newtask').html(data);
+				    }
+				});
+			});
+
+		});
+</script>
