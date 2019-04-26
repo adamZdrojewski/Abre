@@ -41,7 +41,7 @@
 </div>
 
 <script>
-    /*$(function(){
+    $(function(){
             
             //when clicking pagination button reload table with next page's results
 			/*$('#newtask').off('.pagebutton').on('click', '.pagebutton', function(){
@@ -68,11 +68,9 @@
 				    	$('#newtask').html(data);
 				    }
 				});
-			});
+			});*/
         
-            
-
-		});*/
+           var formStarter = $('#form-starter');
     $(add-task).submit(function(event) {
        event.preventDefault();
        var formData = $(add-task).serialize();
@@ -80,5 +78,7 @@
          type: 'POST',
          url: $(add-task).attr('action'),
          data: formData
-       })
+       }) 
+
+		});
 </script>
