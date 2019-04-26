@@ -30,7 +30,7 @@ echo "<div class='page_container mdl-shadow--4dp'>";
         echo "</div>";
         
         echo "<div class='row'>";
-            echo "<form id='add-task' method='get' action='modules/Abre-Starter/newtask.php'>";
+            echo "<form id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>";
                 echo "<div class='input-field col s10'>";
                     echo "<input placeholder='Add New Task' id='new_task' type='text' class='validate'>";
                 echo "</div>";
