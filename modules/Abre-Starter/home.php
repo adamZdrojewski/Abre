@@ -41,7 +41,7 @@
 </div>
 
 <script>
-    $(function(){
+    /*$(function(){
             
             //when clicking pagination button reload table with next page's results
 			$('#newtask').off('.pagebutton').on('click', '.pagebutton', function(){
@@ -70,5 +70,5 @@
 				});
 			});
 
-		});
+		});*/
 </script>
