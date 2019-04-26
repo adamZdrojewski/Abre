@@ -53,7 +53,7 @@
 				    data: {newtask: newtask},
 				    url: $(form).attr('action'),
 				    success: function(data) {
-				    	$('#newtask').html(data);
+				    	$('modules/Abre-Starter/newtask.php').html(data);
 				    }
 				});
 			});
