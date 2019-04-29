@@ -20,6 +20,15 @@
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
     session_start();
+    
+    if(isset($_SESSION['tasklist']))
+    {
+        $tasks = $_SESSION['tasklist'];
+    }
+    else
+    {
+        $tasks = array("computer science", "math");
+    }
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
@@ -39,4 +48,14 @@
             </form>	
         
 	       </div>
+        
+        <?php
+        
+            foreach($tasks as $task)
+            {
+                echo "<h5>".$task."</h5>";
+            }
+        
+        ?>
+        
 </div>
