@@ -27,7 +27,7 @@
     }
     else
     {
-        $tasks = array("computer science", "math");
+        $tasks = array();
     }
     $_SESSION['tasklist'] = $tasks;
 ?>
@@ -51,10 +51,16 @@
 	       </div>
         
         <?php
-        
-            foreach($tasks as $task)
+            if(empty($tasks))
             {
-                echo "<h5>".$task."</h5>";
+                echo "<h5>You Don't Have Any Tasks Right Now</h5>";
+            }
+            else
+            {
+                foreach($tasks as $task)
+                {
+                    echo "<h5>".$task."</h5>";
+                }
             }
         
         ?>
