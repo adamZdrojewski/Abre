@@ -59,4 +59,8 @@
         
         ?>
         
+        <br>
+        
+        <?php echo "<a class='waves-effect waves-light btn' style='background-color:".$siteColor.";'>Restart Session</a>"; ?>
+        
 </div>
