@@ -40,7 +40,7 @@
 	       </div>
 </div>
 
-<script>
+<!--script>
     $(function(){
             
         var formStarter = $('#form-starter');
@@ -62,4 +62,4 @@
         
             
 		});
-</script>
+</script-->
