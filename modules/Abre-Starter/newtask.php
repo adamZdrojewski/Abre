@@ -24,6 +24,6 @@
     $tasks = $_SESSION['tasklist'];
     array_push($tasks, $_POST['tasktoadd']);
     $_SESSION['tasklist'] = $tasks;
-    header('location: modules/Abre-Starter/home.php');
+    header('location: home.php');
 
 ?>
