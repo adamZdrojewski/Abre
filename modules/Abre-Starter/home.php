@@ -32,7 +32,7 @@
         <div class='row'>
             <form class='' id='form-starter' method='post' action='modules/Abre-Starter/newtask.php'>
                 <div class='input-field col s10'>
-                    <input placeholder='Add New Task' id='tasktoadd' type='text' class='validate'></input>
+                    <input id="tasktoadd" name="tasktoadd" type="text" maxlength="20" placeholder="Enter text here" autocomplete="off" required>
                 </div>
                 <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
             </form>	
