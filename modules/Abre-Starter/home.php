@@ -19,6 +19,7 @@
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
+    session_start();
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
