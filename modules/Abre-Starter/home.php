@@ -56,7 +56,7 @@
     
        //Show the notification
        .done(function(responseprocess) {
-         //do something after the ajax call has sent data successfully
+         return true;
        })
      });
         
