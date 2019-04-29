@@ -24,6 +24,6 @@
     $tasks = $_SESSION['tasklist'];
     array_push($tasks, $_POST['tasktoadd']);
     $_SESSION['tasklist'] = $tasks;
-    header('location: home.php');
+    header('location: /#starter');
 
 ?>
