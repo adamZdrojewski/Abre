@@ -59,6 +59,15 @@
          //do something after the ajax call has sent data successfully
        })
      });
+        
+        var formStarter = $("#form-starter");
+    $(formStarter).submit(function(event){
+      event.preventDefault();
+      var results = $(formStarter).serialize();
+      results = results.replace(/&/g, ", ");
+      results = results.replace(/=/g, " = ");
+      $("#formResults").text(results);
+    });
             
 		});
 </script>
