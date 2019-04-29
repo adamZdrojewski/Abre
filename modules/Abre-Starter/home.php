@@ -40,27 +40,3 @@
         
 	       </div>
 </div>
-
-<!--script>
-    $(function(){
-            
-        var formStarter = $('#form-starter');
-    
-     $(formStarter).submit(function(event) {
-      event.preventDefault();
-       var tasktoadd = $('#tasktoadd').val();
-      $.ajax({
-        type: 'POST',
-         url: $(formStarter).attr('action'),
-         data: tasktoadd
-       })
-    
-       //Show the notification
-       .done(function(responseprocess) {
-         return true;
-       })
-     });
-        
-            
-		});
-</script-->
