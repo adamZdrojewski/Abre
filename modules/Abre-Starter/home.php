@@ -32,7 +32,7 @@
         <div class='row'>
             <form class='' id='form-starter' method='post' action='modules/Abre-Starter/newtask.php'>
                 <div class='input-field col s10'>
-                    <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
+                    <input placeholder='Add New Task' id='tasktoadd' type='text' class='validate'>
                 </div>
                 <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
             </form>	
@@ -47,11 +47,11 @@
     
      $(formStarter).submit(function(event) {
       event.preventDefault();
-       var formData = $(formStarter).serialize();
+       var tasktoadd = $('#tasktoadd').val();
       $.ajax({
         type: 'POST',
          url: $(formStarter).attr('action'),
-         data: formData
+         data: tasktoadd
        })
     
        //Show the notification
@@ -60,14 +60,6 @@
        })
      });
         
-        var formStarter = $("#form-starter");
-    $(formStarter).submit(function(event){
-      event.preventDefault();
-      var results = $(formStarter).serialize();
-      results = results.replace(/&/g, ", ");
-      results = results.replace(/=/g, " = ");
-      $("#formResults").text(results);
-    });
             
 		});
 </script>
