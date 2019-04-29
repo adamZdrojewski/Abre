@@ -61,6 +61,6 @@
         
         <br>
         
-        <?php echo "<a href='restartsession.php'><button class='waves-effect waves-light btn' style='background-color:".$siteColor.";'>Restart Session</button></a>"; ?>
+        <?php echo "<a href='modules/Abre-Starter/restartsession.php'><button class='waves-effect waves-light btn' style='background-color:".$siteColor.";'>Restart Session</button></a>"; ?>
         
 </div>
