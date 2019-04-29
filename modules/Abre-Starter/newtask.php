@@ -20,15 +20,10 @@
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
     session_start();
-?>
 
-<div class='page_container mdl-shadow--4dp'>
-	<div class='page'>
-		<div class='row'>
-			<div style='padding:56px; text-align:center; width:100%;'>
-                <span style='font-size: 32px; font-weight:700'>Hello?</span>
-                <?php echo "<h3>".$_POST['tasktoadd']."</h3>"; ?>
-            </div>
-        </div>
-	 </div>
-</div>
+    $tasks = $_SESSION['tasklist'];
+    array_push($tasks, $_POST['tasktoadd']);
+    $_SESSION['tasklist'] = $tasks;
+    header('location: modules/Abre-Starter/home.php');
+
+?>

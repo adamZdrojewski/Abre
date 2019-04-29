@@ -29,6 +29,7 @@
     {
         $tasks = array("computer science", "math");
     }
+    $_SESSION['tasklist'] = $tasks;
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
