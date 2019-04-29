@@ -61,6 +61,6 @@
         
         <br>
         
-        <?php echo "<a class='waves-effect waves-light btn' style='background-color:".$siteColor.";'>Restart Session</a>"; ?>
+        <?php echo "<a href='restartsession.php'><button class='waves-effect waves-light btn' style='background-color:".$siteColor.";'>Restart Session</button></a>"; ?>
         
 </div>
