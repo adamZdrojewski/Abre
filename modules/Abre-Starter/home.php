@@ -31,7 +31,7 @@
         </div>
         
         <div class='row'>
-            <form class='' id='form-starterr' method='post' action='modules/Abre-Starter/newtask.php'>
+            <form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
                 <div class='input-field col s10'>
                     <input id="tasktoadd" name="tasktoadd" type="text" maxlength="20" placeholder="Enter text here" autocomplete="off" required>
                 </div>
