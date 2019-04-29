@@ -35,7 +35,7 @@
                 <div class='input-field col s10'>
                     <input id="tasktoadd" name="tasktoadd" type="text" maxlength="20" placeholder="Enter text here" autocomplete="off" required>
                 </div>
-                <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>; left:20px'><i class="material-icons">add</i></button>
+                <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
             </form>	
         
 	       </div>
