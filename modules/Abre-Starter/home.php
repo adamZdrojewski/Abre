@@ -20,101 +20,45 @@
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
 ?>
-<?php
-echo "<div class='page_container mdl-shadow--4dp'>";
-	echo "<div class='page'>";
-		echo "<div class='row'>";
-			echo "<div style='padding:56px; text-align:center; width:100%;'>";
-                echo "<span style='font-size: 32px; font-weight:700'>Planner</span>";
-            echo "</div>";
-        echo "</div>";
+
+<div class='page_container mdl-shadow--4dp'>
+	<div class='page'>
+		<div class='row'>
+			<div style='padding:56px; text-align:center; width:100%;'>
+                <span style='font-size: 32px; font-weight:700'>Planner</span>
+            </div>
+        </div>
         
-        echo "<div class='row'>";
-            echo "<form id='form-search' method='post' action='modules/Abre-Starter/newtask.php'>";
-											echo "<div class='input-field'>";
-												echo "<input id='searchquery' type='search' placeholder='Search' autocomplete='off'>";
-												echo "<label class='label-icon' for='searchquery'><i class='material-icons'>search</i></label>";
-											echo "</div>";
-										echo "</form>";
+        <div class='row'>
+            <form class='' id='form-starter' method='post' action='modules/Abre-Starter/newtask.php'>
+                <div class='input-field col s10'>
+                    <input placeholder='Add New Task' id='new_task' type='text' class='validate'>
+                </div>
+                <a class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>; left:20px;'><i class='material-icons'>add</i></a>
+            </form>	
         
-	       echo "</div>";
-echo "</div>";
-?>
+	       </div>
+</div>
+
 <script>
     $(function(){
             
-            //when clicking pagination button reload table with next page's results
-			/*$('#newtask').off('.pagebutton').on('click', '.pagebutton', function(){
-				event.preventDefault();
-				$('.mdl-layout__content').animate({scrollTop:0}, 0);
-				var currentPage = $(this).data('page');
-				var newTask = $('#new_task').val();
-				$.post( "modules/Abre-Starter/newtask.php", {page: currentPage, new_task: newTask})
-				.done(function(data){
-					$("#newtask").html(data);
-				});
-			});
-
-			//Press the search data
-			var form = $('#add-task');
-			$(form).submit(function(event) {
-				event.preventDefault();
-				var newTask = $('#new_task').val();
-				$.ajax({
-				    type: 'POST',
-				    data: {new_task: newTask},
-				    url: $(form).attr('action'),
-				    success: function(data) {
-				    	$('#newtask').html(data);
-				    }
-				});
-			});*/
-        
-           /*var addtask = $('#add-task');
-    $(addtask).submit(function(event) {
-       event.preventDefault();
-       var formData = $(addtask).serialize();
-       $.ajax({
-         type: 'GET',
-         url: $(addtask).attr('action'),
-         data: formData
-       }) 
-        
-        var addtask = $("#add-task");
-    $(addtask).submit(function(event){
+        var formStarter = $('#form-starter');
+    
+     $(formStarter).submit(function(event) {
       event.preventDefault();
-      var results = $(addtask).serialize();
-      results = results.replace(/&/g, ", ");
-      results = results.replace(/=/g, " = ");
-      $("#formResults").text(results);
-    });*/
-        
-        //when clicking pagination button reload table with next page's results
-			$('#searchresults').off('.pagebutton').on('click', '.pagebutton', function(){
-				event.preventDefault();
-				$('.mdl-layout__content').animate({scrollTop:0}, 0);
-				var currentPage = $(this).data('page');
-				var searchQuery = $('#searchquery').val();
-				$.post( "modules/Abre-Starter/newtask.php", {page: currentPage, searchquery: searchQuery})
-				.done(function(data){
-					$("#searchresults").html(data);
-				});
-			});
-
-			//Press the search data
-			var form = $('#form-search');
-			$(form).submit(function(event) {
-				event.preventDefault();
-				var searchQuery = $('#searchquery').val();
-				$.ajax({
-				    type: 'POST',
-				    data: {searchquery: searchQuery},
-				    url: $(form).attr('action'),
-				    success: function(data) {
-				    	$('#searchresults').html(data);
-				    }
-				});
-			});
-
+       var formData = $(formStarter).serialize();
+      $.ajax({
+        type: 'POST',
+         url: $(formStarter).attr('action'),
+         data: formData
+       })
+    
+       //Show the notification
+       .done(function(responseprocess) {
+         //do something after the ajax call has sent data successfully
+       })
+     });
+            
 		});
 </script>
