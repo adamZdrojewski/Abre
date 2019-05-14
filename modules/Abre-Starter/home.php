@@ -20,7 +20,7 @@
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
 	//$id = finduserid($_SESSION['useremail'])
-	$id = "hello";
+	$id = $_SESSION['useremail'];
     session_start();
     
     if(isset($_SESSION['tasklist']))
