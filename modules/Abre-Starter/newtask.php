@@ -21,7 +21,7 @@
     $siteColor = getSiteColor();
     session_start();
 
-    //Database Testing
+    //Create Table If Needed
     $con = mysqli_connect($db_host, $db_user, $db_password);
     mysqli_select_db($con, $db_name);
     
@@ -30,8 +30,11 @@
     `tasks` LONGTEXT NOT NULL default '',
     PRIMARY KEY  (`id`)
 )";
-
     mysqli_query($con, $s);
+    
+    
+    //Add Task
+    $s = "select * from Abre_Planner where id = '$id'";
     
     
     $tasks = $_SESSION['tasklist'];

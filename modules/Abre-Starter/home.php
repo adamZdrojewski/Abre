@@ -39,7 +39,7 @@
                 <span style='font-size: 32px; font-weight:700'>Planner</span>
             </div>
         </div>
-        
+        <h1>Current User: <?php echo getCurrentUser(); ?></h1>
         <div class='row'>
             <form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
                 <div class='input-field col s10'>
