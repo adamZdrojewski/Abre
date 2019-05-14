@@ -21,6 +21,19 @@
     $siteColor = getSiteColor();
     session_start();
 
+    //Database Testing
+    $con = mysqli_connect($db_host, $db_user, $db_password);
+    mysqli_select_db($con, $db_name);
+    
+    $s = "CREATE TABLE IF NOT EXISTS `Abre_Planner` (
+    `id` int(11) unsigned NOT NULL,
+    `tasks` LONGTEXT NOT NULL default '',
+    PRIMARY KEY  (`id`)
+)";
+
+    mysqli_query($con, $s);
+    
+    
     $tasks = $_SESSION['tasklist'];
     array_push($tasks, $_POST['tasktoadd']);
     $_SESSION['tasklist'] = $tasks;

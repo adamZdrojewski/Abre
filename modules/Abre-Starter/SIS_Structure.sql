@@ -482,12 +482,4 @@ CREATE TABLE `Abre_VendorLink_SIS_Students` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-DROP TABLE IF EXISTS `Abre_Planner`;
-CREATE TABLE `Abre_Planner` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `StudentID` text NOT NULL,
-  `Tasks` text NOT NULL,
-  PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 -- 2018-02-02 20:15:11
