@@ -19,6 +19,7 @@
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
+	$id = finduserid($_SESSION['useremail'])
     session_start();
     
     if(isset($_SESSION['tasklist']))
@@ -39,7 +40,7 @@
                 <span style='font-size: 32px; font-weight:700'>Planner</span>
             </div>
         </div>
-		<?php echo"<h1>".finduserid($_SESSION['useremail'])."</h1>"; ?>
+		<?php echo"<h1>".$id."</h1>"; ?>
         <div class='row'>
             <form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
                 <div class='input-field col s10'>
