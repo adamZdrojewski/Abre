@@ -19,7 +19,8 @@
 	require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
-	$id = finduserid($_SESSION['useremail'])
+	//$id = finduserid($_SESSION['useremail'])
+	$id = "hello";
     session_start();
     
     if(isset($_SESSION['tasklist']))
