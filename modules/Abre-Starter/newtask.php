@@ -34,7 +34,10 @@
     
     
     //Add Task
-    $s = "select * from Abre_Planner where id = '$id'";
+	$id = finduserid($_SESSION['useremail']);
+	$tasks = "red, blue, green, orange";
+    $s = "UPDATE Abre_Planner SET tasks='$tasks' WHERE id='$id'";
+	mysqli_query($con, $s);
     
     
     $tasks = $_SESSION['tasklist'];
