@@ -65,7 +65,7 @@
                 <span style='font-size: 32px; font-weight:700'>Planner</span>
             </div>
         </div>
-		<?php echo"<h1>".$id."</h1>"; ?>
+		<?php echo"<h1>".$email."</h1>"; ?>
         <div class='row'>
             <form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
                 <div class='input-field col s10'>
