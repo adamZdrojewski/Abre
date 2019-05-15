@@ -20,7 +20,7 @@
     require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
     $siteColor = getSiteColor();
 	//$id = finduserid($_SESSION['useremail'])
-	$id = $_SESSION['useremail'];
+	$email = $_SESSION['useremail'];
     session_start();
     
     //Create Table If Needed
@@ -72,6 +72,7 @@
                 $tasklist = array('');
                 $strtasklist = serialize($tasklist);
                 $s = "update Abre_Planner set tasks='$strtasklist' where email='$email'";
+                mysqli_query();
             }
             
             $tasklist = unserialize($strtasklist);
