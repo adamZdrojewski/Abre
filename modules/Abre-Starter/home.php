@@ -27,7 +27,7 @@
     mysqli_select_db($con, $db_name);
     
     $s ="CREATE TABLE IF NOT EXISTS Abre_Planner (
-    id int(11) unsigned NOT NULL,
+    id int(11) unsigned NOT NULL AUTO_INCREMENT,
     email LONGTEXT NOT NULL,
     tasks LONGTEXT NOT NULL,
     PRIMARY KEY  (`id`)
