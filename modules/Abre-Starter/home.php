@@ -27,12 +27,12 @@
     $con = mysqli_connect($db_host, $db_user, $db_password);
     mysqli_select_db($con, $db_name);
     
-    $s ='CREATE TABLE IF NOT EXISTS Abre_Planner (
-    id int(11) unsigned NOT NULL,
-    email LONGTEXT NOT NULL default '',
-    tasks LONGTEXT NOT NULL default '',
+    $s ="CREATE TABLE IF NOT EXISTS Abre_Planner (
+    'id' int(11) unsigned NOT NULL,
+    'email' LONGTEXT NOT NULL default '',
+    'tasks' LONGTEXT NOT NULL default '',
     PRIMARY KEY  (`id`)
-)';
+)";
 
     mysqli_query($con, $s);
     
