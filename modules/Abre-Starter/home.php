@@ -36,6 +36,27 @@
 
     mysqli_query($con, $s);
     
+    
+    //Get Task List
+    $s = "select * from Abre_Planner where email='$email'";
+    $result = mysqli_query($con, $s);
+    $num = mysqli_num_rows($result);
+            
+    if($num == 1)
+    {
+        $row = mysqli_fetch_array($result);
+        $strtasklist = $row[2];
+    }
+    else
+    {
+        $tasklist = array('one');
+        $strtasklist = serialize($tasklist);
+        $s = "insert into Abre_Planner (email, tasks) values ({$email}, {$strtasklist})";
+        mysqli_query();
+    }
+            
+    $tasklist = unserialize($strtasklist);
+    
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
@@ -58,24 +79,7 @@
         
         <?php
             
-            $s = "select * from Abre_Planner where email='$email'";
-            $result = mysqli_query($con, $s);
-            $num = mysqli_num_rows($result);
             
-            if($num == 1)
-            {
-                $row = mysqli_fetch_array($result);
-                $strtasklist = $row[2];
-            }
-            else
-            {
-                $tasklist = array('');
-                $strtasklist = serialize($tasklist);
-                $s = "update Abre_Planner set tasks='$strtasklist' where email='$email'";
-                mysqli_query();
-            }
-            
-            $tasklist = unserialize($strtasklist);
             
             foreach($tasklist as $currenttask)
             {
