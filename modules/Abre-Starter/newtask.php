@@ -26,9 +26,9 @@
     mysqli_select_db($con, $db_name);
     
     $s = "CREATE TABLE IF NOT EXISTS `Abre_Planner` (
-    `email` TINYTEXT NOT NULL default,
+    `email` LONGTEXT unsigned NOT NULL,
     `tasks` LONGTEXT NOT NULL default '',
-    PRIMARY KEY  (`email`)
+    PRIMARY KEY  (`id`)
 )";
     mysqli_query($con, $s);
     
