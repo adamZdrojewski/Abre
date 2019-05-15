@@ -25,8 +25,8 @@
     $con = mysqli_connect($db_host, $db_user, $db_password);
     mysqli_select_db($con, $db_name);
     
-    $s = "DROP TABLE IF EXISTS `Abre_Planner`;
-          CREATE TABLE `Abre_Planner` (
+    $s = "DROP TABLE IF EXISTS `Abre_Plannerr`;
+          CREATE TABLE `Abre_Plannerr` (
           `email` text NOT NULL,
           `tasks` text NOT NULL,
           PRIMARY KEY (`email`)
