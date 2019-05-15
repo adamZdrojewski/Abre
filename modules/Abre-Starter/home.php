@@ -37,7 +37,7 @@
     mysqli_query($con, $s);
     
     
-    //Get Task List
+    //Get Task List / Create One If Needed
     $s = "select * from Abre_Planner where email='$email'";
     $result = mysqli_query($con, $s);
     $num = mysqli_num_rows($result);
@@ -49,7 +49,7 @@
     }
     else
     {
-        $tasklist = array('one');
+        $tasklist = array();
         $strtasklist = serialize($tasklist);
         $s = "INSERT INTO Abre_Planner (email, tasks) VALUES('".$email."', '".$strtasklist."')";
         mysqli_query($con, $s);
