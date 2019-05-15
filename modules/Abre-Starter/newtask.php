@@ -25,9 +25,11 @@
     $con = mysqli_connect($db_host, $db_user, $db_password);
     mysqli_select_db($con, $db_name);
     
-    $s = "CREATE TABLE IF NOT EXISTS `Abre_Planner` (
-    `email` TINYTEXT NOT NULL PRIMARY KEY,
-    `tasks` LONGTEXT NOT NULL,
+    $s = "DROP TABLE IF EXISTS `Abre_Planner`;
+          CREATE TABLE `Abre_Planner` (
+          `email` text NOT NULL,
+          `tasks` text NOT NULL,
+          PRIMARY KEY (`email`)
 )";
     mysqli_query($con, $s);
     
