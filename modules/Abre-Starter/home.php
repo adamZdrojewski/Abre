@@ -57,7 +57,7 @@
 	       </div>
         
         <?php
-            
+            /*
             $s = "select * from Abre_Planner where email='$email'";
             $result = mysqli_query($con, $s);
             $num = mysqli_num_rows($result);
@@ -81,7 +81,7 @@
             {
                 echo "<h3>".$currenttask."</h3>";
             }
-        
+        */
         ?>
         
         <br>
