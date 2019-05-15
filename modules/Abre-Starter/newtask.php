@@ -28,7 +28,6 @@
     $s = "CREATE TABLE IF NOT EXISTS `Abre_Planner` (
     `email` LONGTEXT NOT NULL default '',
     `tasks` LONGTEXT NOT NULL default '',
-    PRIMARY KEY  (`email`)
 )";
     mysqli_query($con, $s);
     
