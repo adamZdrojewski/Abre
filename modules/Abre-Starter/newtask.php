@@ -27,7 +27,6 @@
     
     $s = "CREATE TABLE IF NOT EXISTS `Abre_Planner` (
     `id` int(11) unsigned NOT NULL,
-    'emai' LONGTEXT NOT NULL default '',
     `tasks` LONGTEXT NOT NULL default '',
     PRIMARY KEY  (`id`)
 )";
