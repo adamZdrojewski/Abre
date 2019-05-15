@@ -23,15 +23,19 @@
 	$id = $_SESSION['useremail'];
     session_start();
     
-    if(isset($_SESSION['tasklist']))
-    {
-        $tasks = $_SESSION['tasklist'];
-    }
-    else
-    {
-        $tasks = array();
-    }
-    $_SESSION['tasklist'] = $tasks;
+    //Create Table If Needed
+    $con = mysqli_connect($db_host, $db_user, $db_password);
+    mysqli_select_db($con, $db_name);
+    
+    $s ='CREATE TABLE IF NOT EXISTS Abre_Planner (
+    id int(11) unsigned NOT NULL,
+    email LONGTEXT NOT NULL default '',
+    tasks LONGTEXT NOT NULL default '',
+    PRIMARY KEY  (`id`)
+)';
+
+    mysqli_query($con, $s);
+    
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
@@ -53,16 +57,28 @@
 	       </div>
         
         <?php
-            if(empty($tasks))
+            
+            $s = "select * from Abre_Planner where email='$email'";
+            $result = mysqli_query($con, $s);
+            $num = mysqli_num_rows($result);
+            
+            if($num == 1)
             {
-                echo "<h5>You Don't Have Any Tasks Right Now</h5>";
+                $row = mysqli_fetch_array($result);
+                $strtasklist = $row[2];
             }
             else
             {
-                foreach($tasks as $task)
-                {
-                    echo "<h5>".$task."</h5>";
-                }
+                $tasklist = array('');
+                $strtasklist = serialize($tasklist);
+                $s = "update Abre_Planner set tasks='$strtasklist' where email='$email'";
+            }
+            
+            $tasklist = unserialize($strtasklist);
+            
+            foreach($tasklist as $currenttask)
+            {
+                echo "<h3>".$currenttask."</h3>";
             }
         
         ?>
