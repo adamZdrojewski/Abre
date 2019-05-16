@@ -82,15 +82,13 @@
             foreach($tasklist as $currenttask)
             {
                 echo "<div class='row'>";
-                echo "<h3>".$currenttask."</h3>";
-                echo "<button class='btn-floating btn waves-effect waves-light' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
+                echo "<button class='btn-floating btn waves-effect waves-light col s2' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
+                echo "<h3 class='col s10'>".$currenttask."</h3>";
                 echo "</div>";
             }
         
         ?>
         
         <br>
-        
-        <?php echo "<a href='modules/Abre-Starter/restartsession.php'><button class='waves-effect waves-light btn' style='background-color:".$siteColor.";'>Restart Session</button></a>"; ?>
         
 </div>
