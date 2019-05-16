@@ -83,7 +83,7 @@
             {
                 echo "<div class='row'>";
                 echo "<button class='btn-floating btn waves-effect waves-light' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
-                echo "<h3>".$currenttask."</h3>";
+                echo "<p class='flow-text'>".$currenttask."</p>";
                 echo "</div>";
             }
         
