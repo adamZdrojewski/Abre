@@ -82,7 +82,7 @@
             foreach($tasklist as $currenttask)
             {
                 echo "<div class='row'>";
-                echo "<button class='btn-floating btn waves-effect waves-light' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
+                echo "<button class='btn-floating btn-large waves-effect waves-light' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "<p class='flow-text col s10  offset-s3'>".$currenttask."</p>";
                 echo "</div>";
             }
