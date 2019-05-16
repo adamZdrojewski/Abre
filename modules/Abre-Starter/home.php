@@ -84,7 +84,7 @@
                 echo "<div class='row'>";
                 echo "<div class='col s12'>";
                 echo "<button class='btn-floating btn waves-effect waves-light' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
-                echo "<p class='flow-text'>".$currenttask."</p>";
+                echo "<p class='flow-text col offset-s3'>".$currenttask."</p>";
                 echo "</div>";
                 echo "</div>";
             }
