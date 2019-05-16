@@ -81,7 +81,9 @@
             
             foreach($tasklist as $currenttask)
             {
+                echo "<div class='row'>";
                 echo "<h3>".$currenttask."</h3>";
+                echo "<button class='btn-floating btn-large waves-effect waves-light' style='background-color:<?php echo $siteColor; ?>;'><i class='material-icons'>remove</i></button>";
             }
         
         ?>
