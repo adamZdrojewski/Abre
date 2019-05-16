@@ -70,7 +70,7 @@
                 <div class='input-field col s10'>
                     <input id="tasktoadd" name="tasktoadd" type="text" maxlength="20" placeholder="Add Task" autocomplete="off" required>
                 </div>
-                <button class="btn-floating btn-large waves-effect waves-light col s0.75" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
+                <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
             </form>	
         
 	       </div>
@@ -82,7 +82,7 @@
             foreach($tasklist as $currenttask)
             {
                 echo "<div class='row'>";
-                echo "<button class='btn-floating btn waves-effect waves-light' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
+                echo "<button class='btn-floating btn waves-effect waves-light col s0.75' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "<p class='flow-text col s4 offset-s5'>".$currenttask."</p>";
                 echo "</div>";
             }
