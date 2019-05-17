@@ -86,7 +86,7 @@
                 echo "<input type='hidden' id='task' name='task' value='".$currenttask."'>";
                 echo "<button class='btn waves-effect waves-light col s0.5' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
-                echo "<p class='flow-text col offset-s5'>".$currenttask."</p>";
+                echo "<p class='flow-text col offset-s1'>".$currenttask."</p>";
                 echo "</div>";
                 echo "</div>";
             }
