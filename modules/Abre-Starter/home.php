@@ -78,15 +78,19 @@
         <?php
             
             
-            
+            $currentindex = 0;
             foreach($tasklist as $currenttask)
             {
                 echo "<div class='row'>";
                 echo "<div class='col s12'>";
+                echo "<form class='' id='remove-task' method='post' action='mmodules/Abre-Starter/removetask.php'>";
+                echo "<input type='hidden' id='task' name='index' value='".$currentindex."'>";
                 echo "<button class='btn-floating btn waves-effect waves-light col' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
+                echo "</form>";
                 echo "<p class='flow-text'>".$currenttask."</p>";
                 echo "</div>";
                 echo "</div>";
+                $currentindex = $currentindex + 1;
             }
         
         ?>
