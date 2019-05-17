@@ -84,7 +84,7 @@
                 echo "<div class='col s12'>";
                 echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
                 echo "<input type='hidden' id='task' name='task' value='".$currenttask."'>";
-                echo "<button class='btn-floating btn waves-effect waves-light col' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
+                echo "<button class='btn-floating btn waves-effect waves-light' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
                 echo "<p class='flow-text col offset-s5'>".$currenttask."</p>";
                 echo "</div>";
