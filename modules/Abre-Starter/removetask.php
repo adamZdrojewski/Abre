@@ -47,7 +47,11 @@
     $tasklist = unserialize($strtasklist);
     
     //Remove Task From Array
-    unset($tasklist[$_POST['index']]);
+    $tasktoremove = $_POST['task'];
+    if (($key = array_search($tasktoremove, $tasklist)) !== false) {
+    unset($tasklist[$key]);
+}
+    //unset($tasklist[$_POST['index']]);
     $strtasklist = serialize($tasklist);
     
     //Update Database With New Array
