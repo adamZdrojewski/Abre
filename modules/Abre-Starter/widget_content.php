@@ -58,7 +58,7 @@
     
     //Display The Tasks
     echo "<div class='widget_holder'>";
-			echo "<div class='widget_container widget_body' style='color:#666;'>Your Top 6 Apps <i class='right material-icons widget_holder_refresh pointer' data-path='/modules/apps/widget_content.php' data-reload='true'>refresh</i>";
+			echo "<div class='widget_container widget_body' style='color:#666;'>";
     
 	foreach($tasklist as $currenttask)
             {
