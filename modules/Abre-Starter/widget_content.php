@@ -62,7 +62,6 @@
     
 	foreach($tasklist as $currenttask)
             {
-                echo "<br>";
                 echo "<div class='row'>";
                 echo $currenttask;
                 //echo "<p class='flow-text col offset-s1'>".$currenttask."</p>";
