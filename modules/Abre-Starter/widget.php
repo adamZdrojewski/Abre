@@ -22,7 +22,7 @@
 	require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
 
 	
-    DisplayWidget('Abre-Starter','cloud','Planner','#FF9800','https://google.com', true);
+    DisplayWidget('Abre-Starter','cloud','Planner','#FF9800','modules/Abre-Starter/#starter', true);
 
 
 ?>
