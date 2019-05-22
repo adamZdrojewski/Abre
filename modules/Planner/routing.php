@@ -25,7 +25,7 @@
 				    $('#loader').show();
 				    $('#titletext').text('Planner');
 				    document.title = 'Planner';
-					$('#content_holder').load('modules/Planner/home.php', function() { init_page(); });
+					$('#content_holder').load('modules/".basename(__DIR__)."/home.php', function() { init_page(); });
 					$( '#modal_holder' ).load( 'modules/".basename(__DIR__)."/modals.php' );
 			  },
 				'planner/elements': function()
