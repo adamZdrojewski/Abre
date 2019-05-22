@@ -63,10 +63,10 @@
         echo "<div class='widget_holder'>";
         echo "<div class='widget_container widget_body' style='color:#666;'>";
         echo "<div class='row'>";
-        echo "<h5>You Don't Have Any Tasks</h5>";
+        echo "<h6>You Don't Have Any Tasks</h6>";
         echo "</div>";
         echo "<div class='row'>";
-        echo "<h5>Head To The Planner App To Add Some</h5>";
+        echo "<h6>Head To The Planner App To Add Some</h6>";
         echo "</div>";
         echo "</div>";
         echo "</div>";
