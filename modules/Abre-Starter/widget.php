@@ -22,7 +22,7 @@
 	require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
 
 	
-    DisplayWidget('Abre-Starter','cloud','Planner','#FF9800','#starter', true);
+    DisplayWidget('Abre-Starter','assignment','Planner','#2B2B2B','#starter', false);
 
 
 ?>
