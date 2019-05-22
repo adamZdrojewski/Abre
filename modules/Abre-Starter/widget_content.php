@@ -60,7 +60,7 @@
 	foreach($tasklist as $currenttask)
             {
                 echo "<div class='row'>";
-                echo "<p class='flow-text'>".$currenttask."</p>";
+                echo "<h6>".$currenttask."</h6>";
                 echo "</div>";
             }
 
