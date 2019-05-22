@@ -62,6 +62,7 @@
                 echo "<div class='row'>";
                 echo "<p class='flow-text col offset-s1'>".$currenttask."</p>";
                 echo "</div>";
+                echo "<div class='divider'></div>";
             }
 
 ?>
