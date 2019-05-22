@@ -59,7 +59,9 @@
     //Display The Tasks
 	foreach($tasklist as $currenttask)
             {
+                echo "<div class='row'>";
                 echo "<h6 class='col offset-s1'>".$currenttask."</h6>";
+                echo "</div>";
             }
 
 ?>
