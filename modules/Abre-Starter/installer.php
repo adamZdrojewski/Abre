@@ -17,7 +17,7 @@
 	//Required configuration files
 	require_once(dirname(__FILE__) . '/../../core/abre_verification.php');
 	require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
-	if(superadmin() && !isAppInstalled("Abre-Starter")){
+	if(superadmin() && !isAppInstalled("Planner")){
 		//Check for guide_boards table
 		// require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
 		// if(!$db->query("SELECT * FROM guide_boards LIMIT 1"))
@@ -38,7 +38,7 @@
 		//Write the Setup File
 		//Mark app as installed
 		require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
-		$sql = "UPDATE apps_abre SET installed = 1 WHERE app = 'Abre-Starter' AND siteID = '".$_SESSION['siteID']."'";
+		$sql = "UPDATE apps_abre SET installed = 1 WHERE app = 'Planner' AND siteID = '".$_SESSION['siteID']."'";
 		$db->multi_query($sql);
 		$db->close();
 	}

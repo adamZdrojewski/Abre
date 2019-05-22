@@ -24,11 +24,11 @@
 	$pageview=1;
 	$drawerhidden=1;
 	$pageorder=10;
-	$pagetitle="Starter";
-	$description="A simple Hello World starter app template.";
+	$pagetitle="Planner";
+	$description="An app to help you keep track of your tasks.";
 	$version = $abre_version;
 	$repo=NULL;
 	$pageicon="code";
-	$pagepath="starter";
+	$pagepath="planner";
 	require_once('permissions.php');
 ?>
