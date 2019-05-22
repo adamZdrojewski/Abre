@@ -56,18 +56,39 @@
             
     $tasklist = unserialize($strtasklist);
     
-    //Display The Tasks
-    echo "<div class='widget_holder'>";
-			echo "<div class='widget_container widget_body' style='color:#666;'>";
+    if(count($tasklist) == 0)
+    {
     
-	foreach($tasklist as $currenttask)
-            {
-                echo "<div class='row'>";
-                echo $currenttask;
-                //echo "<p class='flow-text col offset-s1'>".$currenttask."</p>";
-                echo "</div>";
-            }
-            
-     echo "</div>";
+        //Display The No Tasks Message
+        echo "<div class='widget_holder'>";
+        echo "<div class='widget_container widget_body' style='color:#666;'>";
+        echo "<div class='row'>";
+        echo "<h5>You Don't Have Any Tasks</h5>";
+        echo "</div>";
+        echo "<div class='row'>";
+        echo "<h5>Head To The Planner App To Add Some</h5>";
+        echo "</div>";
+        echo "</div>";
+        echo "</div>";
+    
+    }
+    else
+    {
+    
+        //Display The Tasks
+        echo "<div class='widget_holder'>";
+                echo "<div class='widget_container widget_body' style='color:#666;'>";
+
+        foreach($tasklist as $currenttask)
+                {
+                    echo "<div class='row'>";
+                    echo $currenttask;
+                    //echo "<p class='flow-text col offset-s1'>".$currenttask."</p>";
+                    echo "</div>";
+                }
+
+         echo "</div>";
+     
+     }
 
 ?>
