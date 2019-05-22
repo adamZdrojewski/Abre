@@ -55,6 +55,6 @@
     mysqli_query($con, $s);
     
     //Redirect Back To The Main Page
-    header('location: /#starter');
+    header('location: /#planner');
 
 ?>

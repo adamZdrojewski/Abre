@@ -66,7 +66,7 @@
             </div>
         </div>
         <div class='row'>
-            <form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
+            <form class='' id='add-task' method='post' action='modules/Planner/newtask.php'>
                 <div class='input-field col s10'>
                     <input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
                 </div>
@@ -82,7 +82,7 @@
             {
                 echo "<div class='row'>";
                 echo "<div class='col s12'>";
-                echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
+                echo "<form class='' id='remove-task' method='post' action='modules/Planner/removetask.php'>";
                 echo "<input type='hidden' id='task' name='task' value='".$currenttask."'>";
                 echo "<button class='btn waves-effect waves-light col s0.75' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
