@@ -37,7 +37,7 @@
     mysqli_query($con, $s);
     
     
-    //Get Task List / Create One If Needed
+    //Get Task List(and categories list) / Create One If Needed
     $s = "select * from Abre_Planner where email='$email'";
     $result = mysqli_query($con, $s);
     $num = mysqli_num_rows($result);
@@ -51,11 +51,14 @@
     {
         $tasklist = array();
         $strtasklist = serialize($tasklist);
-        $s = "INSERT INTO Abre_Planner (email, tasks) VALUES('".$email."', '".$strtasklist."')";
+		$categorylist = array();
+        $strcategorylist = serialize($categorylist);
+        $s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$categories"')";
         mysqli_query($con, $s);
     }
             
     $tasklist = unserialize($strtasklist);
+	$categorylist = unserialize($strcategorylist);
     
 ?>
 
