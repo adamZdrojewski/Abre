@@ -30,6 +30,7 @@
     id int(11) unsigned NOT NULL AUTO_INCREMENT,
     email LONGTEXT NOT NULL,
     tasks LONGTEXT NOT NULL,
+	categories LONGTEXT NOT NULL,
     PRIMARY KEY  (`id`)
 )";
 
