@@ -44,16 +44,17 @@
         mysqli_query($con, $s);
     }
             
-    $categorylist = unserialize($strcategorylist);
+    echo $strcategorylist;
+	$categorylist = unserialize($strcategorylist);
     
     //Add Category To Array
-	echo $categorylist;
+	//echo $categorylist;
     array_push($categorylist, $_POST['categorytoadd']);
-	echo $categorylist;
+	//echo $categorylist;
     $strcategorylist = serialize($categorylist);
     
     //Update Database With New Array
-	echo $_POST['categorytoadd'];
+	//echo $_POST['categorytoadd'];
     $s = "UPDATE Abre_Planner SET categories='".$strcategorylist."' WHERE email='".$email."'";
     mysqli_query($con, $s);
     
