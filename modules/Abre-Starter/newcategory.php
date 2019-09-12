@@ -49,7 +49,7 @@
     //Add Category To Array
 	array_push($categorylist, $_POST['categorytoadd']);
     $strcategorylist = serialize($categorylist);
-    $echo $strcategorylist;
+    echo $strcategorylist;
     //Update Database With New Array
     $s = "UPDATE Abre_Planner SET categories='".$strcategorylist."' WHERE email='".$email."'";
     mysqli_query($con, $s);
