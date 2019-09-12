@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class='row'>
-            <form class='' id='add-category' method='post' action='modules/Abre-Starter/newcategory.php'>
+            <form class='' id='add-category' method='post' action='newcategory.php'>
                 <div class='input-field col s10'>
                     <input id="categorytoadd" name="categorytoadd" type="text" maxlength="200" placeholder="Add Category" autocomplete="off" required>
                 </div>
