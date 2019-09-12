@@ -51,11 +51,11 @@
     $strcategorylist = serialize($categorylist);
     
     //Update Database With New Array
+	echo $strcategorylist;
     $s = "UPDATE Abre_Planner SET categories='".$strcategorylist."' WHERE email='".$email."'";
     mysqli_query($con, $s);
     
     //Redirect Back To The Main Page
-	$thingtosave = $_POST['categorytoadd'];
-    header("location: /#planner?{$thingtosave}");
+    //header("location: /#planner");
 
 ?>
