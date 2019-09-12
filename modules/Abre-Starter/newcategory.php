@@ -26,7 +26,7 @@
     $con = mysqli_connect($db_host, $db_user, $db_password);
     mysqli_select_db($con, $db_name);
     
-    //Get Task List / Create One If Needed
+    //Get Category List / Create One If Needed
     $s = "select * from Abre_Planner where email='$email'";
     $result = mysqli_query($con, $s);
     $num = mysqli_num_rows($result);
@@ -46,12 +46,12 @@
             
     $categorylist = unserialize($strcategorylist);
     
-    //Add Task To Array
+    //Add Category To Array
     array_push($categorylist, $_POST['categorytoadd']);
     $strcategorylist = serialize($categorylist);
     
     //Update Database With New Array
-	echo $strcategorylist;
+	echo $_POST['categorytoadd'];
     $s = "UPDATE Abre_Planner SET categories='".$strcategorylist."' WHERE email='".$email."'";
     mysqli_query($con, $s);
     
