@@ -47,7 +47,9 @@
     $categorylist = unserialize($strcategorylist);
     
     //Add Category To Array
+	echo $categorylist;
     array_push($categorylist, $_POST['categorytoadd']);
+	echo $categorylist;
     $strcategorylist = serialize($categorylist);
     
     //Update Database With New Array
