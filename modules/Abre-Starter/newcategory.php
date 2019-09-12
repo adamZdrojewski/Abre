@@ -55,6 +55,7 @@
     mysqli_query($con, $s);
     
     //Redirect Back To The Main Page
-    header('location: /#planner');
+	$thingtosave = $_POST['categorytoadd'];
+    header("location: /#planner?{$thingtosave}");
 
 ?>
