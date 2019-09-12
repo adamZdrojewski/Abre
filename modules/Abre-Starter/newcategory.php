@@ -38,13 +38,21 @@
     }
     else
     {
-        $categorylist = array();
+        $categorylist = array('Tasks');
         $strcategorylist = serialize($categorylist);
         $s = "INSERT INTO Abre_Planner (email, categories) VALUES('".$email."', '".$strcategorylist."')";
         mysqli_query($con, $s);
     }
             
 	$categorylist = unserialize($strcategorylist);
+	
+	if(count($categorylist) == 0)
+	{
+		$categorylist = array('Tasks');
+        $strcategorylist = serialize($categorylist);
+        $s = "INSERT INTO Abre_Planner (email, categories) VALUES('".$email."', '".$strcategorylist."')";
+        mysqli_query($con, $s);
+	}
 	
     //Add Category To Array
 	array_push($categorylist, $_POST['categorytoadd']);
