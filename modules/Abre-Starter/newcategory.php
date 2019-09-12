@@ -47,19 +47,9 @@
 	$categorylist = unserialize($strcategorylist);
     
     //Add Category To Array
-	echo"before";
-	foreach($categorylist as $category)
-	{
-		echo $category;
-	}
-    array_push($categorylist, $_POST['categorytoadd']);
-	echo"after";
-	foreach($categorylist as $category)
-	{
-		echo $category;
-	}
+	array_push($categorylist, $_POST['categorytoadd']);
     $strcategorylist = serialize($categorylist);
-    
+    $echo $strcategorylist;
     //Update Database With New Array
     $s = "UPDATE Abre_Planner SET categories='".$strcategorylist."' WHERE email='".$email."'";
     mysqli_query($con, $s);
