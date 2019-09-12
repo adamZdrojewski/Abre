@@ -49,15 +49,12 @@
     }
     else
     {
-        $tasklist = array();
-        $strtasklist = serialize($tasklist);
 		$categorylist = array();
         $strcategorylist = serialize($categorylist);
-        $s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$categories."')";
+        $s = "INSERT INTO Abre_Planner (email, categories) VALUES('".$email."', '".$categories."')";
         mysqli_query($con, $s);
     }
             
-    $tasklist = unserialize($strtasklist);
 	$categorylist = unserialize($strcategorylist);
     
 ?>
@@ -70,13 +67,13 @@
             </div>
         </div>
         <div class='row'>
-            <form class='' id='add-category' method='post' action='newcategory.php'>
+            <form class='' id='add-category' method='post' action='modules/Abre-Starter/newcategory.php'>
                 <div class='input-field col s10'>
                     <input id="categorytoadd" name="categorytoadd" type="text" maxlength="200" placeholder="Add Category" autocomplete="off" required>
                 </div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
             </form>	
-        
+			<a href="modules/Abre-Starter/categories.php">Hello</a>
 	       </div>
         
         <?php
@@ -87,7 +84,7 @@
                 echo "<div class='row'>";
                 echo "<div class='col s12'>";
                 echo "<form class='' id='remove-category' method='post' action='modules/Abre-Starter/removecategory.php'>";
-                echo "<input type='hidden' id='task' name='category' value='".$currentcategory."'>";
+                echo "<input type='hidden' id='task' name='task' value='".$currentcategory."'>";
                 echo "<button class='btn waves-effect waves-light col s0.75' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
                 echo "<p class='flow-text col offset-s1'>".$currentcategory."</p>";
