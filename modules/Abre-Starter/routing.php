@@ -37,6 +37,16 @@
 						document.title = 'Planner';
 					$('#content_holder').load('modules/".basename(__DIR__)."/elements.php', function() { init_page(); });
 					$( '#modal_holder' ).load( 'modules/".basename(__DIR__)."/modals.php' );
-				},";
+				},
+				'planner/categories': function()
+				{
+				    $('#navigation_top').hide();
+				    $('#content_holder').hide();
+				    $('#loader').show();
+				    $('#titletext').text('Planner');
+				    document.title = 'Planner';
+					$('#content_holder').load('modules/".basename(__DIR__)."/categories.php', function() { init_page(); });
+					$( '#modal_holder' ).load( 'modules/".basename(__DIR__)."/modals.php' );
+			  },";
 		}
 ?>
