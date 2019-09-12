@@ -38,23 +38,29 @@
     }
     else
     {
-        /*$categorylist = array();
+        $categorylist = array();
         $strcategorylist = serialize($categorylist);
         $s = "INSERT INTO Abre_Planner (email, categories) VALUES('".$email."', '".$strcategorylist."')";
-        mysqli_query($con, $s);*/
+        mysqli_query($con, $s);
     }
             
-    echo $strcategorylist;
 	$categorylist = unserialize($strcategorylist);
     
     //Add Category To Array
-	//echo $categorylist;
+	echo"before";
+	foreach($categorylist as $category)
+	{
+		echo $category;
+	}
     array_push($categorylist, $_POST['categorytoadd']);
-	//echo $categorylist;
+	echo"after";
+	foreach($categorylist as $category)
+	{
+		echo $category;
+	}
     $strcategorylist = serialize($categorylist);
     
     //Update Database With New Array
-	//echo $_POST['categorytoadd'];
     $s = "UPDATE Abre_Planner SET categories='".$strcategorylist."' WHERE email='".$email."'";
     mysqli_query($con, $s);
     
