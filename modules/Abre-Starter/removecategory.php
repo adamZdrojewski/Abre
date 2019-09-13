@@ -56,8 +56,8 @@
     //Update Database With New Array
     $s = "UPDATE Abre_Planner SET categories='".$strcategorylist."' WHERE email='".$email."'";
     mysqli_query($con, $s);
-    
+    echo $_POST['category'];
     //Redirect Back To The Main Page
-    header('location: /#planner/categories');
+    //header('location: /#planner/categories');
 
 ?>
