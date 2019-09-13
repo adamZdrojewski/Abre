@@ -79,18 +79,26 @@
 			<a href="/#planner/categories">Hello</a>
 	       </div>
         
+		
+		
         <?php
             
             
             foreach($tasklist as $currenttask)
             {
-                echo "<div class='row'>";
+                $strcurrenttask = unserialize($currenttask);
+				$currentname = $strcurrenttask[0];
+				$currentcategory = $strcurrenttask[1];
+				$currentpriority = $strcurrenttask[2];
+				$currentdate = $strcurrenttask[3];
+				$currentcompleted = $strcurrenttask[4];
+				echo "<div class='row'>";
                 echo "<div class='col s12'>";
                 echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
-                echo "<input type='hidden' id='task' name='task' value='".$currenttask."'>";
+                echo "<input type='hidden' id='task' name='task' value='".$currentname."'>";
                 echo "<button class='btn waves-effect waves-light col s0.75' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
-                echo "<p class='flow-text col offset-s1'>".$currenttask."</p>";
+                echo "<p class='flow-text col offset-s1'>".$currentname."</p>";
                 echo "</div>";
                 echo "</div>";
             }

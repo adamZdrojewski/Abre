@@ -48,15 +48,25 @@
 	
     //Remove Task From Array
     $tasktoremove = $_POST['task'];
-    if (($key = array_search($tasktoremove, $tasklist)) !== false) {
-    unset($tasklist[$key]);
-}
-
-    $strtasklist = serialize($tasklist);
+	$currentindex = 0;
+	foreach($tasklist as $currenttasklist)
+	{
+			$currenttask = unserialize($currenttasklist);
+			if($tasktoremove == $currenttask[0])
+			{
+				//Remove Task
+				unset($tasklist[$currentindex]);
+				
+				$strtasklist = serialize($tasklist);
     
-    //Update Database With New Array
-    $s = "UPDATE Abre_Planner SET tasks='".$strtasklist."' WHERE email='".$email."'";
-    mysqli_query($con, $s);
+				//Update Database With New Array
+				$s = "UPDATE Abre_Planner SET tasks='".$strtasklist."' WHERE email='".$email."'";
+				mysqli_query($con, $s);
+			}
+			$currentindex = $currentindex + 1;
+	}
+
+    
     
     //Redirect Back To The Main Page
     header('location: /#planner');

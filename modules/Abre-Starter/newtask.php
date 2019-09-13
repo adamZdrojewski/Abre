@@ -47,7 +47,8 @@
     $tasklist = unserialize($strtasklist);
     
     //Add Task To Array
-    array_push($tasklist, $_POST['tasktoadd']);
+	$newtask = array("{$_POST['tasktoadd']}", "Tasks", "priority", "date", false);
+    array_push($tasklist, serialize($newtask));
     $strtasklist = serialize($tasklist);
     
     //Update Database With New Array
