@@ -45,13 +45,15 @@
     if($num == 1)
     {
         $row = mysqli_fetch_array($result);
-        $strcategorylist = $row[3];
+        $strtasklist = $row[2];
     }
     else
     {
+        $tasklist = array();
+        $strtasklist = serialize($tasklist);
 		$categorylist = array('Tasks');
         $strcategorylist = serialize($categorylist);
-        $s = "INSERT INTO Abre_Planner (email, categories) VALUES('".$email."', '".$strcategorylist."')";
+        $s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$strcategorylist."')";
         mysqli_query($con, $s);
     }
             
