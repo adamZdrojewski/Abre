@@ -45,12 +45,19 @@
     }
             
     $tasklist = unserialize($strtasklist);
-    
+	
     //Remove Task From Array
     $tasktoremove = $_POST['task'];
     if (($key = array_search($tasktoremove, $tasklist)) !== false) {
     unset($tasklist[$key]);
 }
+
+	//Make Sure At Least One Task Exists
+	if(count($categorylist) == 0)
+	{
+		$categorylist = array('Tasks');
+	}
+
     $strtasklist = serialize($tasklist);
     
     //Update Database With New Array
