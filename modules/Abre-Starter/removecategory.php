@@ -51,6 +51,13 @@
     if (($key = array_search($categorytoremove, $categorylist)) !== false) {
     unset($categorylist[$key]);
 }
+
+	//Make Sure At Least One Category Exists
+	if(count($categorylist) == 0)
+	{
+		$categorylist = array('Tasks');
+	}
+
     $strcategorylist = serialize($categorylist);
     
     //Update Database With New Array
