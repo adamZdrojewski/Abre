@@ -51,7 +51,7 @@
     {
         $tasklist = array();
         $strtasklist = serialize($tasklist);
-		$categorylist = array();
+		$categorylist = array('Tasks');
         $strcategorylist = serialize($categorylist);
         $s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$categories."')";
         mysqli_query($con, $s);
