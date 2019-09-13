@@ -73,7 +73,6 @@
                 </div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
             </form>	
-			<a href="modules/Abre-Starter/categories.php">Hello</a>
 	       </div>
         
         <?php
