@@ -53,7 +53,7 @@
         $s = "INSERT INTO Abre_Planner (email, categories) VALUES('".$email."', '".$strcategorylist."')";
         mysqli_query($con, $s);
 	}
-	
+	$categorylist = array('Tasks');
     //Add Category To Array
 	array_push($categorylist, $_POST['categorytoadd']);
     $strcategorylist = serialize($categorylist);
