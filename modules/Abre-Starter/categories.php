@@ -45,7 +45,7 @@
     if($num == 1)
     {
         $row = mysqli_fetch_array($result);
-        $strtasklist = $row[2];
+        $strcategorylist = $row[3];
     }
     else
     {
