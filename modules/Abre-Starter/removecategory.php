@@ -38,7 +38,7 @@
     }
     else
     {
-        $categorylist = array();
+        $categorylist = array('Tasks');
         $strcategorylist = serialize($categorylist);
         $s = "INSERT INTO Abre_Planner (email, categories) VALUES('".$email."', '".$strcategorylist."')";
         mysqli_query($con, $s);
@@ -58,6 +58,6 @@
     mysqli_query($con, $s);
     
     //Redirect Back To The Main Page
-    header('location: /#planner');
+    header('location: /#planner/categories');
 
 ?>
