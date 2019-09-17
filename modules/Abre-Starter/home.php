@@ -101,7 +101,7 @@
 					echo "<td>";
 					echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
 					echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
-					echo "<button class='btn-small waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>remove</i></button>";
+					echo "<button class='waves-effect waves-light btn-small right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>remove</i></button>";
 					echo "</form>";
 					echo "</td>";
 					echo "</tr>";
