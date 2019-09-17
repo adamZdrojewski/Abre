@@ -69,6 +69,7 @@
     
     
     //Redirect Back To The Main Page
-    header('location: /#planner');
+	echo $_POST['tasktoremove'];
+    //header('location: /#planner');
 
 ?>
