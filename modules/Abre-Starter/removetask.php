@@ -53,12 +53,13 @@
 	{
 
 			$currenttask = unserialize($currenttasklist);
-			echo $currenttask[0];
+			
 			if(strcmp($tasktoremove, $currenttask[0]) == 0)
 			{
 				//Remove Task
 				
-				unset($tasklist[$currentindex]);
+				//unset($tasklist[$currentindex]);
+				array_splice($tasklist, $currentindex);
 				
 				$strtasklist = serialize($tasklist);
 				//echo $strtasklist;
