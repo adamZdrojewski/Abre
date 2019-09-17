@@ -51,7 +51,7 @@
 	$currentindex = 0;
 	foreach($tasklist as $currenttasklist)
 	{
-			echo $currenttask;
+			echo $currenttasklist;
 			$currenttask = unserialize($currenttasklist);
 			if(strcmp($tasktoremove, $currenttask[0]) == 0)
 			{
