@@ -98,7 +98,10 @@
 					$currentname = $strcurrenttask[0];
 					echo "<tr>";
 					echo "<td style='font-size: 22px;'>{$currentname}</td>";
-					echo "<td><button class='btn right aligned'>Hello</button></td>";
+					echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
+					echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
+					echo "<td><button class='btn waves-effect waves-light col s0.75' style='background-color: {$siteColor.};'><i class='material-icons'>remove</i></button><td>";
+					echo "</form>";
 					echo "</tr>";
 				}
 				
