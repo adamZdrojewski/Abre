@@ -52,7 +52,7 @@
 	foreach($tasklist as $currenttasklist)
 	{
 			$currenttask = unserialize($currenttasklist);
-			if($tasktoremove == $currenttask[0])
+			if(strcmp($tasktoremove, $currenttask[0]) == 0)
 			{
 				//Remove Task
 				unset($tasklist[$currentindex]);
