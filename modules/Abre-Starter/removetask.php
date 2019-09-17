@@ -62,7 +62,7 @@
 				array_splice($tasklist, $currentindex, $currentindex);
 				
 				$strtasklist = serialize($tasklist);
-				//echo $strtasklist;
+				echo $strtasklist;
 				//Update Database With New Array
 				$s = "UPDATE Abre_Planner SET tasks='".$strtasklist."' WHERE email='".$email."'";
 				mysqli_query($con, $s);
