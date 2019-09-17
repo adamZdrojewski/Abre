@@ -86,9 +86,10 @@
             
             foreach($categorylist as $currentcategory)
 			{
-				echo "<h3>{$currentcategory}</h3>";
-				echo "<div class='divider'></div>";
 				echo "<table id='myTable' class='tablesorter'>";
+				echo "<thead>";
+				echo "<th>{$currentcategory}</th>";
+				echo "</thead>";
 				echo "<tbody>";
 				
 				foreach($tasklist as $currenttask)
