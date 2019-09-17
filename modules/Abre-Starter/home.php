@@ -88,7 +88,7 @@
 			{
 				echo "<table id='myTable' class='tablesorter'>";
 				echo "<thead>";
-				echo "<th style='font-size: 24px;'>{$currentcategory}</th>";
+				echo "<th style='font-size: 30px;'>{$currentcategory}</th>";
 				echo "</thead>";
 				echo "<tbody>";
 				
@@ -97,7 +97,7 @@
 					$strcurrenttask = unserialize($currenttask);
 					$currentname = $strcurrenttask[0];
 					echo "<tr>";
-					echo "<td>{$currentname}</td>";
+					echo "<td style='font-size: 22px;'>{$currentname}</td>";
 					echo "</tr>";
 				}
 				
