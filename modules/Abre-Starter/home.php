@@ -98,7 +98,7 @@
 					$currentname = $strcurrenttask[0];
 					echo "<tr>";
 					echo "<td style='font-size: 22px;'>{$currentname}</td>";
-					echo "<td><button>Hello</button></td>";
+					echo "<td><button class='btn'>Hello</button></td>";
 					echo "</tr>";
 				}
 				
