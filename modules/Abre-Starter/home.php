@@ -82,7 +82,7 @@
 		
 		
         <?php
-            
+            echo $categorylist;
             foreach($categorylist as $currentcategory)
 			{
 				echo "<h4>{$currentcategory}</h4>";
