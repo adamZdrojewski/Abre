@@ -56,7 +56,8 @@
 			{
 				//Remove Task
 				
-				unset($tasklist[$currentindex]);
+				//unset($tasklist[$currentindex]);
+				array_splice($tasklist, 1, $currentindex);
 				
 				$strtasklist = serialize($tasklist);
 				echo $strtasklist;
