@@ -65,6 +65,14 @@
 
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
+	
+		<!-- Add Task Button -->
+		<div class="fixed-action-btn">
+			<a class="btn-floating btn-large red">
+				<i class="large material-icons">add</i>
+			</a>
+		</div>
+	
 		<div class='row'>
 			<div style='padding:56px; text-align:center; width:100%;'>
                 <span style='font-size: 32px; font-weight:700'>Planner</span>
