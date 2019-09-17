@@ -51,9 +51,9 @@
 	$currentindex = 0;
 	foreach($tasklist as $currenttasklist)
 	{
-			echo $currenttasklist;
-			echo "-----";
+
 			$currenttask = unserialize($currenttasklist);
+			echo $currenttask[0];
 			if(strcmp($tasktoremove, $currenttask[0]) == 0)
 			{
 				//Remove Task
