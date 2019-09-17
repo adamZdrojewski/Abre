@@ -83,7 +83,25 @@
 		
         <?php
             
-            
+            foreach($categorylist as $currentcategory)
+			{
+				echo "<h4>{$currentcategory}</h4>";
+				echo "<table id='myTable' class='tablesorter'>";
+				echo "<tbody>";
+				
+				foreach($tasklist as $currenttask)
+				{
+					$strcurrenttask = unserialize($currenttask);
+					$currentname = $strcurrenttask[0];
+					echo "<tr>";
+					echo "<td>{$currentname}</td>";
+					echo "</tr>";
+				}
+				
+				echo "</tbody>";
+				echo "</table>";
+			}
+			
             foreach($tasklist as $currenttask)
             {
                 $strcurrenttask = unserialize($currenttask);
