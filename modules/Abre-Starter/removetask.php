@@ -58,7 +58,7 @@
 				unset($tasklist[$currentindex]);
 				
 				$strtasklist = serialize($tasklist);
-				echo "hello!";
+				echo $currentindex;
 				//Update Database With New Array
 				$s = "UPDATE Abre_Planner SET tasks='".$strtasklist."' WHERE email='".$email."'";
 				mysqli_query($con, $s);
