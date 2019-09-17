@@ -52,6 +52,7 @@
 	foreach($tasklist as $currenttasklist)
 	{
 			$currenttask = unserialize($currenttasklist);
+			echo $currenttask;
 			if(strcmp($tasktoremove, $currenttask[0]) == 0)
 			{
 				//Remove Task
@@ -59,7 +60,7 @@
 				unset($tasklist[$currentindex]);
 				
 				$strtasklist = serialize($tasklist);
-				echo $strtasklist;
+				//echo $strtasklist;
 				//Update Database With New Array
 				$s = "UPDATE Abre_Planner SET tasks='".$strtasklist."' WHERE email='".$email."'";
 				mysqli_query($con, $s);
