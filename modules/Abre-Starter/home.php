@@ -46,6 +46,7 @@
     {
         $row = mysqli_fetch_array($result);
         $strtasklist = $row[2];
+		$strcategorylist = $row[3];
     }
     else
     {
@@ -82,7 +83,7 @@
 		
 		
         <?php
-            echo $categorylist;
+            
             foreach($categorylist as $currentcategory)
 			{
 				echo "<h4>{$currentcategory}</h4>";
