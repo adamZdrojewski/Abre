@@ -88,6 +88,9 @@
 			{
 				echo "<h4>{$currentcategory}</h4>";
 				echo "<table id='myTable' class='tablesorter'>";
+				echo "<thead>";
+				echo "<th>Name</th>";
+				echo "</thead>";
 				echo "<tbody>";
 				
 				foreach($tasklist as $currenttask)
