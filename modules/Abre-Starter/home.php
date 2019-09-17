@@ -68,9 +68,7 @@
 	
 		<!-- Add Task Button -->
 		<div class="fixed-action-btn">
-			<a class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'>
-				<i class="large material-icons">add</i>
-			</a>
+			<button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button>
 		</div>
 	
 		<div class='row'>
