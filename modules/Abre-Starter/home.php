@@ -68,24 +68,9 @@
 	
 		<!-- Add Task Button -->
 		<div class="fixed-action-btn">
-			<button class="btn-floating btn-large modal-trigger" href="#newTaskModal" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button>
+			<button class="btn-floating btn-large" href="/#planner/newtask" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button>
 		</div>
 		
-		<!-- New Task Model -->
-		<div id="newTaskModal" class="modal">
-			<div class="modal-content">
-				<!--form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
-                <div class='input-field col s10'>
-                    <input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
-                </div>
-            </form-->
-			<h3>Testing</h3>
-			</div>
-			<div class="modal-footer">
-				<button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
-			</div>
-		</div>
-		<button data-target="newTaskModal" class="btn modal-trigger">Modal</button>
 		<div class='row'>
 			<div style='padding:56px; text-align:center; width:100%;'>
                 <span style='font-size: 32px; font-weight:700'>Planner</span>
@@ -143,10 +128,3 @@
         <br>
         
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-  });
-</script>
