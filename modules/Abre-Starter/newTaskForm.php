@@ -22,6 +22,27 @@
 	$email = $_SESSION['useremail'];
     session_start();
     
+	//Get Task List(and categories list) / Create One If Needed
+    $s = "select * from Abre_Planner where email='$email'";
+    $result = mysqli_query($con, $s);
+    $num = mysqli_num_rows($result);
+            
+    if($num == 1)
+    {
+        $row = mysqli_fetch_array($result);
+        $strcategorylist = $row[3];
+    }
+    else
+    {
+        $tasklist = array();
+        $strtasklist = serialize($tasklist);
+		$categorylist = array('Tasks');
+        $strcategorylist = serialize($categorylist);
+        $s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$strcategorylist."')";
+        mysqli_query($con, $s);
+    }
+            
+	$categorylist = unserialize($strcategorylist);
     
 ?>
 
@@ -37,6 +58,19 @@
                 <div class='input-field col s10'>
                     <input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
                 </div>
+				
+				<div class="input-field col s12">
+					<select name="category">
+						<option value="" disabled selected>Choose your option</option>
+						<?php
+							foreach($categorylist as $category)
+							{
+								echo "<option value='{$category}'>category</option>";
+							}
+						?>
+					</select>
+					<label>Materialize Select</label>
+				</div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
             </form>	
 	       </div>
