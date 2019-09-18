@@ -68,7 +68,7 @@
 	
 		<!-- Add Task Button -->
 		<div class="fixed-action-btn">
-			<button class="btn-floating btn-large" href="/#planner/newtask" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button>
+			<a href="/#planner/newtask"><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
 		</div>
 		
 		<div class='row'>
