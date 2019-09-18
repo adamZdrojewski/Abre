@@ -66,6 +66,11 @@
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 	
+	<div class='row'>
+			<h5>Modal Example: </h5>
+			<a class='modal-startermodal' href='#startermodal' style='color: <?php echo $siteColor; ?>;' data-info='This is data being passed from the clickable button'>This will open a modal</a>
+		</div>
+	
 		<!-- Add Task Button -->
 		<div class="fixed-action-btn">
 			<a href="/#planner/newtask"><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
@@ -124,3 +129,12 @@
         <br>
         
 </div>
+<script>
+$(function(){
+    $('select').material_select();
+		$('.modal-startermodal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
+		$(document).on("click", ".modal-startermodal", function () {
+			var info = $(this).data('info');
+			$(".modal-content #infoHolder").text(info);
+		});
+</script>
