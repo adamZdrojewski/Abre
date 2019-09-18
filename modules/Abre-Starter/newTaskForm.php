@@ -45,11 +45,7 @@
 	$categorylist = unserialize($strcategorylist);
     
 ?>
-<script>
-$(document).ready(function(){
-    $('select').formSelect();
-  });
-</script>
+
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 		<div class='row'>
@@ -64,7 +60,7 @@ $(document).ready(function(){
                 </div>
 				
 				<div class="input-field col s12">
-					<select name="category">
+					<!--select name="category" id="category">
 						<option value="" disabled selected>Choose your option</option>
 						<?php
 							foreach($categorylist as $category)
@@ -72,7 +68,17 @@ $(document).ready(function(){
 								echo "<option value='{$category}'>category</option>";
 							}
 						?>
-					</select>
+					</select-->
+					
+					<div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div>
 				</div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
             </form>	
@@ -82,3 +88,9 @@ $(document).ready(function(){
         <br>
 		
 </div>
+
+<script>
+$(document).ready(function(){
+    $('select').formSelect();
+  });
+</script>
