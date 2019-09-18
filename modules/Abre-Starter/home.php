@@ -74,11 +74,12 @@
 		<!-- New Task Model -->
 		<div id="newTaskModal" class="modal">
 			<div class="modal-content">
-				<form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
+				<!--form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
                 <div class='input-field col s10'>
                     <input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
                 </div>
-            </form>
+            </form-->
+			<h3>Testing</h3>
 			</div>
 			<div class="modal-footer">
 				<button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
