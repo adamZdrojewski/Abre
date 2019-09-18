@@ -88,10 +88,8 @@
         <br>
 		
 </div>
-</html>
 <script>
 $(document).ready(function(){
     $('select').formSelect();
   });
 </script>
-<html>
