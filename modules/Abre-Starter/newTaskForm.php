@@ -77,6 +77,7 @@
       <option value="2">Option 2</option>
       <option value="3">Option 3</option>
     </select>
+    <label>Materialize Select</label>
   </div>
 				</div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
