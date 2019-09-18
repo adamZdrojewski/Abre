@@ -84,7 +84,7 @@
 				<button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
 			</div>
 		</div>
-	
+		<button class="btn-floating btn-large modal-trigger" href="#newTaskModal" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button>
 		<div class='row'>
 			<div style='padding:56px; text-align:center; width:100%;'>
                 <span style='font-size: 32px; font-weight:700'>Planner</span>
