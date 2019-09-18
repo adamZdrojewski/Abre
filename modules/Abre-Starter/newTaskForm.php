@@ -77,10 +77,10 @@
         
         <br>
         
-</div>
-
-<script>
+		<script>
 $(document).ready(function(){
     $('select').formSelect();
   });
 </script>
+		
+</div>
