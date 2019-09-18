@@ -45,7 +45,11 @@
 	$categorylist = unserialize($strcategorylist);
     
 ?>
-
+<script>
+$(document).ready(function(){
+    $('select').formSelect();
+  });
+</script>
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 		<div class='row'>
@@ -76,11 +80,5 @@
         
         
         <br>
-        
-		<script>
-$(document).ready(function(){
-    $('select').formSelect();
-  });
-</script>
 		
 </div>
