@@ -79,6 +79,7 @@
         <br>
         
 </div>
+</html>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -86,3 +87,5 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.FormSelect.init(elems, options);
   });
  </script>
+ 
+ <html>
