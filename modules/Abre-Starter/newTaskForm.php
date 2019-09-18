@@ -69,7 +69,7 @@
 							}
 						?>
 					</select>
-					<label>Materialize Select</label>
+					<label>Category</label>
 				</div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
             </form>	
