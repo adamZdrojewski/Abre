@@ -82,6 +82,7 @@
 						<label>Materialize Select</label>
 					</div-->
 				</div>
+			</form>
 		
 		<div style='padding: 0px 24px 0px 24px;'>
 	    <div class="row center-align">
@@ -97,7 +98,6 @@
 	    <!--a class="modal-close waves-effect btn-flat white-text" style='background-color: <?php //echo $siteColor; ?>'>Button</a-->
 	  </div>
   </div>
-  </form>
 </div>
 
 <script>
