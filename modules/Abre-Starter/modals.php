@@ -57,9 +57,10 @@
 				<div class='col s1 right-align'><a class="modal-close"><i class='material-icons' style='color: #fff;'>clear</i></a></div>
 			</div>
 			
-			
+					<div class='container'>
 					<div class='input-field col s8'>
 						<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
+					</div>
 					</div>
 					
 					<div class="input-field col s12">
