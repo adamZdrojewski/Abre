@@ -55,7 +55,36 @@
 			<div class='col s11'><span class="truncate" style="color: #fff; font-weight: 500; font-size: 24px; line-height: 26px;">New Task</span></div>
 			<div class='col s1 right-align'><a class="modal-close"><i class='material-icons' style='color: #fff;'>clear</i></a></div>
 		</div>
-		<h1>Hello world!</h1>
+		
+		<form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
+                <div class='input-field col s10'>
+                    <input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
+                </div>
+				
+				<div class="input-field col s12">
+					<!--select name="category" id="category">
+						<option value="" disabled selected>Choose your option</option>
+						<?php
+							/*foreach($categorylist as $category)
+							{
+								echo "<option value='{$category}'>category</option>";
+							}*/
+						?>
+					</select-->
+					
+					<!--div class="input-field col s12">
+						<select>
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+						<label>Materialize Select</label>
+					</div-->
+				</div>
+                <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
+            </form>
+		
 		<div style='padding: 0px 24px 0px 24px;'>
 	    <div class="row center-align">
 	      <p id="infoHolder" style=""></p>
