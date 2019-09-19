@@ -94,10 +94,10 @@
 			<button class="btn waves-effect waves-light" type="submit" name="action">Submit
     <i class="material-icons right">send</i>
   </button>
-			</form>
 	    <!--a class="modal-close waves-effect btn-flat white-text" style='background-color: <?php //echo $siteColor; ?>'>Button</a-->
 	  </div>
   </div>
+  </form>
 </div>
 
 <script>
