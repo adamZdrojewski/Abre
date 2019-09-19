@@ -58,31 +58,31 @@
 			</div>
 			
 					<div class='container'>
-					<div class='input-field col s5'>
-						<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
-					</div>
-					</div>
-					
-					<div class="input-field col s12">
-						<!--select name="category" id="category">
-							<option value="" disabled selected>Choose your option</option>
-							<?php
-								/*foreach($categorylist as $category)
-								{
-									echo "<option value='{$category}'>category</option>";
-								}*/
-							?>
-						</select-->
+						<div class='input-field'>
+							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
+						</div>
 						
-						<!--div class="input-field col s12">
-							<select>
+						<div class="input-field col s12">
+							<!--select name="category" id="category">
 								<option value="" disabled selected>Choose your option</option>
-								<option value="1">Option 1</option>
-								<option value="2">Option 2</option>
-								<option value="3">Option 3</option>
-							</select>
-							<label>Materialize Select</label>
-						</div-->
+								<?php
+									/*foreach($categorylist as $category)
+									{
+										echo "<option value='{$category}'>category</option>";
+									}*/
+								?>
+							</select-->
+							
+							<!--div class="input-field col s12">
+								<select>
+									<option value="" disabled selected>Choose your option</option>
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+								</select>
+								<label>Materialize Select</label>
+							</div-->
+						</div>
 					</div>
 				
 			
