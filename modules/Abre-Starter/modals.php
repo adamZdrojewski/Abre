@@ -58,7 +58,7 @@
 			</div>
 			
 			
-					<div class='input-field col s10'>
+					<div class='input-field col s8'>
 						<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
 					</div>
 					
