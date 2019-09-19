@@ -50,56 +50,54 @@
 </div>
 
 <div id="newTaskModal" class="modal modal-fixed-footer modal-mobile-full">
-<form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
-  <div class="modal-content" style="padding: 0px !important;">
-		<div class="row" style='background-color: <?php echo $siteColor; ?>; padding: 24px;'>
-			<div class='col s11'><span class="truncate" style="color: #fff; font-weight: 500; font-size: 24px; line-height: 26px;">New Task</span></div>
-			<div class='col s1 right-align'><a class="modal-close"><i class='material-icons' style='color: #fff;'>clear</i></a></div>
-		</div>
-		
-		
-                <div class='input-field col s10'>
-                    <input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
-                </div>
-				
-				<div class="input-field col s12">
-					<!--select name="category" id="category">
-						<option value="" disabled selected>Choose your option</option>
-						<?php
-							/*foreach($categorylist as $category)
-							{
-								echo "<option value='{$category}'>category</option>";
-							}*/
-						?>
-					</select-->
-					
-					<!--div class="input-field col s12">
-						<select>
-							<option value="" disabled selected>Choose your option</option>
-							<option value="1">Option 1</option>
-							<option value="2">Option 2</option>
-							<option value="3">Option 3</option>
-						</select>
-						<label>Materialize Select</label>
-					</div-->
-				</div>
+	<form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
+	  <div class="modal-content" style="padding: 0px !important;">
+			<div class="row" style='background-color: <?php echo $siteColor; ?>; padding: 24px;'>
+				<div class='col s11'><span class="truncate" style="color: #fff; font-weight: 500; font-size: 24px; line-height: 26px;">New Task</span></div>
+				<div class='col s1 right-align'><a class="modal-close"><i class='material-icons' style='color: #fff;'>clear</i></a></div>
+			</div>
 			
-		
-		<div style='padding: 0px 24px 0px 24px;'>
-	    <div class="row center-align">
-	      <p id="infoHolder" style=""></p>
-	    </div>
-		</div>
-  </div>
-  <div class="modal-footer">
-	  <div id ="footerButtonsDiv" style='display: inline-block; float:right'>
-			<button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
-  </form>
-	    <!--a class="modal-close waves-effect btn-flat white-text" style='background-color: <?php //echo $siteColor; ?>'>Button</a-->
+			
+					<div class='input-field col s10'>
+						<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
+					</div>
+					
+					<div class="input-field col s12">
+						<!--select name="category" id="category">
+							<option value="" disabled selected>Choose your option</option>
+							<?php
+								/*foreach($categorylist as $category)
+								{
+									echo "<option value='{$category}'>category</option>";
+								}*/
+							?>
+						</select-->
+						
+						<!--div class="input-field col s12">
+							<select>
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+							<label>Materialize Select</label>
+						</div-->
+					</div>
+				
+			
+			<div style='padding: 0px 24px 0px 24px;'>
+			<div class="row center-align">
+			  <p id="infoHolder" style=""></p>
+			</div>
+			</div>
 	  </div>
-  </div>
+	  <div class="modal-footer">
+		  <div id ="footerButtonsDiv" style='display: inline-block; float:right'>
+			<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+			<!--a class="modal-close waves-effect btn-flat white-text" style='background-color: <?php //echo $siteColor; ?>'>Button</a-->
+		  </div>
+	  </div>
+	</form>
 </div>
 
 <script>
