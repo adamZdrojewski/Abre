@@ -49,6 +49,26 @@
   </div>
 </div>
 
+<div id="newTaskModal" class="modal modal-fixed-footer modal-mobile-full">
+  <div class="modal-content" style="padding: 0px !important;">
+		<div class="row" style='background-color: <?php echo $siteColor; ?>; padding: 24px;'>
+			<div class='col s11'><span class="truncate" style="color: #fff; font-weight: 500; font-size: 24px; line-height: 26px;">New Task</span></div>
+			<div class='col s1 right-align'><a class="modal-close"><i class='material-icons' style='color: #fff;'>clear</i></a></div>
+		</div>
+		<div style='padding: 0px 24px 0px 24px;'>
+	    <div class="row center-align">
+	      <p id="infoHolder" style="">Hello!</p>
+	    </div>
+		</div>
+  </div>
+  <div class="modal-footer">
+	  <div id ="footerButtonsDiv" style='display: inline-block; float:right'>
+			<button class="modal-close waves-effect btn-flat white-text" style='margin-left:5px; background-color: <?php echo $siteColor; ?>'>Close</button>
+	    <a class="modal-action waves-effect btn-flat white-text" style='background-color: <?php echo $siteColor; ?>'>Button</a>
+	  </div>
+  </div>
+</div>
+
 <script>
 
 </script>
