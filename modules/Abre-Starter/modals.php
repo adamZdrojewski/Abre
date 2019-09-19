@@ -89,8 +89,8 @@
 	    </div>
 		</div>
   </div>
-  <!--div class="modal-footer"-->
-	  <div id ="footerButtonsDiv" style='display: inline-block; float:right'>
+  <div class="modal-footer">
+	  <!--div id ="footerButtonsDiv" style='display: inline-block; float:right'-->
 			<button class="btn waves-effect waves-light" type="submit" name="action">Submit
     <i class="material-icons right">send</i>
   </button>
