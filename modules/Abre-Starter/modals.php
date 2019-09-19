@@ -91,9 +91,9 @@
   </div>
   <div class="modal-footer">
 	  <div id ="footerButtonsDiv" style='display: inline-block; float:right'>
-			<button class="modal-close waves-effect btn-flat white-text" style='margin-left:5px; background-color: <?php echo $siteColor; ?>' type='submit' name='action'>Close</button>
+			<button class="modal-action waves-effect btn-flat white-text" style='margin-left:5px; background-color: <?php echo $siteColor; ?>' type='submit' name='action'>Close</button>
 			</form>
-	    <a class="modal-action waves-effect btn-flat white-text" style='background-color: <?php echo $siteColor; ?>'>Button</a>
+	    <a class="modal-close waves-effect btn-flat white-text" style='background-color: <?php echo $siteColor; ?>'>Button</a>
 	  </div>
   </div>
 </div>
