@@ -50,13 +50,14 @@
 </div>
 
 <div id="newTaskModal" class="modal modal-fixed-footer modal-mobile-full">
+<form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
   <div class="modal-content" style="padding: 0px !important;">
 		<div class="row" style='background-color: <?php echo $siteColor; ?>; padding: 24px;'>
 			<div class='col s11'><span class="truncate" style="color: #fff; font-weight: 500; font-size: 24px; line-height: 26px;">New Task</span></div>
 			<div class='col s1 right-align'><a class="modal-close"><i class='material-icons' style='color: #fff;'>clear</i></a></div>
 		</div>
 		
-		<form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
+		
                 <div class='input-field col s10'>
                     <input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
                 </div>
@@ -82,7 +83,7 @@
 						<label>Materialize Select</label>
 					</div-->
 				</div>
-			</form>
+			
 		
 		<div style='padding: 0px 24px 0px 24px;'>
 	    <div class="row center-align">
@@ -95,6 +96,7 @@
 			<button class="btn waves-effect waves-light" type="submit" name="action">Submit
     <i class="material-icons right">send</i>
   </button>
+  </form>
 	    <!--a class="modal-close waves-effect btn-flat white-text" style='background-color: <?php //echo $siteColor; ?>'>Button</a-->
 	  </div>
   </div>
