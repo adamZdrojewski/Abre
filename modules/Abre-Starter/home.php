@@ -68,7 +68,7 @@
 	
 	<div class='row'>
 			<h5>Modal Example: </h5>
-			<a class='modal-startermodal' href='#startermodal' style='color: <?php echo $siteColor; ?>;' data-info='This is data being passed from the clickable button'>This will open a modal</a>
+			<a class='modal-newTaskModal' href='#newTaskModal' style='color: <?php echo $siteColor; ?>;' data-info='This is data being passed from the clickable button'>This will open a modal</a>
 		</div>
 	
 		<!-- Add Task Button -->
