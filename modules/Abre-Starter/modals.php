@@ -82,10 +82,6 @@
 						<label>Materialize Select</label>
 					</div-->
 				</div>
-				<button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
-  </form>
 		
 		<div style='padding: 0px 24px 0px 24px;'>
 	    <div class="row center-align">
@@ -95,8 +91,10 @@
   </div>
   <div class="modal-footer">
 	  <div id ="footerButtonsDiv" style='display: inline-block; float:right'>
-			<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
-			<!--/form-->
+			<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+			</form>
 	    <a class="modal-close waves-effect btn-flat white-text" style='background-color: <?php echo $siteColor; ?>'>Button</a>
 	  </div>
   </div>
