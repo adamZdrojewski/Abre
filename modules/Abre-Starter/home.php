@@ -129,7 +129,7 @@
         <br>
         
 </div>
-<script>
+<!--script>
 $(function(){
     $('select').material_select();
 		$('.modal-startermodal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
@@ -137,4 +137,4 @@ $(function(){
 			var info = $(this).data('info');
 			$(".modal-content #infoHolder").text(info);
 		});
-</script>
+</script-->
