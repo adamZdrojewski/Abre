@@ -66,11 +66,6 @@
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 	
-	<div class='row'>
-			<h5>Modal Example: </h5>
-			<a class='modal-newTaskModal' href='#newTaskModal' style='color: <?php echo $siteColor; ?>;'>This will open a modal</a>
-		</div>
-	
 		<!-- Add Task Button -->
 		<div class="fixed-action-btn">
 			<a href="#newTaskModal" class='modal-newTaskModal'><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
