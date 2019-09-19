@@ -55,12 +55,10 @@
 			<div class='col s11'><span class="truncate" style="color: #fff; font-weight: 500; font-size: 24px; line-height: 26px;">New Task</span></div>
 			<div class='col s1 right-align'><a class="modal-close"><i class='material-icons' style='color: #fff;'>clear</i></a></div>
 		</div>
+		<h1>Hello world!</h1>
 		<div style='padding: 0px 24px 0px 24px;'>
 	    <div class="row center-align">
 	      <p id="infoHolder" style=""></p>
-		  
-		  <h1>Hello world</h1>
-		  
 	    </div>
 		</div>
   </div>
