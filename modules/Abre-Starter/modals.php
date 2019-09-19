@@ -91,7 +91,7 @@
   </div>
   <div class="modal-footer">
 	  <div id ="footerButtonsDiv" style='display: inline-block; float:right'>
-			<button class="modal-action waves-effect btn-flat white-text" style='margin-left:5px; background-color: <?php echo $siteColor; ?>' type='submit' name='action'>Close</button>
+			<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
 			</form>
 	    <a class="modal-close waves-effect btn-flat white-text" style='background-color: <?php echo $siteColor; ?>'>Button</a>
 	  </div>
