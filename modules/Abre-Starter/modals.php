@@ -59,7 +59,7 @@
 			
 					<div class='container'>
 						<div class='input-field'>
-							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
+							<input id="tasktoadd" name="tasktoadd" style='background-color: <?php echo $siteColor; ?>' type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
 						</div>
 						
 						<div class="input-field col s12">
