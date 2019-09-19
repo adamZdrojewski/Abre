@@ -58,6 +58,9 @@
 		<div style='padding: 0px 24px 0px 24px;'>
 	    <div class="row center-align">
 	      <p id="infoHolder" style=""></p>
+		  
+		  <h1>Hello world</h1>
+		  
 	    </div>
 		</div>
   </div>
