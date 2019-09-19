@@ -59,7 +59,7 @@
 			
 					<div class='container'>
 						<div class='input-field'>
-							<input id="tasktoadd" name="tasktoadd" style='background-color: <?php echo $siteColor; ?>' type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
+							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
 						</div>
 						
 						<div class="input-field col s12">
@@ -94,7 +94,7 @@
 	  </div>
 	  <div class="modal-footer">
 		  <div id ="footerButtonsDiv" style='display: inline-block; float:right'>
-			<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+			<button class="btn waves-effect waves-light" type="submit" style='background-color: <?php echo $siteColor; ?>' name="action">Submit<i class="material-icons right">send</i></button>
 			<!--a class="modal-close waves-effect btn-flat white-text" style='background-color: <?php //echo $siteColor; ?>'>Button</a-->
 		  </div>
 	  </div>

@@ -73,7 +73,7 @@
 	
 		<!-- Add Task Button -->
 		<div class="fixed-action-btn">
-			<a href="/#planner/newtask"><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
+			<a href="#newTaskModal" class='modal-newTaskModal'><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
 		</div>
 		
 		<div class='row'>
