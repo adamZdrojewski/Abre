@@ -84,7 +84,7 @@
 				</div>
 		
 		<div style='padding: 0px 24px 0px 24px;'>
-	    <!--div class="row center-align"-->
+	    <div class="row center-align">
 	      <p id="infoHolder" style=""></p>
 	    </div>
 		</div>
