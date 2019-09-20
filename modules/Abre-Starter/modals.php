@@ -22,6 +22,10 @@
 	require_once(dirname(__FILE__) . '/../../core/abre_functions.php');
 	require_once('permissions.php');
 
+	//Database Connect
+    $con = mysqli_connect($db_host, $db_user, $db_password);
+    mysqli_select_db($con, $db_name);
+	
 	$siteColor = getSiteColor();
 
 	if($pagerestrictions == ""){
@@ -84,7 +88,7 @@
 									{
 										$tasklist = array();
 										$strtasklist = serialize($tasklist);
-										$categorylist = array('Tasks', 'other');
+										$categorylist = array('Tasks');
 										$strcategorylist = serialize($categorylist);
 										$s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$strcategorylist."')";
 										mysqli_query($con, $s);
