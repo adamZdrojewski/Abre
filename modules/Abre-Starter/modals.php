@@ -109,6 +109,7 @@
 							{
 								echo $category;
 							}*/
+							exit();
 							?>
 						</div>
 					</div>
