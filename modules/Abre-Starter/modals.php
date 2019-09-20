@@ -28,28 +28,6 @@
 
 	}
 	
-	//Get Task List(and categories list) / Create One If Needed
-    $s = "select * from Abre_Planner where email='$email'";
-    $result = mysqli_query($con, $s);
-    $num = mysqli_num_rows($result);
-            
-    if($num == 1)
-    {
-        $row = mysqli_fetch_array($result);
-        $strcategorylist = $row[3];
-    }
-    else
-    {
-        $tasklist = array();
-        $strtasklist = serialize($tasklist);
-		$categorylist = array('Tasks');
-        $strcategorylist = serialize($categorylist);
-        $s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$strcategorylist."')";
-        mysqli_query($con, $s);
-    }
-            
-	$categorylist = unserialize($strcategorylist);
-	
 	
 ?>
 
@@ -91,6 +69,29 @@
 							<select name="category" id="category">
 								<option value="" disabled selected>Choose your option</option>
 								<?php
+								
+									//Get Task List(and categories list) / Create One If Needed
+									$s = "select * from Abre_Planner where email='$email'";
+									$result = mysqli_query($con, $s);
+									$num = mysqli_num_rows($result);
+											
+									if($num == 1)
+									{
+										$row = mysqli_fetch_array($result);
+										$strcategorylist = $row[3];
+									}
+									else
+									{
+										$tasklist = array();
+										$strtasklist = serialize($tasklist);
+										$categorylist = array('Tasks');
+										$strcategorylist = serialize($categorylist);
+										$s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$strcategorylist."')";
+										mysqli_query($con, $s);
+									}
+											
+									$categorylist = unserialize($strcategorylist);
+									
 									foreach($categorylist as $category)
 									{
 										echo "<option value='{$category}'>{$category}</option>";
