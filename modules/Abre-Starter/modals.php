@@ -62,32 +62,17 @@
 							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
 						</div>
 						
-						<select class='col l3 s6' id='selectValue' name='selectValue'>
-							<option value=''></option>
-							<option value='1'>Option 1</option>
-							<option value='2'>Option 2</option>
-						</select>
 						
 						<div class="input-field col s12">
-							<!--select name="category" id="category">
+							<select name="category" id="category">
 								<option value="" disabled selected>Choose your option</option>
 								<?php
-									/*foreach($categorylist as $category)
+									foreach($categorylist as $category)
 									{
 										echo "<option value='{$category}'>category</option>";
-									}*/
+									}
 								?>
-							</select-->
-							
-							<!--div class="input-field col s12">
-								<select>
-									<option value="" disabled selected>Choose your option</option>
-									<option value="1">Option 1</option>
-									<option value="2">Option 2</option>
-									<option value="3">Option 3</option>
-								</select>
-								<label>Materialize Select</label>
-							</div-->
+							</select>
 						</div>
 					</div>
 				
