@@ -95,14 +95,16 @@
 									}
 											
 									$categorylist = unserialize($strcategorylist);
-									echo $strcategorylist;
+									
 									foreach($categorylist as $category)
 									{
 										echo "<option value='{$category}'>{$category}</option>";
 									}
 								?>
 							</select>
+							
 							<?php
+							echo $strcategorylist;
 							foreach($categorylist as $category)
 							{
 								echo $category;
