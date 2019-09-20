@@ -93,7 +93,7 @@
 								<?php
 									foreach($categorylist as $category)
 									{
-										echo "<option value='{$category}'>category</option>";
+										echo "<option value='{$category}'>{$category}</option>";
 									}
 								?>
 							</select>

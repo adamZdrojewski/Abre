@@ -98,8 +98,8 @@
 					$currentdate = $strcurrenttask[3];
 					$currentcompleted = $strcurrenttask[4];
 					
-					//if(strcmp($currenttaskcategory, $currentcategory) == 0)
-					//{
+					if(strcmp($currenttaskcategory, $currentcategory) == 0)
+					{
 					
 						echo "<tr>";
 						echo "<td style='font-size: 22px;'>{$currentname}</td>";
@@ -111,7 +111,7 @@
 						echo "</td>";
 						echo "</tr>";
 					
-					//}
+					}
 				}
 				
 				echo "</tbody>";
