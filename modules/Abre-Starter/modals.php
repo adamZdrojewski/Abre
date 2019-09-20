@@ -83,7 +83,6 @@
 									{
 										$row = mysqli_fetch_array($result);
 										$strcategorylist = $row[3];
-										$thing = 'if';
 									}
 									else
 									{
@@ -93,7 +92,6 @@
 										$strcategorylist = serialize($categorylist);
 										$s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$strcategorylist."')";
 										mysqli_query($con, $s);
-										$thing = 'else';
 									}
 											
 									$categorylist = unserialize($strcategorylist);
@@ -106,7 +104,6 @@
 							</select>
 							
 							<?php
-							echo $thing;
 							foreach($categorylist as $category)
 							{
 								echo $category;
