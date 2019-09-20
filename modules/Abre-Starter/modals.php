@@ -98,6 +98,12 @@
 									}
 								?>
 							</select>
+							<?php
+							foreach($categorylist as $category)
+							{
+								echo $category;
+							}
+							?>
 						</div>
 					</div>
 				
@@ -111,7 +117,6 @@
 	  <div class="modal-footer">
 		  <div id ="footerButtonsDiv" style='display: inline-block; float:right'>
 			<button class="btn waves-effect waves-light" type="submit" style='background-color: <?php echo $siteColor; ?>' name="action">Submit<i class="material-icons right">send</i></button>
-			<!--a class="modal-close waves-effect btn-flat white-text" style='background-color: <?php //echo $siteColor; ?>'>Button</a-->
 		  </div>
 	  </div>
 	</form>
