@@ -83,6 +83,7 @@
 									{
 										$row = mysqli_fetch_array($result);
 										$strcategorylist = $row[3];
+										echo "this is the if";
 									}
 									else
 									{
