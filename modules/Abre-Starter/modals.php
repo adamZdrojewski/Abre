@@ -107,7 +107,7 @@
 							</select>
 							
 							<?php
-							echo $row;
+							echo serialize($row);
 							/*foreach($categorylist as $category)
 							{
 								echo $category;
