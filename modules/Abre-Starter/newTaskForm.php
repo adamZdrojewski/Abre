@@ -55,31 +55,55 @@
         </div>
         <div class='row'>
             <form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
-                <div class='input-field col s10'>
-                    <input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
-                </div>
-				
-				<div class="input-field col s12">
-					<!--select name="category" id="category">
-						<option value="" disabled selected>Choose your option</option>
-						<?php
-							foreach($categorylist as $category)
+                <div class='input-field'>
+							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
+						</div>
+						
+						
+						<div class="input-field col s12">
+							<select name="category" id="category">
+								<option value="" disabled selected>Choose your option</option>
+								<?php
+								
+									//Get Task List(and categories list) / Create One If Needed
+									$con = mysqli_connect($db_host, $db_user, $db_password);
+									mysqli_select_db($con, $db_name);
+									$s = "select * from Abre_Planner where email='$email'";
+									$result = mysqli_query($con, $s);
+									$num = mysqli_num_rows($result);
+											
+									if($num == 1)
+									{
+										$row = mysqli_fetch_array($result);
+										$strcategorylist = $row[3];
+									}
+									else
+									{
+										$tasklist = array();
+										$strtasklist = serialize($tasklist);
+										$categorylist = array('Tasks', 'other');
+										$strcategorylist = serialize($categorylist);
+										$s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$strcategorylist."')";
+										mysqli_query($con, $s);
+									}
+											
+									$categorylist = unserialize($strcategorylist);
+									
+									foreach($categorylist as $category)
+									{
+										echo "<option value='{$category}'>{$category}</option>";
+									}
+								?>
+							</select>
+							
+							<?php
+							echo $strcategorylist;
+							/*foreach($categorylist as $category)
 							{
-								echo "<option value='{$category}'>category</option>";
-							}
-						?>
-					</select-->
-					
-					<div class="input-field col s12">
-    <select>
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <label>Materialize Select</label>
-  </div>
-				</div>
+								echo $category;
+							}*/
+							?>
+						</div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
             </form>	
 	       </div>
