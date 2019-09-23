@@ -85,6 +85,7 @@
 									{
 										$row = mysqli_fetch_array($result);
 										$strcategorylist = $row[3];
+										$thetime = date('H:i:s');
 									}
 									else
 									{
@@ -103,12 +104,11 @@
 										echo "<option value='{$category}'>{$category}</option>";
 									}
 									
-									$thedate = date('H:i:s');
 								?>
 							</select>
 							
 							<?php
-							echo $thedate;
+							echo $thetime;
 							/*foreach($categorylist as $category)
 							{
 								echo $category;
