@@ -102,11 +102,13 @@
 									{
 										echo "<option value='{$category}'>{$category}</option>";
 									}
+									
+									$thedate = date('H:i:s');
 								?>
 							</select>
 							
 							<?php
-							echo date('H:i:s');
+							echo $thedate;
 							/*foreach($categorylist as $category)
 							{
 								echo $category;
