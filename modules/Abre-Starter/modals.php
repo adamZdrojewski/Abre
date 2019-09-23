@@ -106,7 +106,7 @@
 							</select>
 							
 							<?php
-							echo date(H:i:s);
+							echo date('H:i:s');
 							/*foreach($categorylist as $category)
 							{
 								echo $category;
