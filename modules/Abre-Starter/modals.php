@@ -75,6 +75,8 @@
 								<?php
 								
 									//Get Task List(and categories list) / Create One If Needed
+									$con = mysqli_connect($db_host, $db_user, $db_password);
+									mysqli_select_db($con, $db_name);
 									$s = "select * from Abre_Planner where email='$email'";
 									$result = mysqli_query($con, $s);
 									$num = mysqli_num_rows($result);
@@ -109,7 +111,6 @@
 							{
 								echo $category;
 							}*/
-							exit();
 							?>
 						</div>
 					</div>
