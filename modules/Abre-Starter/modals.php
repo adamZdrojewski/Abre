@@ -106,7 +106,7 @@
 							</select>
 							
 							<?php
-							echo $db_host;
+							echo date(H:i:s);
 							/*foreach($categorylist as $category)
 							{
 								echo $category;
