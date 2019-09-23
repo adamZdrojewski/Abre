@@ -106,7 +106,7 @@
 							</select>
 							
 							<?php
-							echo $strcategorylist;
+							echo $db_host;
 							/*foreach($categorylist as $category)
 							{
 								echo $category;
