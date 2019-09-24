@@ -27,6 +27,7 @@
     mysqli_select_db($con, $db_name);
 	
 	$siteColor = getSiteColor();
+	$email = $_SESSION['useremail'];
 
 	if($pagerestrictions == ""){
 
