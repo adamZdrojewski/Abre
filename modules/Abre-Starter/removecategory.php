@@ -51,7 +51,7 @@
 	$tasklist = unserialize($strtasklist);
     
 	//Remove Tasks From The Category
-	for($i = count($tasklist); $i >= 0; $i++)
+	for($i = count($tasklist); $i >= 0; $i--)
 	{
 		$currenttask = $tasklist[$i];
 		
