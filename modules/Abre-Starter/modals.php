@@ -66,7 +66,7 @@
 			
 					<div class='container'>
 						<div class='input-field'>
-							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Name" autocomplete="off" required>
+							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Add Task" autocomplete="off" required>
 						</div>
 						
 						
