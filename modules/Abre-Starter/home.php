@@ -69,6 +69,9 @@
 		<!-- Add Task Button -->
 		<div class="fixed-action-btn">
 			<a href="#newTaskModal" class='modal-newTaskModal'><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
+			<ul>
+				<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+			</ul>
 		</div>
 		
 		<div class='row'>
@@ -98,8 +101,8 @@
 					$currentdate = $strcurrenttask[3];
 					$currentcompleted = $strcurrenttask[4];
 					
-					//if(strcmp($currenttaskcategory, $currentcategory) == 0)
-					//{
+					if(strcmp($currenttaskcategory, $currentcategory) == 0)
+					{
 					
 						echo "<tr>";
 						echo "<td style='font-size: 22px;'>{$currentname}</td>";
@@ -111,7 +114,7 @@
 						echo "</td>";
 						echo "</tr>";
 					
-					//}
+					}
 				}
 				
 				echo "</tbody>";
