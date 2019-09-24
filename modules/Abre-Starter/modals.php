@@ -60,19 +60,19 @@
 	<form class='' id='add-task' method='post' action='modules/Abre-Starter/newtask.php'>
 	  <div class="modal-content" style="padding: 0px !important;">
 			<div class="row" style='background-color: <?php echo $siteColor; ?>; padding: 24px;'>
-				<div class='col s11'><span class="truncate" style="color: #fff; font-weight: 500; font-size: 24px; line-height: 26px;">Task Name</span></div>
+				<div class='col s11'><span class="truncate" style="color: #fff; font-weight: 500; font-size: 24px; line-height: 26px;">Add Task</span></div>
 				<div class='col s1 right-align'><a class="modal-close"><i class='material-icons' style='color: #fff;'>clear</i></a></div>
 			</div>
 			
 					<div class='container'>
 						<div class='input-field'>
-							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Name" autocomplete="off" required>
+							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Task Name" autocomplete="off" required>
 						</div>
 						
 						
 						<div class="input-field col s12">
 							<select name="category" id="category">
-								<option value="" disabled selected>Choose your option</option>
+								<option value="" disabled selected>Select Category</option>
 								<?php
 								
 									//Get Task List(and categories list) / Create One If Needed
