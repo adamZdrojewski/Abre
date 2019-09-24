@@ -60,6 +60,7 @@
 		
 		if(strcmp($categorytoremove, unserialize($currenttask)[1]) == 0)
 		{
+			echo $currenttask;
 			array_splice($tasklist, $i, 1);
 		}
 	}
@@ -82,6 +83,6 @@
     mysqli_query($con, $s);
 
     //Redirect Back To The Main Page
-    header('location: /#planner/categories');
+    //header('location: /#planner/categories');
 
 ?>
