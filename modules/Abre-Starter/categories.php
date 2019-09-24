@@ -66,7 +66,7 @@
 		<div class='row'>
 			<div style='padding:56px; text-align:center; width:100%;'>
                 <span style='font-size: 32px; font-weight:700'>Categories</span><br>
-				<span style='font-size: 25px; font-weight:700'>Warning: Removing Categories Will Remove All Tasks In Them</span>
+				<span style='font-size: 15px; font-weight:600'>Warning: Removing Categories Will Remove All Tasks In Them</span>
             </div>
         </div>
         <div class='row'>
