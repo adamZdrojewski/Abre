@@ -77,10 +77,11 @@
 		$categorylist = array('Tasks');
 	}
 
+	$strtasklist = serialize($tasklist);
     $strcategorylist = serialize($categorylist);
     
     //Update Database With New Array
-    $s = "UPDATE Abre_Planner SET categories='".$strcategorylist."' WHERE email='".$email."'";
+    $s = "UPDATE Abre_Planner SET categories='".$strcategorylist."', tasks='".$strtasklist."' WHERE email='".$email."'";
     mysqli_query($con, $s);
 
     //Redirect Back To The Main Page
