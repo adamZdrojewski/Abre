@@ -36,6 +36,14 @@
 	
 ?>
 
+<style>
+	/* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000000;
+     box-shadow: 0 1px 0 0 #000000;
+   }
+</style>
+
 <div id="startermodal" class="modal modal-fixed-footer modal-mobile-full">
   <div class="modal-content" style="padding: 0px !important;">
 		<div class="row" style='background-color: <?php echo $siteColor; ?>; padding: 24px;'>
