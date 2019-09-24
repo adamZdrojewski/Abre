@@ -37,32 +37,10 @@
 ?>
 
 <style>
-	/* label color */
-   .input-field label {
-     color: #00FF00;
-   }
-   /* label focus color */
-   .input-field input[type=text]:focus + label {
-     color: #00FF00;
-   }
    /* label underline focus color */
    .input-field input[type=text]:focus {
      border-bottom: 1px solid #0000FF;
      box-shadow: 0 1px 0 0 #0000FF;
-   }
-   /* valid color */
-   .input-field input[type=text].valid {
-     border-bottom: 1px solid #00FF00;
-     box-shadow: 0 1px 0 0 #00FF00;
-   }
-   /* invalid color */
-   .input-field input[type=text].invalid {
-     border-bottom: 1px solid #00FF00;
-     box-shadow: 0 1px 0 0 #00FF00;
-   }
-   /* icon prefix focus color */
-   .input-field .prefix.active {
-     color: #00FF00;
    }
 </style>
 
