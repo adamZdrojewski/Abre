@@ -48,7 +48,7 @@
    /* label underline focus color */
    .input-field input[type=text]:focus {
      border-bottom: 1px solid #00FF00;
-     box-shadow: 0 1px 0 0 #00FF00;
+     box-shadow: 0 1px 0 0 #0000FF;
    }
    /* valid color */
    .input-field input[type=text].valid {
