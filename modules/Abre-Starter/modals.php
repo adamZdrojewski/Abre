@@ -96,7 +96,7 @@
 			
 					<div class='container'>
 						<div class='input-field'>
-							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Task Name" autocomplete="off" required>
+							<input style="/* label underline focus color */.input-field input[type=text]:focus {border-bottom: 1px solid #000; box-shadow: 0 1px 0 0 #000;}" id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Task Name" autocomplete="off" required>
 						</div>
 						
 						
