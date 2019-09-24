@@ -106,6 +106,14 @@
 									
 								?>
 							</select>
+							
+							<?php
+							echo $strcategorylist;
+							/*foreach($categorylist as $category)
+							{
+								echo $category;
+							}*/
+							?>
 						</div>
 					</div>
 				
