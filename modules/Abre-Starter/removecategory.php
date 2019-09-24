@@ -49,20 +49,22 @@
             
     $categorylist = unserialize($strcategorylist);
 	$tasklist = unserialize($strtasklist);
+	
+	//Category To Remove
+	$categorytoremove = $_POST['category'];
     
 	//Remove Tasks From The Category
 	for($i = count($tasklist); $i >= 0; $i--)
 	{
 		$currenttask = $tasklist[$i];
 		
-		if(strcmp($_POST['category'], unserialize($currenttask)[1]) == 0)
+		if(strcmp($categorytoremove, unserialize($currenttask)[1]) == 0)
 		{
 			unset($tasklist[$i]);
 		}
 	}
 	
     //Remove Category From Array
-    $categorytoremove = $_POST['category'];
     if (($key = array_search($categorytoremove, $categorylist)) !== false) {
     unset($categorylist[$key]);
 }
