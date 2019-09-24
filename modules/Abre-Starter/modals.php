@@ -107,7 +107,7 @@
 							</select>
 							
 							<?php
-							echo $result;
+							echo $strcategorylist;
 							/*foreach($categorylist as $category)
 							{
 								echo $category;
