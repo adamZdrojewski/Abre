@@ -39,8 +39,8 @@
 <style>
    /* label underline focus color */
    .input-field input[type=text]:focus {
-     border-bottom: 1px solid #<?php echo $siteColor;?>;
-     box-shadow: 0 1px 0 0 #<?php echo $siteColor;?>;
+     border-bottom: 1px solid <?php echo $siteColor;?>;
+     box-shadow: 0 1px 0 0 <?php echo $siteColor;?>;
    }
 </style>
 
