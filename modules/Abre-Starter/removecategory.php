@@ -62,7 +62,7 @@
 		if(strcmp($categorytoremove, unserialize($currenttask)[1]) == 0)
 		{
 			echo $currenttask;
-			array_splice($tasklist, $i, 1);
+			unset($tasklist[$i]);
 		}
 	}
 	echo serialize($tasklist);
