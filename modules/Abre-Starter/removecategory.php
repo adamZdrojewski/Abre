@@ -34,19 +34,34 @@
     if($num == 1)
     {
         $row = mysqli_fetch_array($result);
+		$strtasklist = $row[2];
         $strcategorylist = $row[3];
     }
     else
     {
         $categorylist = array('Tasks');
         $strcategorylist = serialize($categorylist);
-        $s = "INSERT INTO Abre_Planner (email, categories) VALUES('".$email."', '".$strcategorylist."')";
+		$tasklist = array();
+        $strtasklist = serialize($tasklist);
+        $s = "INSERT INTO Abre_Planner (email, categories, tasks) VALUES('".$email."', '".$strcategorylist."', '".$strtasklist."')";
         mysqli_query($con, $s);
     }
             
     $categorylist = unserialize($strcategorylist);
+	$tasklist = unserialize($strtasklist);
     
-    //Remove Task From Array
+	//Remove Tasks From The Category
+	for($i = count($tasklist); $i >= 0; $i++)
+	{
+		$currenttask = $tasklist[$i];
+		
+		if(strcmp($_POST['category'], unserialize($currenttask)[1]) == 0)
+		{
+			unset($tasklist[$i]);
+		}
+	}
+	
+    //Remove Category From Array
     $categorytoremove = $_POST['category'];
     if (($key = array_search($categorytoremove, $categorylist)) !== false) {
     unset($categorylist[$key]);
