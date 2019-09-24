@@ -54,7 +54,8 @@
 	$categorytoremove = $_POST['category'];
     
 	//Remove Tasks From The Category
-	for($i = count($tasklist); $i >= 0; $i--)
+	$tasklistlength = count($tasklist);
+	for($i = $tasklistlength; $i >= 0; $i--)
 	{
 		$currenttask = $tasklist[$i];
 		
@@ -64,7 +65,7 @@
 			array_splice($tasklist, $i, 1);
 		}
 	}
-	
+	echo serialize($tasklist);
     //Remove Category From Array
     if (($key = array_search($categorytoremove, $categorylist)) !== false) {
     unset($categorylist[$key]);
