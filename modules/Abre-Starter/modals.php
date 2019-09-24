@@ -114,6 +114,7 @@
 									
 								?>
 							</select>
+							<h4><?php echo $siteColor;?></h4>
 						</div>
 					</div>
 				
