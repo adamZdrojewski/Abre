@@ -79,7 +79,7 @@
 						
 						
 						<div class="input-field col s12">
-							<select name="category" id="category">
+							<select name="category" id="category" required>
 								<option value="" disabled selected>Select Category</option>
 								<?php
 								
