@@ -85,6 +85,6 @@
     mysqli_query($con, $s);
 
     //Redirect Back To The Main Page
-    //header('location: /#planner/categories');
+    header('location: /#planner/categories');
 
 ?>
