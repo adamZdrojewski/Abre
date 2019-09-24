@@ -70,7 +70,7 @@
 		<div class="fixed-action-btn">
 			<a href="#newTaskModal" class='modal-newTaskModal'><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
 			<ul>
-				<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+				<li><a class="btn-floating <?php echo $siteColor;?>" href="/#planner/categories"><i class="material-icons">list</i></a></li>
 			</ul>
 		</div>
 		
