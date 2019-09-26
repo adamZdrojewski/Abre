@@ -105,7 +105,7 @@
 					if(strcmp($currenttaskcategory, $currentcategory) == 0)
 					{
 					
-						echo "<tr class='{$currentpriority}'>";
+						echo "<tr>";
 						echo "<td style='font-size: 22px;'>{$currentname}</td>";
 						echo "<td><button class='btn {$currentpriority} col s1 right aligned'></button></td>";
 						echo "<td>";
