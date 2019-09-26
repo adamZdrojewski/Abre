@@ -105,8 +105,8 @@
 					if(strcmp($currenttaskcategory, $currentcategory) == 0)
 					{
 					
-						echo "<tr>";
-						echo "<td style='font-size: 22px;' class='{$currentpriority}'>{$currentname}</td>";
+						echo "<tr class='{$currentpriority}'>";
+						echo "<td style='font-size: 22px;'>{$currentname}</td>";
 						echo "<td><button class='btn {$currentpriority} col s1 right aligned'></button></td>";
 						echo "<td>";
 						echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
