@@ -106,7 +106,7 @@
 					
 						echo "<tr>";
 						echo "<td style='font-size: 22px;'>{$currentname}</td>";
-						echo "<td><button class='btn {$currentpriority} col s1'></button></td>"
+						echo "<td><button class='btn {$currentpriority} col s1'></button></td>";
 						echo "<td>";
 						echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
 						echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
