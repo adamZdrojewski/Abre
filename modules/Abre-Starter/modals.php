@@ -151,6 +151,8 @@ $(function(){
 			var info = $(this).data('info');
 			$(".modal-content #infoHolder").text(info);
 		});
+		var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
 	//you can use this code to send data to the server or another page if needed
 		// var formStarter = $('#form-starter');
 		//
@@ -177,9 +179,4 @@ $(function(){
       $("#formResults").text(results);
     });
 	});
-	
-	document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.datepicker');
-    var instances = M.Datepicker.init(elems, options);
-  });
 </script>
