@@ -152,9 +152,7 @@ $(function(){
 			$(".modal-content #infoHolder").text(info);
 		});
 	
-	 $(document).ready(function(){
-    $('select').formSelect();
-  });
+	 M.AutoInit();
 	
 	//you can use this code to send data to the server or another page if needed
 		// var formStarter = $('#form-starter');
