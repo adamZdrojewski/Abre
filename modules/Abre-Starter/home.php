@@ -126,6 +126,9 @@
         
         ?>
         
+		<br>
+		<input type="text" class="datepicker">
+		
         <br>
         
 </div>
