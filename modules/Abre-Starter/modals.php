@@ -124,6 +124,8 @@
 								<option value="green">Low</option>
 							</select>
 						</div>
+						
+						<input name="date" id="date" type="text" class="datepicker">
 					</div>
 				
 			
@@ -175,4 +177,9 @@ $(function(){
       $("#formResults").text(results);
     });
 	});
+	
+	document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
+  });
 </script>
