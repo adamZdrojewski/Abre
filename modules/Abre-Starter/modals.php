@@ -146,13 +146,13 @@
 <script>
 $(function(){
     $('select').material_select();
+	$('.datepicker').datepicker();
 		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
 		$(document).on("click", ".modal-newTaskModal", function () {
 			var info = $(this).data('info');
 			$(".modal-content #infoHolder").text(info);
 		});
 	
-	 M.AutoInit();
 	
 	//you can use this code to send data to the server or another page if needed
 		// var formStarter = $('#form-starter');
