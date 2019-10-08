@@ -125,7 +125,7 @@
 							</select>
 						</div>
 						
-						<input name="date" id="date" type="text" class="datepicker">
+						<input name="date" id="date" type="text" class="datepicker" placeholder="date DOES NOT WORK">
 					</div>
 				
 			

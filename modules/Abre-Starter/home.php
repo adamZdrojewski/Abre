@@ -127,7 +127,7 @@
         ?>
         
 		<br>
-		<input type="text" class="datepicker">
+		<input type="text" class="datepicker" placeholder="test date picker">
 		
         <br>
         
