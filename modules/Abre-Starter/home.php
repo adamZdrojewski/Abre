@@ -138,9 +138,7 @@
 	$(document).ready(function(){
     $(document).ready(function () {
   $(document).ready(function(){
-    $('.modal').modal();
-    $('.datepicker').datepicker({
-    })
+    $('.datepicker').datepicker();
   });
 });
 		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
