@@ -137,9 +137,10 @@
     $('select').material_select();
 	$(document).ready(function(){
     $(document).ready(function () {
-  $(".datepicker").pickadate({
-    closeOnSelect: true,
-    format: "dd/mm/yyyy"
+  $(document).ready(function(){
+    $('.modal').modal();
+    $('.datepicker').datepicker({
+    })
   });
 });
 		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
