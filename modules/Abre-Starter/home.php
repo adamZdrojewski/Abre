@@ -133,10 +133,9 @@
         
 </div>
 <script>
-	$(function(){
+$(function(){
     $('select').material_select();
-	$(document).ready(function(){
-    $(document).ready(function () {
+	$(document).ready(function () {
   $(document).ready(function(){
     $('.datepicker').datepicker();
   });
@@ -146,13 +145,8 @@
 			var info = $(this).data('info');
 			$(".modal-content #infoHolder").text(info);
 		});
-		$('.datepicker-modal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
-		$(document).on("click", ".modal-newTaskModal", function () {
-			var info = $(this).data('info');
-			$(".modal-content #infoHolder").text(info);
-		});
-		
-
+	
+	
 	//you can use this code to send data to the server or another page if needed
 		// var formStarter = $('#form-starter');
 		//
