@@ -136,7 +136,11 @@
 $(function(){
     $('select').material_select();
 	$('.datepicker').pickadate({
-		
+		closeOnSelect: true,
+    onClose: function() {
+        $('.datepicker').blur();
+        $('.picker').blur();
+    }
 	});
 	$(document).ready(function () {
 });
