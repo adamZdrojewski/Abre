@@ -135,22 +135,9 @@
 <script>
 $(function(){
     $('select').material_select();
-	$('.datepicker').pickadate({
-		closeOnSelect: true,
-    onClose: function() {
-        $('.datepicker').blur();
-        $('.picker').blur();
-    }
-	});
+	$('.datepicker').pickadate()
 	$(document).ready(function () {
 });
-
-afterShow: function() {
-  setTimeout(() => {
-    $(".collectTime .clockpicker").addClass('picker--opened')
-    $(".collectTime .clockpicker").show();
-  }, 50);
-}
 
 		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
 		$(document).on("click", ".modal-newTaskModal", function () {
