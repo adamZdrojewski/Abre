@@ -127,7 +127,7 @@
         ?>
         
 		<br>
-		<input type="text" class="datepicker" placeholder="test date picker">
+		<input type="text" class="datepickerr" placeholder="test date picker">
 		
         <br>
         
@@ -137,7 +137,7 @@ $(function(){
     $('select').material_select();
 	$(document).ready(function () {
 });
-$('.datepicker').pickadate()
+$('.datepickerr').pickadate()
 		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
 		$(document).on("click", ".modal-newTaskModal", function () {
 			var info = $(this).data('info');
