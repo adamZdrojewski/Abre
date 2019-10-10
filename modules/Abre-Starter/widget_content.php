@@ -88,14 +88,9 @@
 					$currentpriority = $strcurrenttask[2];
 					$currentdate = $strcurrenttask[3];
 					$currentcompleted = $strcurrenttask[4];
-					
-					if(strcmp($currenttaskcategory, $currentcategory) == 0)
-					{
-					
+
 						echo "<h3>{$currentname}</h3>";
 						echo "<br>";
-					
-					}
 				}
      
      }
