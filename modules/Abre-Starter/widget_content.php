@@ -31,12 +31,13 @@
     id int(11) unsigned NOT NULL AUTO_INCREMENT,
     email LONGTEXT NOT NULL,
     tasks LONGTEXT NOT NULL,
+	categories LONGTEXT NOT NULL,
     PRIMARY KEY  (`id`)
 )";
 
     mysqli_query($con, $s);
     
-    //Get Task List / Create One If Needed
+    //Get Task List(and categories list) / Create One If Needed
     $s = "select * from Abre_Planner where email='$email'";
     $result = mysqli_query($con, $s);
     $num = mysqli_num_rows($result);
@@ -45,16 +46,20 @@
     {
         $row = mysqli_fetch_array($result);
         $strtasklist = $row[2];
+		$strcategorylist = $row[3];
     }
     else
     {
         $tasklist = array();
         $strtasklist = serialize($tasklist);
-        $s = "INSERT INTO Abre_Planner (email, tasks) VALUES('".$email."', '".$strtasklist."')";
+		$categorylist = array('Tasks');
+        $strcategorylist = serialize($categorylist);
+        $s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$strcategorylist."')";
         mysqli_query($con, $s);
     }
             
     $tasklist = unserialize($strtasklist);
+	$categorylist = unserialize($strcategorylist);
     
     if(count($tasklist) == 0)
     {
@@ -75,19 +80,23 @@
     else
     {
     
-        //Display The Tasks
-        echo "<div class='widget_holder'>";
-                echo "<div class='widget_container widget_body' style='color:#666;'>";
-
         foreach($tasklist as $currenttask)
-                {
-                    echo "<div class='row'>";
-                    echo $currenttask;
-                    //echo "<p class='flow-text col offset-s1'>".$currenttask."</p>";
-                    echo "</div>";
-                }
-
-         echo "</div>";
+				{
+					$strcurrenttask = unserialize($currenttask);
+					$currentname = $strcurrenttask[0];
+					$currenttaskcategory = $strcurrenttask[1];
+					$currentpriority = $strcurrenttask[2];
+					$currentdate = $strcurrenttask[3];
+					$currentcompleted = $strcurrenttask[4];
+					
+					if(strcmp($currenttaskcategory, $currentcategory) == 0)
+					{
+					
+						echo "<h3>{$currentname}</h3>";
+						echo "<br>";
+					
+					}
+				}
      
      }
 
