@@ -89,8 +89,9 @@
 					$currentdate = $strcurrenttask[3];
 					$currentcompleted = $strcurrenttask[4];
 
-						echo "<h3>{$currentname}</h3>";
-						echo "<br>";
+						echo "<div class='row'>";
+						echo "<h6>{$currentname}</h6>";
+						echo "</div>";
 				}
      
      }
