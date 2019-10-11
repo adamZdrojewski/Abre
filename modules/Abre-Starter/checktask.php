@@ -61,7 +61,7 @@
 				$currenttask[4] = true;
 				
 				$currenttasklist = serialize($currenttask);
-				$tasklist[$currentindex] = $currenttasklist
+				$tasklist[$currentindex] = $currenttasklist;
 				$strtasklist = serialize($tasklist);
 
 				//Update Database With New Array
