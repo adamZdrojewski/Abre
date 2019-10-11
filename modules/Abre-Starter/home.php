@@ -121,11 +121,16 @@
 						{
 							echo "<tr class='green'>";
 							echo "<td style='font-size: 22px;'>{$currentname}</td>";
-							echo "<td><button class='btn {$currentpriority} col s1 right aligned'></button></td>";
 							echo "<td>";
 							echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
 							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
-							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>remove</i></button>";
+							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>trash</i></button>";
+							echo "</form>";
+							echo "</td>";
+							echo "<td>";
+							echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/unchecktask.php'>";
+							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
+							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>clear</i></button>";
 							echo "</form>";
 							echo "</td>";
 							echo "</tr>";
