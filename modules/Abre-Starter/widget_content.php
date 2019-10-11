@@ -79,20 +79,45 @@
     }
     else
     {
-    
-        foreach($tasklist as $currenttask)
-				{
-					$strcurrenttask = unserialize($currenttask);
-					$currentname = $strcurrenttask[0];
-					$currenttaskcategory = $strcurrenttask[1];
-					$currentpriority = $strcurrenttask[2];
-					$currentdate = $strcurrenttask[3];
-					$currentcompleted = $strcurrenttask[4];
+		
+		//Displays Task Table
+        echo "<div class='widget_holder'>";
+        echo "<div class='widget_container widget_body' style='color:#666;'>";
+        
+		echo "<table id='myTable' class='tablesorter'>";
+		echo "<thead>";
+		echo "<th style='font-size: 30px;'>Task</th>";
+		echo "<th style='font-size: 30px;' class='right align'>Completion Status</th>";
+		echo "</thead>";
+		echo "<tbody>";
+		
+		foreach($tasklist as $currenttask)
+		{
+			$strcurrenttask = unserialize($currenttask);
+			$currentname = $strcurrenttask[0];
+			$currenttaskcategory = $strcurrenttask[1];
+			$currentpriority = $strcurrenttask[2];
+			$currentdate = $strcurrenttask[3];
+			$currentcompleted = $strcurrenttask[4];
 
-						echo "<div class='row'>";
-						echo "<h6>{$currentname}</h6>";
-						echo "</div>";
+				echo "<tr>";
+				echo "<td style='font-size: 10px;'>{$currentname}</td>";
+				if($currentcomplete == true)
+				{
+					echo "<td><button class='btn green col s1 right aligned'></button></td>";
 				}
+				else
+				{
+					echo "<td><button class='btn red col s1 right aligned'></button></td>";
+				}
+				echo "</tr>";
+		}
+		
+		
+		echo "<tbody>";
+		echo "</table>";
+        echo "</div>";
+        echo "</div>";
      
      }
 
