@@ -65,7 +65,7 @@
 				//Update Database With New Array
 				$s = "UPDATE Abre_Planner SET tasks='".$strtasklist."' WHERE email='".$email."'";
 				mysqli_query($con, $s);
-				echo $strtasklist
+				echo $strtasklist;
 				//Redirect Back To The Main Page
 				//header('location: /#planner');
 				//exit();
