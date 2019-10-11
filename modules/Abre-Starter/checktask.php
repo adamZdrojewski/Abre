@@ -57,7 +57,7 @@
 			{
 				//Check Task
 				
-				$currenttask[4] = true;
+				$currenttask[4] = 1;
 				
 				$currenttasklist = serialize($currenttask);
 				$strtasklist = serialize($tasklist);
