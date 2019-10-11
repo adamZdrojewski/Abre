@@ -87,7 +87,7 @@
 		echo "<table id='myTable' class='tablesorter'>";
 		echo "<thead>";
 		echo "<th style='font-size: 30px;'>Task</th>";
-		echo "<th style='font-size: 30px;' class='right align'>Completion Status</th>";
+		echo "<th style='font-size: 30px;' class='right align'>Completed?</th>";
 		echo "</thead>";
 		echo "<tbody>";
 		
@@ -101,7 +101,7 @@
 			$currentcompleted = $strcurrenttask[4];
 
 				echo "<tr>";
-				echo "<td style='font-size: 10px;'>{$currentname}</td>";
+				echo "<td style='font-size: 25px;'>{$currentname}</td>";
 				if($currentcomplete == true)
 				{
 					echo "<td><button class='btn green col s1 right aligned'></button></td>";
