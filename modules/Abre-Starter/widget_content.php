@@ -102,7 +102,7 @@
 
 				echo "<tr>";
 				echo "<td style='font-size: 25px;'>{$currentname}</td>";
-				if($currentcomplete == 1)
+				if($currentcompleted == true)
 				{
 					echo "<td><button class='btn green col s1 right aligned'></button></td>";
 				}
