@@ -48,7 +48,6 @@
 	
     //Remove Task From Array
     $tasktocheck = $_POST['task'];
-	$currentindex = 0;
 	foreach($tasklist as $currenttasklist)
 	{
 
@@ -60,6 +59,7 @@
 				
 				$currenttask[4] = true;
 				
+				$currenttasklist = serialize($currenttask);
 				$strtasklist = serialize($tasklist);
 
 				//Update Database With New Array
