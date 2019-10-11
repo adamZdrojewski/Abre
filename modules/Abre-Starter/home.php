@@ -90,7 +90,7 @@
 				echo "<thead>";
 				echo "<th style='font-size: 30px;'>{$currentcategory}</th>";
 				echo "<th style='font-size: 30px;' class='right align'>Controls</th>";
-				echo "<th style='font-size: 30px;' class='right align'>Priority</th>";
+				echo "<th style='font-size: 30px;'>Priority</th>";
 				echo "</thead>";
 				echo "<tbody>";
 				
