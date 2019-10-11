@@ -48,6 +48,7 @@
 	
     //Remove Task From Array
     $tasktocheck = $_POST['task'];
+	$currentindex = 0;
 	foreach($tasklist as $currenttasklist)
 	{
 
@@ -57,9 +58,10 @@
 			{
 				//Check Task
 				
-				$currenttask[4] = 1;
+				$currenttask[4] = true;
 				
 				$currenttasklist = serialize($currenttask);
+				$tasklist[$currentindex] = $currenttasklist
 				$strtasklist = serialize($tasklist);
 
 				//Update Database With New Array
@@ -70,7 +72,7 @@
 				//header('location: /#planner');
 				//exit();
 			}
-
+		$currentindex = $currentindex + 1;
 	}
 
     
