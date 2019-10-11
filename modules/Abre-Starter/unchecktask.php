@@ -46,19 +46,19 @@
             
     $tasklist = unserialize($strtasklist);
 	
-    //Check Task In Array
-    $tasktocheck = $_POST['task'];
+    //Uncheck Task In Array
+    $tasktouncheck = $_POST['task'];
 	$currentindex = 0;
 	foreach($tasklist as $currenttasklist)
 	{
 
 			$currenttask = unserialize($currenttasklist);
 			
-			if(strcmp($tasktocheck, $currenttask[0]) == 0)
+			if(strcmp($tasktouncheck, $currenttask[0]) == 0)
 			{
 				//Check Task
 				
-				$currenttask[4] = true;
+				$currenttask[4] = false;
 				
 				$currenttasklist = serialize($currenttask);
 				$tasklist[$currentindex] = $currenttasklist;
