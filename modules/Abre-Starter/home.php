@@ -109,7 +109,7 @@
 						{
 							echo "<tr>";
 							echo "<td style='font-size: 22px;'>{$currentname}</td>";
-							echo "<td><button class='btn {$currentpriority} right aligned'></button></td>";
+							echo "<td><button class='btn {$currentpriority} right-align'></button></td>";
 							echo "<td>";
 							echo "<form class='' id='check-task' method='post' action='modules/Abre-Starter/checktask.php'>";
 							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
