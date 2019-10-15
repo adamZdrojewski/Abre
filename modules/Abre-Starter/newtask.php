@@ -51,7 +51,7 @@
 	$category = $_POST['category'];
 	$priority = $_POST['priority'];
 	$date = $_POST['date'];
-	$newtask = array("{$tasktoadd}", "{$category}", "{$priority}", "10/22/2019", false);
+	$newtask = array("{$tasktoadd}", "{$category}", "{$priority}", "{$date}", false);
     array_push($tasklist, serialize($newtask));
     $strtasklist = serialize($tasklist);
     
