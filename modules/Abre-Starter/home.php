@@ -89,7 +89,7 @@
 				echo "<table id='myTable' class='tablesorter'>";
 				echo "<thead>";
 				echo "<th style='font-size: 30px;'>{$currentcategory}</th>";
-				echo "<th style='font-size: 30px;' class='right-align'>Priority</th>";
+				echo "<th style='font-size: 30px;' class=''>Priority</th>";
 				echo "<th style='font-size: 30px;' class='right-align'>Controls</th>";
 				echo "</thead>";
 				echo "<tbody>";
