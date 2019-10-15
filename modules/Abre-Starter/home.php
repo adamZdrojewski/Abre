@@ -108,7 +108,7 @@
 					{
 						if($currentcompleted == false)
 						{
-							echo "<tr class='center-align'>";
+							echo "<tr>";
 							echo "<td style='font-size: 22px;'>{$currentname}</td>";
 							echo "<td><button class='btn {$currentpriority} col s1 offset-s4'></button></td>";
 							echo "<td style='font-size: 22px;'>{$currentdate}</td>";
