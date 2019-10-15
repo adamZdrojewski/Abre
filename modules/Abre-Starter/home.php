@@ -90,6 +90,7 @@
 				echo "<thead>";
 				echo "<th style='font-size: 30px;'>{$currentcategory}</th>";
 				echo "<th style='font-size: 30px;' class=''>Priority</th>";
+				echo "<th style='font-size: 30px;' class=''>Due Date</th>";
 				echo "<th style='font-size: 30px;' class='right-align'>Controls</th>";
 				echo "</thead>";
 				echo "<tbody>";
@@ -110,6 +111,7 @@
 							echo "<tr>";
 							echo "<td style='font-size: 22px;'>{$currentname}</td>";
 							echo "<td><button class='btn {$currentpriority} col s1 offset-s4'></button></td>";
+							echo "<td style='font-size: 22px;'>{$currentdate}</td>";
 							echo "<td>";
 							echo "<form class='' id='check-task' method='post' action='modules/Abre-Starter/checktask.php'>";
 							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
