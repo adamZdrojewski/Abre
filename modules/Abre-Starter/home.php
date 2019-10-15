@@ -107,7 +107,7 @@
 					{
 						if($currentcompleted == false)
 						{
-							echo "<tr>";
+							echo "<tr class='col s12'>";
 							echo "<td style='font-size: 22px;'>{$currentname}</td>";
 							echo "<td><button class='btn {$currentpriority} col s1 right-align'></button></td>";
 							echo "<td>";
