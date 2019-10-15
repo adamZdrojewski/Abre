@@ -113,7 +113,7 @@
 							echo "<td>";
 							echo "<form class='' id='check-task' method='post' action='modules/Abre-Starter/checktask.php'>";
 							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
-							echo "<button class='btn-floating waves-effect waves-light right-align' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>check</i></button>";
+							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>check</i></button>";
 							echo "</form>";
 							echo "</td>";
 							echo "</tr>";
