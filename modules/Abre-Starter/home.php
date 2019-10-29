@@ -158,9 +158,9 @@
 <script>
 $(function(){
     $('select').material_select();
-	$('.datepicker').pickadate() {
-		closeOnSelect: true
-	}
+	$('.datepicker').pickadate({
+        closeOnSelect: true, // should be default
+    });
 	$(document).ready(function () {
 });
 
