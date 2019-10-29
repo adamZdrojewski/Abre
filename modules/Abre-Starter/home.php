@@ -151,8 +151,6 @@
         
         ?>
         
-		<br>
-		<input type="text" class="datepicker" placeholder="test date picker">
 		
         <br>
         
@@ -160,7 +158,6 @@
 <script>
 $(function(){
     $('select').material_select();
-	$('.datepicker').pickadate()
 	$(document).ready(function () {
 });
 
