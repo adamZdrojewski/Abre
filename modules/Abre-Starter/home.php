@@ -158,6 +158,7 @@
 <script>
 $(function(){
     $('select').material_select();
+	$('.datepicker').pickadate()
 	$(document).ready(function () {
 });
 
