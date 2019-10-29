@@ -159,7 +159,7 @@
 $(function(){
     $('select').material_select();
 	$('.datepicker').pickadate({
-        closeOnSelect: true, // should be default
+        closeOnSelect: true,
     });
 	$(document).ready(function () {
 });
