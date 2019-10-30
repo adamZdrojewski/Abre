@@ -86,7 +86,7 @@
             
 			echo "<table id='myTable' class='tablesorter'>";
 			echo "<thead>";
-					echo "<th style='font-size: 30px;'>{$currentcategory}</th>";
+					echo "<th style='font-size: 30px;'>Name</th>";
 					echo "<th style='font-size: 30px;' class=''>Priority</th>";
 					echo "<th style='font-size: 30px;' class=''>Due Date</th>";
 					echo "<th style='font-size: 30px;' class='right-align'>Controls</th>";
@@ -95,6 +95,7 @@
 			
             foreach($categorylist as $currentcategory)
 			{
+				echo "<h3>{$currentcategory}</h3>";
 				echo "<table id='myTable' class='tablesorter'>";
 				echo "<tbody>";
 				
