@@ -84,15 +84,21 @@
 		
         <?php
             
+			$firstCategory = true;
+			
             foreach($categorylist as $currentcategory)
 			{
 				echo "<table id='myTable' class='tablesorter'>";
-				echo "<thead>";
-				echo "<th style='font-size: 30px;'>{$currentcategory}</th>";
-				echo "<th style='font-size: 30px;' class=''>Priority</th>";
-				echo "<th style='font-size: 30px;' class=''>Due Date</th>";
-				echo "<th style='font-size: 30px;' class='right-align'>Controls</th>";
-				echo "</thead>";
+				if($firstCategory == true)
+				{
+					echo "<thead>";
+					echo "<th style='font-size: 30px;'>{$currentcategory}</th>";
+					echo "<th style='font-size: 30px;' class=''>Priority</th>";
+					echo "<th style='font-size: 30px;' class=''>Due Date</th>";
+					echo "<th style='font-size: 30px;' class='right-align'>Controls</th>";
+					echo "</thead>";
+					$firstCategory = false;
+				}
 				echo "<tbody>";
 				
 				foreach($tasklist as $currenttask)
