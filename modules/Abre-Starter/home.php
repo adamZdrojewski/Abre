@@ -155,6 +155,11 @@
         <br>
         
 </div>
+<style>
+.modal {
+	height: 90%;
+}
+</style>
 <script>
 $(function(){
     $('select').material_select();
