@@ -44,8 +44,8 @@
    }
    
    .modal {
-	max-height: 90%;
-	width: 60%;
+	max-height: 10%;
+	width: 10%;
 }
 </style>
 <div id="startermodal" class="modal modal-fixed-footer modal-mobile-full">
