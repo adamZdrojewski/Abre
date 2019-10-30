@@ -42,8 +42,11 @@
      border-bottom: 1px solid <?php echo $siteColor;?>;
      box-shadow: 0 1px 0 0 <?php echo $siteColor;?>;
    }
+   
+   .modal {
+	height: 90%;
+}
 </style>
-
 <div id="startermodal" class="modal modal-fixed-footer modal-mobile-full">
   <div class="modal-content" style="padding: 0px !important;">
 		<div class="row" style='background-color: <?php echo $siteColor; ?>; padding: 24px;'>
