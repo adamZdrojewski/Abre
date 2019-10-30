@@ -44,7 +44,7 @@
    }
    
    .datepicker {
-	   height: 100px;
+	   max-height: 100px;
    }
 </style>
 <div id="startermodal" class="modal modal-fixed-footer modal-mobile-full">
