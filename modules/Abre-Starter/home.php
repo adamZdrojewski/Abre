@@ -114,7 +114,7 @@
 					{
 						if($currentcompleted == false)
 						{
-							echo "<div class='row'>";
+							/*echo "<div class='row'>";
 							echo "<tr>";
 							echo "<div class='col s3'><td style='font-size: 22px;'>{$currentname}</td></div>";
 							echo "<td><button class='btn {$currentpriority}'></button></td>";
@@ -125,6 +125,15 @@
 							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>check</i></button>";
 							echo "</form>";
 							echo "</td>";
+							echo "</tr>";
+							echo "</div>";*/
+							
+							echo "<div class='row'>";
+							echo "<tr>";
+							echo "<div class='col s3'><td><button class='btn blue'></button></td></div>";
+							echo "<td><button class='btn green'></button></td>";
+							echo "<td><button class='btn yellow'></button></td>";
+							echo "<td><button class='btn purple'></button></td>";
 							echo "</tr>";
 							echo "</div>";
 						}
