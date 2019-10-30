@@ -130,10 +130,10 @@
 							
 							echo "<div class='row'>";
 							echo "<tr>";
-							echo "<td style='40%'><button class='btn blue'></button></td></div>";
+							echo "<td><button class='btn blue'></button></td></div>";
 							echo "<td><button class='btn green'></button></td>";
 							echo "<td><button class='btn yellow'></button></td>";
-							echo "<td><button class='btn purple'></button></td>";
+							echo "<td class='right align'><button class='btn purple'></button></td>";
 							echo "</tr>";
 							echo "</div>";
 						}
