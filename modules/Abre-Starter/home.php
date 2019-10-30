@@ -86,11 +86,13 @@
             
 			echo "<table id='myTable' class='tablesorter'>";
 			echo "<thead>";
+					echo "<div class='row'>";
 					echo "<th class='col s3' style='font-size: 30px;'>Name</th>";
 					echo "<th style='font-size: 30px;' class=''>Priority</th>";
 					echo "<th style='font-size: 30px;' class=''>Due Date</th>";
 					echo "<th style='font-size: 30px;' class='right-align'>Controls</th>";
 					echo "</thead>";
+					echo "</div>";
 			echo "</table>";
 			
             foreach($categorylist as $currentcategory)
@@ -112,6 +114,7 @@
 					{
 						if($currentcompleted == false)
 						{
+							echo "<div class='row'>";
 							echo "<tr>";
 							echo "<td class='col s3' style='font-size: 22px;'>{$currentname}</td>";
 							echo "<td><button class='btn {$currentpriority} col s1 offset-s4'></button></td>";
@@ -123,6 +126,7 @@
 							echo "</form>";
 							echo "</td>";
 							echo "</tr>";
+							echo "</div>";
 						}
 						else
 						{
