@@ -116,7 +116,7 @@
 						{
 							echo "<div class='row'>";
 							echo "<tr>";
-							echo "<td style='font-size: 22px;'>{$currentname}</td>";
+							echo "<div class='col s3'><td style='font-size: 22px;'>{$currentname}</td></div>";
 							echo "<td><button class='btn {$currentpriority}'></button></td>";
 							echo "<td style='font-size: 22px;'>{$currentdate}</td>";
 							echo "<td>";
