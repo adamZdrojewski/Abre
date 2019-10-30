@@ -117,7 +117,7 @@
 							echo "<div class='row'>";
 							echo "<tr>";
 							echo "<td style='font-size: 22px;'>{$currentname}</td>";
-							echo "<td><button class='btn {$currentpriority} col s5'></button></td>";
+							echo "<td><button class='btn {$currentpriority}'></button></td>";
 							echo "<td style='font-size: 22px;'>{$currentdate}</td>";
 							echo "<td>";
 							echo "<form class='' id='check-task' method='post' action='modules/Abre-Starter/checktask.php'>";
