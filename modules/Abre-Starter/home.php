@@ -86,7 +86,7 @@
             
 			echo "<table id='myTable' class='tablesorter'>";
 			echo "<thead>";
-					echo "<th style='font-size: 30px;'>Name</th>";
+					echo "<th class='col s3' style='font-size: 30px;'>Name</th>";
 					echo "<th style='font-size: 30px;' class=''>Priority</th>";
 					echo "<th style='font-size: 30px;' class=''>Due Date</th>";
 					echo "<th style='font-size: 30px;' class='right-align'>Controls</th>";
@@ -113,7 +113,7 @@
 						if($currentcompleted == false)
 						{
 							echo "<tr>";
-							echo "<td style='font-size: 22px;'>{$currentname}</td>";
+							echo "<td class='col s3' style='font-size: 22px;'>{$currentname}</td>";
 							echo "<td><button class='btn {$currentpriority} col s1 offset-s4'></button></td>";
 							echo "<td style='font-size: 22px;'>{$currentdate}</td>";
 							echo "<td>";
