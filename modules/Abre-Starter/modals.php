@@ -43,16 +43,9 @@
      box-shadow: 0 1px 0 0 <?php echo $siteColor;?>;
    }
    
-   .modal {
-	left: 0;
- 
-  right: 0;
- 
- 
-  padding: 0;
- 
-  max-height: 100%;
-}
+   .datepicker {
+	   height: 100px;
+   }
 </style>
 <div id="startermodal" class="modal modal-fixed-footer modal-mobile-full">
   <div class="modal-content" style="padding: 0px !important;">
