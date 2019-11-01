@@ -114,28 +114,28 @@
 					{
 						if($currentcompleted == false)
 						{
-							/*echo "<div class='row'>";
+							echo "<div class='row'>";
 							echo "<tr>";
-							echo "<div class='col s3'><td style='font-size: 22px;'>{$currentname}</td></div>";
-							echo "<td><button class='btn {$currentpriority}'></button></td>";
-							echo "<td style='font-size: 22px;'>{$currentdate}</td>";
-							echo "<td>";
+							echo "<td style='font-size: 22px; width: 30%;'>{$currentname}</td>";
+							echo "<td style='width: 10%;'><button class='btn {$currentpriority}'></button></td>";
+							echo "<td style='font-size: 22px; width: 10%;'>{$currentdate}</td>";
+							echo "<td style='width: 10%;'>";
 							echo "<form class='' id='check-task' method='post' action='modules/Abre-Starter/checktask.php'>";
 							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
 							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>check</i></button>";
 							echo "</form>";
 							echo "</td>";
 							echo "</tr>";
-							echo "</div>";*/
+							echo "</div>";
 
-							echo "<div class='row'>";
+							/*echo "<div class='row'>";
 							echo "<tr>";
 							echo "<td style='width: 30%;'><button class='btn blue'></button></td></div>";
 							echo "<td style='width: 10%;'><button class='btn green'></button></td>";
 							echo "<td style='width: 10%;'><button class='btn yellow'></button></td>";
 							echo "<td style='width: 10%;' class='right align'><button class='btn purple'></button></td>";
 							echo "</tr>";
-							echo "</div>";
+							echo "</div>";*/
 						}
 						else
 						{
