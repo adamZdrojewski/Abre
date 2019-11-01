@@ -87,7 +87,7 @@
 			echo "<table id='myTable' class='tablesorter'>";
 			echo "<thead>";
 					echo "<div class='row'>";
-					echo "<th class='col s3' style='font-size: 30px; width=30%;'>Name</th>";
+					echo "<th style='font-size: 30px; width=30%;'>Name</th>";
 					echo "<th style='font-size: 30px; width=10%;' class=''>Priority</th>";
 					echo "<th style='font-size: 30px; width=10%;' class=''>Due Date</th>";
 					echo "<th style='font-size: 30px; width=10%;' class='right-align'>Controls</th>";
