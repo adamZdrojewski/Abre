@@ -105,7 +105,7 @@
 
             foreach($categorylist as $currentcategory)
 			{
-				echo "<h3 style='padding-bottom: 0;'>{$currentcategory}</h3>";
+				echo "<h3>{$currentcategory}</h3>";
 				echo "<table id='myTable' class='tablesorter'>";
 				echo "<tbody>";
 
