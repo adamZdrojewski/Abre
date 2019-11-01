@@ -105,6 +105,7 @@
 
             foreach($categorylist as $currentcategory)
 			{
+				echo "<blockquote>";
 				echo "<h3>{$currentcategory}</h3>";
 				echo "<table id='myTable' class='tablesorter'>";
 				echo "<tbody>";
@@ -135,15 +136,7 @@
 							echo "</td>";
 							echo "</tr>";
 							echo "</div>";
-
-							/*echo "<div class='row'>";
-							echo "<tr>";
-							echo "<td style='width: 30%;'><button class='btn blue'></button></td></div>";
-							echo "<td style='width: 10%;'><button class='btn green'></button></td>";
-							echo "<td style='width: 10%;'><button class='btn yellow'></button></td>";
-							echo "<td style='width: 10%;' class='right align'><button class='btn purple'></button></td>";
-							echo "</tr>";
-							echo "</div>";*/
+							
 						}
 						else
 						{
@@ -171,6 +164,7 @@
 
 				echo "</tbody>";
 				echo "</table>";
+				echo "</blockquote>";
 			}
 
 
