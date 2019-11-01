@@ -105,7 +105,6 @@
 
             foreach($categorylist as $currentcategory)
 			{
-				echo "<blockquote>";
 				echo "<h3>{$currentcategory}</h3>";
 				echo "<table id='myTable' class='tablesorter'>";
 				echo "<tbody>";
@@ -164,7 +163,6 @@
 
 				echo "</tbody>";
 				echo "</table>";
-				echo "</blockquote>";
 			}
 
 
