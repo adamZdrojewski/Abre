@@ -140,9 +140,9 @@
 						else
 						{
 							echo "<tr class='green'>";
-							echo "<td style='font-size: 22px; width: 20%; max-width:20%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
 							echo "<td>";
 							echo "</td>";
+							echo "<td style='font-size: 22px; width: 20%; max-width:20%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
 							echo "<td>";
 							echo "</td>";
 							echo "<td>";
