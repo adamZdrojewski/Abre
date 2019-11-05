@@ -107,7 +107,7 @@
 			{
 				//echo "<h3>{$currentcategory}</h3>";
 				echo "<table id='myTable' class='tablesorter'>";
-				echo "<caption class='left align' style='font-size: 26px;'>{$currentcategory}</caption>";
+				echo "<caption class='left align' style='font-size: 26px; font-weight: bold;'>{$currentcategory}</caption>";
 				echo "<tbody>";
 
 				foreach($tasklist as $currenttask)
