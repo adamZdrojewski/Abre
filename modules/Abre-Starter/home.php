@@ -124,8 +124,8 @@
 						{
 							echo "<div class='row'>";
 							echo "<tr>";
-							echo "<td style='font-size: 22px; width: 20%; max-width: 20%; word-wrap: break-word;'>{$currentname}</td>";
-							echo "<td style='width: 10%;'><button class='btn {$currentpriority}'></button></td>";
+							echo "<td style='font-size: 22px; width: 20%;'>{$currentname}</td>";
+							echo "<td style='width: 20%; max-width: 20%; word-wrap: break-word;'><button class='btn {$currentpriority}'></button></td>";
 							echo "<td style='font-size: 22px; width: 10%;'>{$currentdate}</td>";
 							echo "<td style='width: 10%;'>";
 							echo "<form class='' id='check-task' method='post' action='modules/Abre-Starter/checktask.php'>";
