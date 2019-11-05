@@ -105,8 +105,9 @@
 
             foreach($categorylist as $currentcategory)
 			{
-				echo "<h3>{$currentcategory}</h3>";
+				//echo "<h3>{$currentcategory}</h3>";
 				echo "<table id='myTable' class='tablesorter'>";
+				echo "<caption>{$currentcategory}</caption>";
 				echo "<tbody>";
 
 				foreach($tasklist as $currenttask)
