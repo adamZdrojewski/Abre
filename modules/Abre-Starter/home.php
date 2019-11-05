@@ -87,8 +87,8 @@
 			echo "<table id='myTable' class='tablesorter'>";
 			echo "<thead>";
 					echo "<div class='row'>";
-					echo "<th style='font-size: 30px; width=20%;'>Name</th>";
 					echo "<th style='font-size: 30px; width=10%;' class=''>Priority</th>";
+					echo "<th style='font-size: 30px; width=20%;'>Name</th>";
 					echo "<th style='font-size: 30px; width=10%;' class=''>Due Date</th>";
 					echo "<th style='font-size: 30px; width=10%;' class='right-align'>Controls</th>";
 					echo "</div>";
@@ -105,7 +105,6 @@
 
             foreach($categorylist as $currentcategory)
 			{
-				//echo "<h3>{$currentcategory}</h3>";
 				echo "<table id='myTable' class='tablesorter'>";
 				echo "<caption class='left align' style='font-size: 28px; font-weight: bold;'>{$currentcategory}</caption>";
 				echo "<tbody>";
@@ -125,8 +124,8 @@
 						{
 							echo "<div class='row'>";
 							echo "<tr>";
-							echo "<td style='font-size: 22px; width: 20%; max-width:20%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
 							echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'><button class='btn {$currentpriority}'></button></td>";
+							echo "<td style='font-size: 22px; width: 20%; max-width:20%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
 							echo "<td style='font-size: 22px; width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>{$currentdate}</td>";
 							echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>";
 							echo "<form class='' id='check-task' method='post' action='modules/Abre-Starter/checktask.php'>";
