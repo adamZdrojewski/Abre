@@ -128,6 +128,10 @@
 							echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'><button class='btn {$currentpriority}'></button></td>";
 							echo "<td style='font-size: 22px; width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>{$currentdate}</td>";
 							echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>";
+							echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/edittask.php'>";
+							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
+							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>edit</i></button>";
+							echo "</form>";
 							echo "<form class='' id='check-task' method='post' action='modules/Abre-Starter/checktask.php'>";
 							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
 							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>check</i></button>";
