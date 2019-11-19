@@ -41,5 +41,41 @@
     }
             
 	$tasklist = unserialize($strtasklist);
-    
+    $tasktofind = $_POST['task'];
+	
+	foreach($tasklist as $currenttaskarr)
+	{
+		$currenttask = unserialize($currenttaskarr);
+		if(strcmp($currenttask[0], $tasktofind) == 0)
+		{
+			$currentname = $currenttask[0];
+			$currenttaskcategory = $currenttask[1];
+			$currentpriority = $currenttask[2];
+			$currentdate = $currenttask[3];
+			$currentcompleted = $currenttask[4];
+		}
+	}
+	
 ?>
+
+<div class='page_container mdl-shadow--4dp'>
+	<div class='page'>
+
+		<!-- Add Task Button -->
+		<div class="fixed-action-btn">
+			<a href="#newTaskModal" class='modal-newTaskModal'><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
+			<ul>
+				<li><a class="btn-floating" href="/#planner/categories" style="background-color:<?php echo $siteColor;?>"><i class="material-icons">list</i></a></li>
+			</ul>
+		</div>
+
+		<div class='row'>
+			<div style='padding:56px; text-align:center; width:100%;'>
+                <?php echo"<span style='font-size: 32px; font-weight:700'>{$currentname}</span>";?>
+				<?php echo"<span style='font-size: 25px; font-weight:600'>{$currenttaskcategory}</span>";?>
+            </div>
+        </div>
+
+
+
+</div>
