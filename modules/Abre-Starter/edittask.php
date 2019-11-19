@@ -37,7 +37,7 @@
     }
     else
     {
-        header('location: /#planner');
+        header('location: /#planner?thishappened');
     }
             
 	$tasklist = unserialize($strtasklist);
