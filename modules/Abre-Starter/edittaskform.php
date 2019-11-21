@@ -22,41 +22,21 @@
 	$email = $_SESSION['useremail'];
     session_start();
 
-    mysqli_query($con, $s);
     
-    
-    //Get Task List(and categories list) / Create One If Needed
-	$con = mysqli_connect($db_host, $db_user, $db_password);
-    mysqli_select_db($con, $db_name);
-    $s = "select * from Abre_Planner where email='$email'";
-    $result = mysqli_query($con, $s);
-    $num = mysqli_num_rows($result);
-            
-    if($num == 1)
-    {
-        $row = mysqli_fetch_array($result);
-        $strtasklist = $row[2];
-    }
-    else
-    {
-        header("location: /#planner");
-    }
-            
-	$tasklist = unserialize($strtasklist);
-    $tasktofind = $_POST['task'];
-	
-	foreach($tasklist as $currenttaskarr)
-	{
-		$currenttask = unserialize($currenttaskarr);
-		if(strcmp($currenttask[0], $tasktofind) == 0)
-		{
-			$_SESSION['updatename'] = $currenttask[0];
-			$_SESSION['updatetaskcategory'] = $currenttask[1];
-			$_SESSION['updatepriority'] = $currenttask[2];
-			$_SESSION['updatedate'] = $currenttask[3];
-			header('location:edittaskform.php');
-			die();
-		}
-	}
+	$updatename = $_SESSION['updatename'] = $currenttask[0];
+	$updatetaskcategory = $_SESSION['updatetaskcategory'] = $currenttask[1];
+	$updatepriority = $_SESSION['updatepriority'] = $currenttask[2];
+	$updatedate = $_SESSION['updatedate'] = $currenttask[3];
 	
 ?>
+
+<div class='page_container mdl-shadow--4dp'>
+	<div class='page'>
+		<div class='row'>
+			<div style='padding:56px; text-align:center; width:100%;'>
+                <?php echo"<span style='font-size: 32px; font-weight:700'>{$updatename}</span>";?>
+            </div>
+        </div>
+        
+        
+</div>
