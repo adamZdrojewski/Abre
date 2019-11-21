@@ -23,10 +23,10 @@
     session_start();
 
     
-	$updatename = $_SESSION['updatename'] = $currenttask[0];
-	$updatetaskcategory = $_SESSION['updatetaskcategory'] = $currenttask[1];
-	$updatepriority = $_SESSION['updatepriority'] = $currenttask[2];
-	$updatedate = $_SESSION['updatedate'] = $currenttask[3];
+	$updatename = $_SESSION['updatename'];
+	$updatetaskcategory = $_SESSION['updatetaskcategory'];
+	$updatepriority = $_SESSION['updatepriority'];
+	$updatedate = $_SESSION['updatedate'];
 	
 ?>
 
