@@ -54,7 +54,7 @@
 			$_SESSION['updatetaskcategory'] = $currenttask[1];
 			$_SESSION['updatepriority'] = $currenttask[2];
 			$_SESSION['updatedate'] = $currenttask[3];
-			header('location:edittaskform.php');
+			header('location:/#planner/edittask');
 			die();
 		}
 	}
