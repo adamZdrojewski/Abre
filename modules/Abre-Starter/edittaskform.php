@@ -35,9 +35,42 @@
 		<div class='row'>
 			<div style='padding:56px; text-align:center; width:100%;'>
                 <?php echo"<span style='font-size: 32px; font-weight:700'>{$updatename}</span><br>";?>
-				<?php echo"<span style='font-size: 22px; font-weight:300'>{$updatetaskcategory}</span>";?>
+				<?php echo"<span style='font-size: 22px; font-weight:400'>{$updatetaskcategory}</span>";?>
             </div>
         </div>
+		
+		<div class="input-field col s12">
+			<select name="category" id="category" required>
+				<option value="" disabled selected>Select Category</option>
+				<?php
+				
+					//Get Task List(and categories list) / Create One If Needed
+					$con = mysqli_connect($db_host, $db_user, $db_password);
+					mysqli_select_db($con, $db_name);
+					$s = "select * from Abre_Planner where email='$email'";
+					$result = mysqli_query($con, $s);
+					$num = mysqli_num_rows($result);
+							
+					if($num == 1)
+					{
+						$row = mysqli_fetch_array($result);
+						$strcategorylist = $row[3];
+					}
+					else
+					{
+						header("location: /#planner");
+					}
+							
+					$categorylist = unserialize($strcategorylist);
+					
+					foreach($categorylist as $category)
+					{
+						echo "<option value='{$category}'>{$category}</option>";
+					}
+					
+				?>
+			</select>
+		</div>
         
         
 </div>
