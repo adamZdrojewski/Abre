@@ -40,55 +40,84 @@
         </div>
 		
 		<div class="row">
-		<div class="col m6 s12">
-			<h4>Name</h4>
-			<div class='input-field col s12'>
-				<?php echo"<input id='tasktoadd' name='tasktoadd' type='text' maxlength='200' value='{$updatename}' autocomplete='off' required>";?>
+			<div class="col m6 s12">
+				<h4>Name</h4>
+				<div class='input-field col s12'>
+					<?php echo"<input id='tasktoadd' name='tasktoadd' type='text' maxlength='200' value='{$updatename}' autocomplete='off' required>";?>
+				</div>
 			</div>
-		</div>
-		
-		
-		<div class="col m6 s12">
-			<h4>Category</h4>
-			<div class="input-field col s12">
-				<select name="category" id="category" required>
-					<?php
-					
-						//Get Task List(and categories list) / Create One If Needed
-						$con = mysqli_connect($db_host, $db_user, $db_password);
-						mysqli_select_db($con, $db_name);
-						$s = "select * from Abre_Planner where email='$email'";
-						$result = mysqli_query($con, $s);
-						$num = mysqli_num_rows($result);
-								
-						if($num == 1)
-						{
-							$row = mysqli_fetch_array($result);
-							$strcategorylist = $row[3];
-						}
-						else
-						{
-							header("location: /#planner");
-						}
-								
-						$categorylist = unserialize($strcategorylist);
+			
+			
+			<div class="col m6 s12">
+				<h4>Category</h4>
+				<div class="input-field col s12">
+					<select name="category" id="category" required>
+						<?php
 						
-						foreach($categorylist as $category)
-						{
-							if(strcmp($category, $updatetaskcategory) == 0)
+							//Get Task List(and categories list) / Create One If Needed
+							$con = mysqli_connect($db_host, $db_user, $db_password);
+							mysqli_select_db($con, $db_name);
+							$s = "select * from Abre_Planner where email='$email'";
+							$result = mysqli_query($con, $s);
+							$num = mysqli_num_rows($result);
+									
+							if($num == 1)
 							{
-								echo "<option value='{$category}' selected>{$category}</option>";
+								$row = mysqli_fetch_array($result);
+								$strcategorylist = $row[3];
 							}
 							else
 							{
-								echo "<option value='{$category}' selected>{$category}</option>";
+								header("location: /#planner");
 							}
-						}
-						
-					?>
-				</select>
-			</div>	
+									
+							$categorylist = unserialize($strcategorylist);
+							
+							foreach($categorylist as $category)
+							{
+								if(strcmp($category, $updatetaskcategory) == 0)
+								{
+									echo "<option value='{$category}' selected>{$category}</option>";
+								}
+								else
+								{
+									echo "<option value='{$category}' selected>{$category}</option>";
+								}
+							}
+							
+						?>
+					</select>
+				</div>	
+			</div>
 		</div>
+		
+		<div class="row">
+			<div class="col m6 s12">
+				<div class="input-field col s12">
+					<select name="priority" id="priority" required>
+					<?php
+						if(strcmp("red", $updatepriority) == 0)
+						{
+							echo"<option value='red' selected>High</option>";
+							echo"<option value='yellow'>Medium</option>";
+							echo"<option value='green'>Low</option>";
+						}
+						else if(strcmp("yellow", $updatepriority) == 0)
+						{
+							echo"<option value='red'>High</option>";
+							echo"<option value='yellow' selected>Medium</option>";
+							echo"<option value='green'>Low</option>";
+						}
+						else
+						{
+							echo"<option value='red'>High</option>";
+							echo"<option value='yellow'>Medium</option>";
+							echo"<option value='green' selected>Low</option>";
+						}
+					?>
+					</select>
+				</div>
+			</div>
 		</div>
         
         
