@@ -40,9 +40,9 @@
         </div>
 		
 		<div class="row">
-		<div class="col s6">
+		<div class="col m6 s12">
 			<h4>Name</h4>
-			<div class='input-field col m6 s12'>
+			<div class='input-field col s12'>
 				<?php echo"<input id='tasktoadd' name='tasktoadd' type='text' maxlength='200' value='{$updatename}' autocomplete='off' required>";?>
 			</div>
 		</div>
