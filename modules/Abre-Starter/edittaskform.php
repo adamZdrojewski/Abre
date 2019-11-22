@@ -34,7 +34,8 @@
 	<div class='page'>
 		<div class='row'>
 			<div style='padding:56px; text-align:center; width:100%;'>
-                <?php echo"<span style='font-size: 32px; font-weight:700'>{$updatename}</span>";?>
+                <?php echo"<span style='font-size: 32px; font-weight:700'>{$updatename}</span><br>";?>
+				<?php echo"<span style='font-size: 22px; font-weight:600'>{$updatetaskcategory}</span>";?>
             </div>
         </div>
         
