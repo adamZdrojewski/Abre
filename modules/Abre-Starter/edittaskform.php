@@ -39,47 +39,51 @@
             </div>
         </div>
 		
-		<h3>Category</h3>
+		<div class='input-field'>
+			<?php echo"<input id='tasktoadd' name='tasktoadd' type='text' maxlength='200' value='{$updatename}' autocomplete='off' required>";?>
+		</div>
+		
+		<h4>Category</h4>
 		<div class="row">
-		<div class="input-field col s6">
-			<select name="category" id="category" required>
-				<option value="" disabled selected>Select Category</option>
-				<?php
-				
-					//Get Task List(and categories list) / Create One If Needed
-					$con = mysqli_connect($db_host, $db_user, $db_password);
-					mysqli_select_db($con, $db_name);
-					$s = "select * from Abre_Planner where email='$email'";
-					$result = mysqli_query($con, $s);
-					$num = mysqli_num_rows($result);
-							
-					if($num == 1)
-					{
-						$row = mysqli_fetch_array($result);
-						$strcategorylist = $row[3];
-					}
-					else
-					{
-						header("location: /#planner");
-					}
-							
-					$categorylist = unserialize($strcategorylist);
+			<div class="input-field col s6">
+				<select name="category" id="category" required>
+					<option value="" disabled selected>Select Category</option>
+					<?php
 					
-					foreach($categorylist as $category)
-					{
-						if(strcmp($category, $updatetaskcategory) == 0)
+						//Get Task List(and categories list) / Create One If Needed
+						$con = mysqli_connect($db_host, $db_user, $db_password);
+						mysqli_select_db($con, $db_name);
+						$s = "select * from Abre_Planner where email='$email'";
+						$result = mysqli_query($con, $s);
+						$num = mysqli_num_rows($result);
+								
+						if($num == 1)
 						{
-							echo "<option value='{$category}' selected>{$category}</option>";
+							$row = mysqli_fetch_array($result);
+							$strcategorylist = $row[3];
 						}
 						else
 						{
-							echo "<option value='{$category}' selected>{$category}</option>";
+							header("location: /#planner");
 						}
-					}
-					
-				?>
-			</select>
-		</div>	
+								
+						$categorylist = unserialize($strcategorylist);
+						
+						foreach($categorylist as $category)
+						{
+							if(strcmp($category, $updatetaskcategory) == 0)
+							{
+								echo "<option value='{$category}' selected>{$category}</option>";
+							}
+							else
+							{
+								echo "<option value='{$category}' selected>{$category}</option>";
+							}
+						}
+						
+					?>
+				</select>
+			</div>	
 		</div>
         
         
