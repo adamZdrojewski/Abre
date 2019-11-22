@@ -39,7 +39,8 @@
             </div>
         </div>
 		
-		<div class="input-field col s12">
+		<h3>Category</h3>
+		<div class="input-field col s6">
 			<select name="category" id="category" required>
 				<option value="" disabled selected>Select Category</option>
 				<?php
