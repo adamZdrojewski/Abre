@@ -40,17 +40,17 @@
         </div>
 		
 		<div class="row">
-		<div class="col s10">
+		<div class="col s6">
 			<h4>Name</h4>
-			<div class='input-field col s6'>
+			<div class='input-field col s12'>
 				<?php echo"<input id='tasktoadd' name='tasktoadd' type='text' maxlength='200' value='{$updatename}' autocomplete='off' required>";?>
 			</div>
 		</div>
 		
 		
-		<div class="col s10">
+		<div class="col s6">
 			<h4>Category</h4>
-			<div class="input-field col s6">
+			<div class="input-field col s12">
 				<select name="category" id="category" required>
 					<option value="" disabled selected>Select Category</option>
 					<?php
