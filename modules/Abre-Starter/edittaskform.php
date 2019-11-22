@@ -52,7 +52,6 @@
 			<h4>Category</h4>
 			<div class="input-field col s12">
 				<select name="category" id="category" required>
-					<option value="" disabled selected>Select Category</option>
 					<?php
 					
 						//Get Task List(and categories list) / Create One If Needed
