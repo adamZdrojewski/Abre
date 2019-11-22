@@ -39,8 +39,11 @@
             </div>
         </div>
 		
-		<div class='input-field'>
-			<?php echo"<input id='tasktoadd' name='tasktoadd' type='text' maxlength='200' value='{$updatename}' autocomplete='off' required>";?>
+		<h4>Name</h4>
+		<div class="row">
+			<div class='input-field'>
+				<?php echo"<input id='tasktoadd' name='tasktoadd' type='text' maxlength='200' value='{$updatename}' autocomplete='off' required>";?>
+			</div>
 		</div>
 		
 		<h4>Category</h4>
