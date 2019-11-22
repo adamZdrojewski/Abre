@@ -65,7 +65,14 @@
 					
 					foreach($categorylist as $category)
 					{
-						echo "<option value='{$category}'>{$category}</option>";
+						if(strcmp($category, $updatetaskcategory) == 0)
+						{
+							echo "<option value='{$category}' selected>{$category}</option>";
+						}
+						else
+						{
+							echo "<option value='{$category}' selected>{$category}</option>";
+						}
 					}
 					
 				?>
