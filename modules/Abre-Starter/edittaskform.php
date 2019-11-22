@@ -41,7 +41,7 @@
 		
 		<h4>Name</h4>
 		<div class="row">
-			<div class='input-field'>
+			<div class='input-field col s6'>
 				<?php echo"<input id='tasktoadd' name='tasktoadd' type='text' maxlength='200' value='{$updatename}' autocomplete='off' required>";?>
 			</div>
 		</div>
