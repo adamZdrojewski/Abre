@@ -39,7 +39,7 @@
             </div>
         </div>
 		
-		
+		<div class="row">
 		<div class="col s6">
 			<h4>Name</h4>
 			<div class='input-field col s6'>
@@ -89,6 +89,7 @@
 					?>
 				</select>
 			</div>	
+		</div>
 		</div>
         
         
