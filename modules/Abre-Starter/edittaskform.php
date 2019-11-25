@@ -123,7 +123,7 @@
 			<div class="col m6 s12">
 				<h4>Date</h4>
 				<div class="input-field col s12">
-					<input name='date' id='date' type='text' class='datepicker' placeholder='Due Date'>
+					<?php echo"<input name='date' id='date' type='text' class='datepicker' placeholder='Due Date' value='{$updatedate}'>";?>
 				</div>
 			</div>
 		</div>
@@ -163,4 +163,13 @@ $(function(){
 		//     //do something after the ajax call has sent data successfully
 		//   })
 		// });
+    var formStarter = $("#form-starter");
+    $(formStarter).submit(function(event){
+      event.preventDefault();
+      var results = $(formStarter).serialize();
+      results = results.replace(/&/g, ", ");
+      results = results.replace(/=/g, " = ");
+      $("#formResults").text(results);
+    });
+	});
 </script>
