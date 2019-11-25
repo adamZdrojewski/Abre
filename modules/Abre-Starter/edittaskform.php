@@ -123,7 +123,7 @@
 			<div class="col m6 s12">
 				<h4>Date</h4>
 				<div class="input-field col s12">
-					<? echo"<input name='date' id='date' type='text' class='datepicker' placeholder='Due Date'>";?>
+					<input name='date' id='date' type='text' class='datepicker' placeholder='Due Date'>
 				</div>
 			</div>
 		</div>
