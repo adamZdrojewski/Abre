@@ -93,6 +93,7 @@
 		
 		<div class="row">
 			<div class="col m6 s12">
+				<h4>Priority</h4>
 				<div class="input-field col s12">
 					<select name="priority" id="priority" required>
 					<?php
@@ -116,6 +117,13 @@
 						}
 					?>
 					</select>
+				</div>
+			</div>
+			
+			<div class="col m6 s12">
+				<h4>Date</h4>
+				<div class="input-field col s12">
+					<?echo"<input name='date' id='date' type='text' class='datepicker' placeholder='Due Date' value='{$updatedate}'>";?>
 				</div>
 			</div>
 		</div>
