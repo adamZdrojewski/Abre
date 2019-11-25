@@ -130,3 +130,16 @@
         
         
 </div>
+
+<script>
+$(function(){
+    $('select').material_select();
+	$(document).ready(function () {
+});
+		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
+		$(document).on("click", ".modal-newTaskModal", function () {
+			var info = $(this).data('info');
+			$(".modal-content #infoHolder").text(info);
+		});
+	});
+</script>
