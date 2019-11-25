@@ -133,40 +133,7 @@
 
 <script>
 $(function(){
-    $('select').material_select();
-	$(document).ready(function () {
-});
-		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
-		$(document).on("click", ".modal-newTaskModal", function () {
-			var info = $(this).data('info');
-			$(".modal-content #infoHolder").text(info);
-		});
-	
-	
-	//you can use this code to send data to the server or another page if needed
-		// var formStarter = $('#form-starter');
-		//
-		// $(formStarter).submit(function(event) {
-		//   event.preventDefault();
-		//   var formData = $(formStarter).serialize();
-		//   $.ajax({
-		//     type: 'POST',
-		//     url: $(formStarter).attr('action'),
-		//     data: formData
-		//   })
-		//
-		//   //Show the notification
-		//   .done(function(responseprocess) {
-		//     //do something after the ajax call has sent data successfully
-		//   })
-		// });
-    var formStarter = $("#form-starter");
-    $(formStarter).submit(function(event){
-      event.preventDefault();
-      var results = $(formStarter).serialize();
-      results = results.replace(/&/g, ", ");
-      results = results.replace(/=/g, " = ");
-      $("#formResults").text(results);
+    $('.datepicker').pickadate({
+        closeOnSelect: true,
     });
-	});
 </script>
