@@ -56,7 +56,7 @@
     {
         if(strcmp($currenttask[0], $oldname) == 0)
         {
-            echo "itworked ".$currentindex;
+            echo $currenttask[0];
             $tasklist[$currentindex] = $updatedtask;
             break;
         }
