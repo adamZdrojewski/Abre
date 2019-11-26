@@ -54,6 +54,7 @@
     $currentindex = 0;
     foreach($tasklist as $currenttask)
     {
+        echo serialize($currenttask);
         if(strcmp($currenttask[0], $oldname) == 0)
         {
             $tasklist[$currentindex] = $updatedtask;
@@ -68,7 +69,7 @@
     $s = "UPDATE Abre_Planner SET tasks='".$strtasklist."' WHERE email='".$email."'";
     mysqli_query($con, $s);
 
-    echo $strtasklist;
+    //echo $strtasklist;
 
     //Redirect Back To The Main Page
     //header('location: /#planner');
