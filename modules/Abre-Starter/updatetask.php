@@ -56,6 +56,7 @@
     {
         if(strcmp(unserialize($currenttask[0]), $oldname) == 0)
         {
+            echo "ran";
             $tasklist[$currentindex] = serialize($updatedtask);
             break;
         }
