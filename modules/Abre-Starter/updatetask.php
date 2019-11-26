@@ -54,9 +54,9 @@
     $currentindex = 0;
     foreach($tasklist as $currenttask)
     {
+        echo $currenttask[0];
         if(strcmp($currenttask[0], $oldname) == 0)
         {
-            echo $currenttask;
             $tasklist[$currentindex] = $updatedtask;
             break;
         }
