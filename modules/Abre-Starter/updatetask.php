@@ -54,10 +54,9 @@
     $currentindex = 0;
     foreach($tasklist as $currenttask)
     {
-        echo $currenttask;
-        if(strcmp($currenttask[0], $oldname) == 0)
+        if(strcmp(unserialize($currenttask[0]), $oldname) == 0)
         {
-            $tasklist[$currentindex] = $updatedtask;
+            $tasklist[$currentindex] = serialize($updatedtask);
             break;
         }
         $currentindex = $currentindex + 1;
