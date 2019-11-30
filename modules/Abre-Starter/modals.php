@@ -118,18 +118,8 @@
 								?>
 							</select>
 						</div>
-						
-						<!--div class="input-field col s12">
-							<select name="priority" id="priority" required>
-								<option value="" disabled selected>Priority</option>
-								<option value="red">High</option>
-								<option value="yellow">Medium</option>
-								<option value="green">Low</option>
-							</select>
-						</div>
-						
-						<input name="date" id="date" type="text" class="datepicker" placeholder="Due Date"-->
-						
+
+						<input name="priority" id="priority" type="hidden" value="white">
 					</div>
 				
 			
