@@ -56,7 +56,6 @@
     {
 		if(strcmp(unserialize($currenttask)[0], $oldname) == 0)
         {
-            echo "ran";
             $tasklist[$currentindex] = serialize($updatedtask);
             break;
         }
@@ -69,9 +68,8 @@
     $s = "UPDATE Abre_Planner SET tasks='".$strtasklist."' WHERE email='".$email."'";
     mysqli_query($con, $s);
 
-    //echo $strtasklist;
 
     //Redirect Back To The Main Page
-    //header('location: /#planner');
+    header('location: /#planner');
 
 ?>
