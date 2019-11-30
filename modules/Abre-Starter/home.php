@@ -131,7 +131,7 @@
 							}
 							else
 							{
-								echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'></td>";
+								echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'><button class='btn white'></button></td>";
 							}
 							echo "<td style='font-size: 22px; width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>{$currentdate}</td>";
 							echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>";
