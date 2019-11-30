@@ -55,7 +55,7 @@
     foreach($tasklist as $currenttask)
     {
         echo "----------";
-		echo $currenttask[0];
+		echo $currenttask[1];
 		echo $oldname;
 		echo "-------";
 		if(strcmp(unserialize($currenttask[0]), $oldname) == 0)
