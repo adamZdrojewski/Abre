@@ -56,7 +56,7 @@
     {
 		echo "----------";
 		echo unserialize($currenttask)[0];
-		//echo $oldname;
+		echo $oldname;
 		echo "-------";
 		if(strcmp(unserialize($currenttask[0]), $oldname) == 0)
         {
