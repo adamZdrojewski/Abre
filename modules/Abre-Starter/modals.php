@@ -119,7 +119,7 @@
 							</select>
 						</div>
 						
-						<div class="input-field col s12">
+						<!--div class="input-field col s12">
 							<select name="priority" id="priority" required>
 								<option value="" disabled selected>Priority</option>
 								<option value="red">High</option>
@@ -128,7 +128,8 @@
 							</select>
 						</div>
 						
-						<input name="date" id="date" type="text" class="datepicker" placeholder="Due Date">
+						<input name="date" id="date" type="text" class="datepicker" placeholder="Due Date"-->
+						
 					</div>
 				
 			
