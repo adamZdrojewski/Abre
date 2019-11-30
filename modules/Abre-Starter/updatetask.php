@@ -52,13 +52,12 @@
 	$updatedtask = array("{$newname}", "{$category}", "{$priority}", "{$date}", false);
 
     $currentindex = 0;
-	echo $strtasklist;
     foreach($tasklist as $currenttask)
     {
-        /*echo "----------";
-		echo $currenttask[1];
-		echo $oldname;
-		echo "-------";*/
+        echo "----------";
+		echo $currenttask;
+		//echo $oldname;
+		echo "-------";
 		if(strcmp(unserialize($currenttask[0]), $oldname) == 0)
         {
             echo "ran";
