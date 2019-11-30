@@ -52,7 +52,7 @@
 	$updatedtask = array("{$newname}", "{$category}", "{$priority}", "{$date}", false);
 
     $currentindex = 0;
-	echo unserialize($tasklist);
+	echo $tasklist;
     foreach($tasklist as $currenttask)
     {
         /*echo "----------";
