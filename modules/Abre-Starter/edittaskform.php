@@ -101,21 +101,31 @@
 						<?php
 							if(strcmp("red", $updatepriority) == 0)
 							{
+								echo"<option value='white'>No Priority</option>";
 								echo"<option value='red' selected>High</option>";
 								echo"<option value='yellow'>Medium</option>";
 								echo"<option value='green'>Low</option>";
 							}
 							else if(strcmp("yellow", $updatepriority) == 0)
 							{
+								echo"<option value='white'>No Priority</option>";
 								echo"<option value='red'>High</option>";
 								echo"<option value='yellow' selected>Medium</option>";
 								echo"<option value='green'>Low</option>";
 							}
-							else
+							else if(strcmp("green", $updatepriority) == 0)
 							{
+								echo"<option value='white'>No Priority</option>";
 								echo"<option value='red'>High</option>";
 								echo"<option value='yellow'>Medium</option>";
 								echo"<option value='green' selected>Low</option>";
+							}
+							else
+							{
+								echo"<option value='white' selected>No Priority</option>";
+								echo"<option value='red'>High</option>";
+								echo"<option value='yellow'>Medium</option>";
+								echo"<option value='green'>Low</option>";
 							}
 						?>
 						</select>
