@@ -106,7 +106,7 @@
             foreach($categorylist as $currentcategory)
 			{
 				echo "<table id='myTable' class='tablesorter'>";
-				echo "<h4 class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:40%; -ms-word-break: break-all; word-break: break-all;'>{$currentcategory}</h4>";
+				echo "<h4 class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:40%; -ms-word-break: break-all; word-break: break-all; margin:0;'>{$currentcategory}</h4>";
 				//echo "<caption class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:40%; -ms-word-break: break-all; word-break: break-all;'>{$currentcategory}</caption>";
 				echo "<tbody>";
 
