@@ -107,7 +107,7 @@
 			{
 				//echo "<h4 class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:40%; -ms-word-break: break-all; word-break: break-all; margin:0;'>{$currentcategory}</h4>";
 				echo "<table id='myTable' class='tablesorter' style='margin-top:0;'>";
-				echo "<caption class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:40%; -ms-word-break: break-all; word-break: break-all;'>{$currentcategory}</caption>";
+				echo "<caption class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:100%; -ms-word-break: break-all; word-break: break-all;'>{$currentcategory}</caption>";
 				echo "<tbody>";
 
 				foreach($tasklist as $currenttask)
