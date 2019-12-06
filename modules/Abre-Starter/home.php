@@ -112,7 +112,7 @@
 				}
 				else
 				{
-					//echo "<caption class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:100%; -ms-word-break: break-all; word-break: break-all;'>{$currentcategory}</caption>";
+					echo "<caption class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:100%; -ms-word-break: break-all; word-break: break-all;'>{$currentcategory}</caption>";
 				}
 				echo "<tbody>";
 
