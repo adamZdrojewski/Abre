@@ -106,15 +106,7 @@
             foreach($categorylist as $currentcategory)
 			{
 				echo "<table id='myTable' class='tablesorter' style='margin-top:0;'>";
-				if(count($tasklist) < 1)
-				{
-					echo "<caption class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:40%; -ms-word-break: break-all; word-break: break-all;'>{$currentcategory}</caption>";
-				}
-				else
-				{
-					$justathing = count($tasklist);
-					echo "<caption class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:100%; -ms-word-break: break-all; word-break: break-all;'>{$justathing}</caption>";
-				}
+				echo "<caption class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:40%; -ms-word-break: break-all; word-break: break-all; background-color:green;'>{$currentcategory}</caption>";
 				echo "<tbody>";
 
 				foreach($tasklist as $currenttask)
