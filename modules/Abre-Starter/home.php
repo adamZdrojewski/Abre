@@ -67,7 +67,7 @@
 	<div class='page'>
 
 		<!-- Add Task Button -->
-		<div class="fixed-action-btn">
+		<div class="fixed-action-btn click-to-open">
 			<a href="#newTaskModal" class='modal-newTaskModal'><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
 			<ul>
 				<li><a class="btn-floating" href="/#planner/categories" style="background-color:<?php echo $siteColor;?>"><i class="material-icons">list</i></a></li>
@@ -107,7 +107,6 @@
 			{
 				echo "<h3 class='left align' style='margin-bottom:0; font-size: 28px; font-weight: bold; padding-bottom: 0px; max-width:40%; -ms-word-break: break-all; word-break: break-all;'>{$currentcategory}</h3>";
 				echo "<table id='myTable' class='tablesorter' style='margin-top:0; margin-bottom:30px;'>";
-				//echo "<caption class='left align' style='font-size: 28px; font-weight: bold; padding-bottom: 5px; max-width:40%; -ms-word-break: break-all; word-break: break-all; background-color:green;'>{$currentcategory}</caption>";
 				echo "<tbody>";
 
 				foreach($tasklist as $currenttask)
