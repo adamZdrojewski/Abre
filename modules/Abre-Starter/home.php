@@ -191,6 +191,14 @@ $(function(){
 			var info = $(this).data('info');
 			$(".modal-content #infoHolder").text(info);
 		});
+		
+		document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left',
+      hoverEnabled: false
+    });
+  });
 
 
 	//you can use this code to send data to the server or another page if needed
