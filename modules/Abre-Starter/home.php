@@ -67,7 +67,7 @@
 	<div class='page'>
 
 		<!-- Add Task Button -->
-		<div class="fixed-action-btn click-to-open">
+		<div class="fixed-action-btn click-to-toggle">
 			<a href="#newTaskModal" class='modal-newTaskModal'><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
 			<ul>
 				<li><a class="btn-floating" href="/#planner/categories" style="background-color:<?php echo $siteColor;?>"><i class="material-icons">list</i></a></li>
@@ -192,13 +192,7 @@ $(function(){
 			$(".modal-content #infoHolder").text(info);
 		});
 		
-		document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'left',
-      hoverEnabled: false
-    });
-  });
+
 
 
 	//you can use this code to send data to the server or another page if needed
