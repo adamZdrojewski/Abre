@@ -180,6 +180,10 @@
 <script>
 $(function(){
     $('select').material_select();
+	$('.fixed-action-btn').floatingActionButton({
+    hoverEnabled: false;
+	direction: 'left';
+  });
 	$('.datepicker').pickadate({
         closeOnSelect: true,
     });
