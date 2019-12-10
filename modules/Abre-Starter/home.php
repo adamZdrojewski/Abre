@@ -67,9 +67,10 @@
 	<div class='page'>
 
 		<!-- Add Task Button -->
-		<div class="fixed-action-btn">
-			<a href="#newTaskModal" class='modal-newTaskModal'><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a>
+		<div class="fixed-action-btn click-to-toggle">
+			<button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">menu</i></button></a>
 			<ul>
+				<li><a href="#newTaskModal" class='modal-newTaskModal'><button class="btn-floating" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">add</i></button></a></li>
 				<li><a class="btn-floating" href="/#planner/categories" style="background-color:<?php echo $siteColor;?>"><i class="material-icons">list</i></a></li>
 			</ul>
 		</div>
@@ -191,7 +192,7 @@ $(function(){
 			var info = $(this).data('info');
 			$(".modal-content #infoHolder").text(info);
 		});
-		
+
 
 
 
