@@ -21,11 +21,11 @@
     $siteColor = getSiteColor();
 	$email = $_SESSION['useremail'];
     session_start();
-    
+
     //Create Table If Needed
     $con = mysqli_connect($db_host, $db_user, $db_password);
     mysqli_select_db($con, $db_name);
-    
+
     $s ="CREATE TABLE IF NOT EXISTS Abre_Planner (
     id int(11) unsigned NOT NULL AUTO_INCREMENT,
     email LONGTEXT NOT NULL,
@@ -35,13 +35,13 @@
 )";
 
     mysqli_query($con, $s);
-    
-    
+
+
     //Get Task List(and categories list) / Create One If Needed
     $s = "select * from Abre_Planner where email='$email'";
     $result = mysqli_query($con, $s);
     $num = mysqli_num_rows($result);
-            
+
     if($num == 1)
     {
         $row = mysqli_fetch_array($result);
@@ -56,9 +56,9 @@
         $s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$strcategorylist."')";
         mysqli_query($con, $s);
     }
-            
+
 	$categorylist = unserialize($strcategorylist);
-    
+
 ?>
 
 <div class='page_container mdl-shadow--4dp'>
@@ -74,12 +74,12 @@
                     <input id="categorytoadd" name="categorytoadd" type="text" maxlength="200" placeholder="Add Category" autocomplete="off" required>
                 </div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
-            </form>	
+            </form>
 	       </div>
-        
+
         <?php
-            
-            
+
+
             foreach($categorylist as $currentcategory)
             {
                 echo "<div class='row'>";
@@ -88,13 +88,13 @@
                 echo "<input type='hidden' id='category' name='category' value='".$currentcategory."'>";
                 echo "<button class='btn waves-effect waves-light col s0.75' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
-                echo "<p class='flow-text col offset-s1'>".$currentcategory."</p>";
+                echo "<p class='flow-text col offset-s1' style='-ms-word-break: break-all; word-break: break-all;'>".$currentcategory."</p>";
                 echo "</div>";
                 echo "</div>";
             }
-        
+
         ?>
-        
+
         <br>
-        
+
 </div>
