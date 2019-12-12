@@ -1,57 +1,3 @@
-<script>
-$(function(){
-	window.onload = function() {
-	    if (window.jQuery) {
-	        // jQuery is loaded
-	        alert("Yeah!");
-	    } else {
-	        // jQuery is not loaded
-	        alert("Doesn't Work");
-	    }
-	}
-    $('select').material_select();
-	$('.datepicker').pickadate({
-        closeOnSelect: true,
-    });
-	$(document).ready(function () {
-});
-
-		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
-		$(document).on("click", ".modal-newTaskModal", function () {
-			var info = $(this).data('info');
-			$(".modal-content #infoHolder").text(info);
-		});
-
-
-
-
-	//you can use this code to send data to the server or another page if needed
-		// var formStarter = $('#form-starter');
-		//
-		// $(formStarter).submit(function(event) {
-		//   event.preventDefault();
-		//   var formData = $(formStarter).serialize();
-		//   $.ajax({
-		//     type: 'POST',
-		//     url: $(formStarter).attr('action'),
-		//     data: formData
-		//   })
-		//
-		//   //Show the notification
-		//   .done(function(responseprocess) {
-		//     //do something after the ajax call has sent data successfully
-		//   })
-		// });
-    var formStarter = $("#form-starter");
-    $(formStarter).submit(function(event){
-      event.preventDefault();
-      var results = $(formStarter).serialize();
-      results = results.replace(/&/g, ", ");
-      results = results.replace(/=/g, " = ");
-      $("#formResults").text(results);
-    });
-	});
-</script>
 <?php
 	/*
 	* Copyright (C) 2016-2017 Abre.io LLC
@@ -231,3 +177,103 @@ $(function(){
         <br>
 
 </div>
+
+<!--script>
+$(function(){
+    $('select').material_select();
+	$('.datepicker').pickadate({
+        closeOnSelect: true,
+    });
+	$(document).ready(function () {
+});
+
+		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
+		$(document).on("click", ".modal-newTaskModal", function () {
+			var info = $(this).data('info');
+			$(".modal-content #infoHolder").text(info);
+		});
+
+
+
+
+	//you can use this code to send data to the server or another page if needed
+		// var formStarter = $('#form-starter');
+		//
+		// $(formStarter).submit(function(event) {
+		//   event.preventDefault();
+		//   var formData = $(formStarter).serialize();
+		//   $.ajax({
+		//     type: 'POST',
+		//     url: $(formStarter).attr('action'),
+		//     data: formData
+		//   })
+		//
+		//   //Show the notification
+		//   .done(function(responseprocess) {
+		//     //do something after the ajax call has sent data successfully
+		//   })
+		// });
+    var formStarter = $("#form-starter");
+    $(formStarter).submit(function(event){
+      event.preventDefault();
+      var results = $(formStarter).serialize();
+      results = results.replace(/&/g, ", ");
+      results = results.replace(/=/g, " = ");
+      $("#formResults").text(results);
+    });
+	});
+</script-->
+<script>
+$(document).ready(function(){
+	window.onload = function() {
+	    if (window.jQuery) {
+	        // jQuery is loaded
+	        alert("Yeah!");
+	    } else {
+	        // jQuery is not loaded
+	        alert("Doesn't Work");
+	    }
+	}
+    $('select').material_select();
+	$('.datepicker').pickadate({
+        closeOnSelect: true,
+    });
+	$(document).ready(function () {
+});
+
+		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
+		$(document).on("click", ".modal-newTaskModal", function () {
+			var info = $(this).data('info');
+			$(".modal-content #infoHolder").text(info);
+		});
+
+
+
+
+	//you can use this code to send data to the server or another page if needed
+		// var formStarter = $('#form-starter');
+		//
+		// $(formStarter).submit(function(event) {
+		//   event.preventDefault();
+		//   var formData = $(formStarter).serialize();
+		//   $.ajax({
+		//     type: 'POST',
+		//     url: $(formStarter).attr('action'),
+		//     data: formData
+		//   })
+		//
+		//   //Show the notification
+		//   .done(function(responseprocess) {
+		//     //do something after the ajax call has sent data successfully
+		//   })
+		// });
+    var formStarter = $("#form-starter");
+    $(formStarter).submit(function(event){
+      event.preventDefault();
+      var results = $(formStarter).serialize();
+      results = results.replace(/&/g, ", ");
+      results = results.replace(/=/g, " = ");
+      $("#formResults").text(results);
+    });
+	});
+</script>
