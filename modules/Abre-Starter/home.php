@@ -224,7 +224,7 @@ $(function(){
 	});
 </script-->
 <script>
-$(document).ready(function(){
+$( document ).ready(function(){
 	window.onload = function() {
 	    if (window.jQuery) {
 	        // jQuery is loaded
