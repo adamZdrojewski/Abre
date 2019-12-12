@@ -62,7 +62,7 @@
 	$categorylist = unserialize($strcategorylist);
 
 ?>
-
+<body>
 <div class='page_container mdl-shadow--4dp'>
 	<div class='page'>
 
@@ -80,7 +80,7 @@
                 <span style='font-size: 32px; font-weight:700'>Planner</span>
             </div>
         </div>
-
+</body>
 
 
         <?php
@@ -224,7 +224,7 @@ $(function(){
 	});
 </script-->
 <script>
-$( document ).ready(function(){
+$(document).ready(function(){
 	window.onload = function() {
 	    if (window.jQuery) {
 	        // jQuery is loaded
