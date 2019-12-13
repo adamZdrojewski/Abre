@@ -172,7 +172,7 @@
 
         ?>
 
-
+<input name='date' id='date' type='text' class='datepicker' placeholder='Due Date'>
         <br>
 
 </div>
