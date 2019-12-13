@@ -67,11 +67,10 @@
 	<div class='page'>
 
 		<!-- Add Task Button -->
-		<div class="fixed-action-btn click-to-toggle">
-			<a><button class="btn-floating btn-large" style='background-color:<?php echo $siteColor; ?>;'><i class="large material-icons">menu</i></button></a>
+		<div class="fixed-action-btn">
+			<a><button href="#newTaskModal" class='btn-floating modal-newTaskModal' style="background-color:<?php echo $siteColor;?>"><i class="material-icons">add</i></button></a>
 			<ul>
 				<li><a class="btn-floating" href="/#planner/categories" style="background-color:<?php echo $siteColor;?>"><i class="material-icons">list</i></a></li>
-				<li><a href="#newTaskModal" class='btn-floating modal-newTaskModal' style="background-color:<?php echo $siteColor;?>"><i class="material-icons">add</i></a></li>
 			</ul>
 		</div>
 
