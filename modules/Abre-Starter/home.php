@@ -1,3 +1,8 @@
+<script>
+$(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+</script>
 <?php
 	/*
 	* Copyright (C) 2016-2017 Abre.io LLC
@@ -172,7 +177,7 @@
 
         ?>
 
-<input name='date' id='date' type='text' class='datepicker' placeholder='Due Date'>
+
         <br>
 
 </div>
