@@ -71,7 +71,7 @@
 		<a class="waves-effect waves-light btn" style="background-color:<?php echo $siteColor;?>; margin-bottom: 20px;" href="/#planner"><i class="material-icons left">list</i>Tasks</a>
         <div class='row'>
             <form class='' id='add-category' method='post' action='modules/Abre-Starter/newcategory.php'>
-                <div class='input-field col s10'>
+                <div class='input-field col s11'>
                     <input id="categorytoadd" name="categorytoadd" type="text" maxlength="200" placeholder="Add Category" autocomplete="off" required>
                 </div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
