@@ -1,8 +1,3 @@
-<script>
-$(document).ready(function(){
-    $('.fixed-action-btn').floatingActionButton();
-  });
-</script>
 <?php
 	/*
 	* Copyright (C) 2016-2017 Abre.io LLC
@@ -74,9 +69,6 @@ $(document).ready(function(){
 		<!-- Add Task Button -->
 		<div class="fixed-action-btn">
 			<a><button href="#newTaskModal" class='btn-floating btn-large modal-newTaskModal' style="background-color:<?php echo $siteColor;?>"><i class="material-icons">add</i></button></a>
-			<ul>
-				<li><a class="btn-floating" href="/#planner/categories" style="background-color:<?php echo $siteColor;?>"><i class="material-icons">list</i></a></li>
-			</ul>
 		</div>
 
 		<div class='row'>
@@ -86,6 +78,7 @@ $(document).ready(function(){
         </div>
 </body>
 
+        <a class="waves-effect waves-light btn" style="background-color:<?php echo $siteColor;?>"><i class="material-icons left">list</i>Categories</a>
 
         <?php
 
