@@ -25,15 +25,15 @@
 	//Database Connect
     $con = mysqli_connect($db_host, $db_user, $db_password);
     mysqli_select_db($con, $db_name);
-	
+
 	$siteColor = getSiteColor();
 	$email = $_SESSION['useremail'];
 
 	if($pagerestrictions == ""){
 
 	}
-	
-	
+
+
 ?>
 
 <style>
@@ -42,7 +42,7 @@
      border-bottom: 1px solid <?php echo $siteColor;?>;
      box-shadow: 0 1px 0 0 <?php echo $siteColor;?>;
    }
-   
+
    .datepicker {
 	   max-height: 100px;
    }
@@ -74,25 +74,25 @@
 				<div class='col s11'><span class="truncate" style="color: #fff; font-weight: 500; font-size: 24px; line-height: 26px;">Add Task</span></div>
 				<div class='col s1 right-align'><a class="modal-close"><i class='material-icons' style='color: #fff;'>clear</i></a></div>
 			</div>
-			
+
 					<div class='container'>
 						<div class='input-field'>
 							<input id="tasktoadd" name="tasktoadd" type="text" maxlength="200" placeholder="Task Name" autocomplete="off" required>
 						</div>
-						
-						
+
+
 						<div class="input-field col s12">
 							<select name="category" id="category" required>
 								<option value="" disabled selected>Select Category</option>
 								<?php
-								
+
 									//Get Task List(and categories list) / Create One If Needed
 									$con = mysqli_connect($db_host, $db_user, $db_password);
 									mysqli_select_db($con, $db_name);
 									$s = "select * from Abre_Planner where email='$email'";
 									$result = mysqli_query($con, $s);
 									$num = mysqli_num_rows($result);
-											
+
 									if($num == 1)
 									{
 										$row = mysqli_fetch_array($result);
@@ -107,22 +107,29 @@
 										$s = "INSERT INTO Abre_Planner (email, tasks, categories) VALUES('".$email."', '".$strtasklist."', '".$strcategorylist."')";
 										mysqli_query($con, $s);
 									}
-											
+
 									$categorylist = unserialize($strcategorylist);
-									
+
 									foreach($categorylist as $category)
 									{
 										echo "<option value='{$category}'>{$category}</option>";
 									}
-									
+
 								?>
 							</select>
 						</div>
 
-						<input name="priority" id="priority" type="hidden" value="white">
+						<div class="input-field col s12">
+							<select name="priority" id="priority">
+								<option value="white" disabled selected>Select Priority</option>
+								<option value="red">High</option>
+								<option value="yellow">Medium</option>
+								<option value="green">Low</option>
+							</select>
+						</div>
 					</div>
-				
-			
+
+
 			<div style='padding: 0px 24px 0px 24px;'>
 			<div class="row center-align">
 			  <p id="infoHolder" style=""></p>
@@ -147,8 +154,8 @@ $(function(){
 			var info = $(this).data('info');
 			$(".modal-content #infoHolder").text(info);
 		});
-	
-	
+
+
 	//you can use this code to send data to the server or another page if needed
 		// var formStarter = $('#form-starter');
 		//
