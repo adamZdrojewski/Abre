@@ -83,7 +83,7 @@
 									}
 									else
 									{
-										echo "<option value='{$category}' selected>{$category}</option>";
+										echo "<option value='{$category}'>{$category}</option>";
 									}
 								}
 
