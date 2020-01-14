@@ -127,6 +127,10 @@
 								<option value="green">Low</option>
 							</select>
 						</div>
+
+						<div class="input-field col s12">
+							<input name='date' id='date' type='text' class='datepicker' placeholder='Due Date'>
+						</div>
 					</div>
 
 
@@ -147,6 +151,9 @@
 <script>
 $(function(){
     $('select').material_select();
+		$('.datepicker').pickadate({
+	        closeOnSelect: true,
+	    });
 	$(document).ready(function () {
 });
 		$('.modal-newTaskModal').leanModal({ in_duration: 0, out_duration: 0, ready: function() { $('.modal-content').scrollTop(0); } });
