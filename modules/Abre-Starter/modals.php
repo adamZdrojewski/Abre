@@ -121,7 +121,7 @@
 
 						<div class="input-field col s12">
 							<select name="priority" id="priority">
-								<option value="white" disabled selected>Select Priority</option>
+								<option value="white" selected>Select Priority</option>
 								<option value="red">High</option>
 								<option value="yellow">Medium</option>
 								<option value="green">Low</option>
