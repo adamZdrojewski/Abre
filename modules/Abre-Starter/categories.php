@@ -114,7 +114,7 @@
                 echo "<input type='hidden' id='category' name='category' value='".$currentcategory."'>";
                 echo "<button class='btn waves-effect waves-light col s0.75' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
-                echo "<p class='flow-text col s10 offset-s1' style='-ms-word-break: break-all; word-break: break-all; width:80%; max-width:85%;'>".$currentcategory."</p>";
+                echo "<p class='flow-text col s10 offset-s1' style='-ms-word-break: break-all; word-break: break-all; width:75%; max-width:75%;'>".$currentcategory."</p>";
                 echo "</div>";
                 echo "</div>";
             }
