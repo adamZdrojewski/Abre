@@ -78,7 +78,8 @@
         </div>
 </body>
 
-        <a class="waves-effect waves-light btn" style="background-color:<?php echo $siteColor;?>" href="/#planner/categories"><i class="material-icons left">list</i>Categories</a>
+        <a class="waves-effect waves-light btn hide-on-small-only" style="background-color:<?php echo $siteColor;?>" href="/#planner/categories"><i class="material-icons left">list</i>Categories</a>
+		<a class="waves-effect waves-light btn hide-on-large-only hide-on-med-only center align" style="background-color:<?php echo $siteColor;?>" href="/#planner/categories"><i class="material-icons left">list</i>Categories</a>
 
         <?php
 			
