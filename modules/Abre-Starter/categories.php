@@ -109,10 +109,10 @@
             foreach($categorylist as $currentcategory)
             {
                 echo "<div class='row yellow'>";
-                echo "<div class='col s12'>";
+                echo "<div class='col s11'>";
                 echo "<form class='' id='remove-category' method='post' action='modules/Abre-Starter/removecategory.php'>";
                 echo "<input type='hidden' id='category' name='category' value='".$currentcategory."'>";
-                echo "<button class='btn waves-effect waves-light col s5' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
+                echo "<button class='btn waves-effect waves-light col s0.75' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
                 echo "<p class='flow-text col s10 offset-s1' style='-ms-word-break: break-all; word-break: break-all;'>".$currentcategory."</p>";
                 echo "</div>";
