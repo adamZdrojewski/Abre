@@ -176,7 +176,7 @@
 			echo "<table id='myTable' class='tablesorter green'>";
 			echo "<thead>";
 					echo "<div class='row'>";
-					echo "<th style='font-size: 30px; width:20%;'>Name</th>";
+					echo "<th style='font-size: 30px; width:30%;'>Name</th>";
 					echo "<th style='font-size: 30px; width:20%;'>Due Date</th>";
 					echo "<th style='font-size: 30px; width:10%;' class='right-aligned'>Controls</th>";
 					echo "</div>";
