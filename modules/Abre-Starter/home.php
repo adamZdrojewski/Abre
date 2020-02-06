@@ -83,7 +83,7 @@
         <?php
 			
 			//Large View
-			echo "<div class='show-on-large'>";
+			echo "<div class='show-on-large hide-on-med-only hide-on-small-only'>";
 			echo "<table id='myTable' class='tablesorter'>";
 			echo "<thead>";
 					echo "<div class='row'>";
@@ -172,7 +172,7 @@
 			
 			
 			//Medium View
-			echo "<div class='show-on-medium'>";
+			echo "<div class='show-on-medium hide-on-large-only hide-on-small-only'>";
 			echo "<table id='myTable' class='tablesorter green'>";
 			echo "<thead>";
 					echo "<div class='row'>";
