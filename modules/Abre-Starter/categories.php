@@ -80,7 +80,7 @@
 	       </div>
 		  <div class='row hide-on-large-only'>
             <form class='' id='add-category' method='post' action='modules/Abre-Starter/newcategory.php'>
-                <div class='input-field col s10'>
+                <div class='input-field col s9'>
                     <input id="categorytoadd" name="categorytoadd" type="text" maxlength="200" placeholder="Add Category" autocomplete="off" required>
                 </div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
