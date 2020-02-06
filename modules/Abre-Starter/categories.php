@@ -108,7 +108,7 @@
 			echo "<div class='hide-on-large-only hide-on-med-only'>";
             foreach($categorylist as $currentcategory)
             {
-                echo "<div class='row'>";
+                echo "<div class='row yellow'>";
                 echo "<div class='col s12'>";
                 echo "<form class='' id='remove-category' method='post' action='modules/Abre-Starter/removecategory.php'>";
                 echo "<input type='hidden' id='category' name='category' value='".$currentcategory."'>";
