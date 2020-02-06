@@ -178,7 +178,7 @@
 					echo "<div class='row'>";
 					echo "<th style='font-size: 30px; width:20%;'>Name</th>";
 					echo "<th style='font-size: 30px; width:20%;'>Due Date</th>";
-					echo "<th style='font-size: 30px; width:10%;' class='right-aligned'>Controls</th>";
+					echo "<th style='font-size: 30px; width:10%; text-align:right;' class='right-aligned'>Controls</th>";
 					echo "</div>";
 			echo "</thead>";
 			echo "<tbody>";
