@@ -82,7 +82,7 @@
 
         <?php
 			
-			echo "<div class=''show-on-large'>";
+			echo "<div class='show-on-large'>";
 			echo "<table id='myTable' class='tablesorter'>";
 			echo "<thead>";
 					echo "<div class='row'>";
