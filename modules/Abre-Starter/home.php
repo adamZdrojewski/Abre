@@ -235,8 +235,6 @@
 							echo "<td>";
 							echo "</td>";
 							echo "<td>";
-							echo "</td>";
-							echo "<td>";
 							echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
 							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
 							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>delete</i></button>";
@@ -314,11 +312,7 @@
 						else
 						{
 							echo "<tr class='green'>";
-							echo "<td style='font-size: 22px; width: 20%; max-width:20%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
-							echo "<td>";
-							echo "</td>";
-							echo "<td>";
-							echo "</td>";
+							echo "<td style='font-size: 22px; width: 40%; max-width:40%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
 							echo "<td>";
 							echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
 							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
