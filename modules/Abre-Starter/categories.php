@@ -70,9 +70,17 @@
         </div>
 		<div class="hide-on-small-only"><a class="waves-effect waves-light btn" style="background-color:<?php echo $siteColor;?>; margin-bottom: 20px;" href="/#planner"><i class="material-icons left">dashboard</i>Tasks</a></div>
 		<div class="hide-on-large-only hide-on-med-only center aligned"><a class="waves-effect waves-light btn" style="background-color:<?php echo $siteColor;?>; margin-bottom: 20px;" href="/#planner"><i class="material-icons left">dashboard</i>Tasks</a></div>
-        <div class='row'>
+        <div class='row hide-on-small-only hide-on-med-only'>
             <form class='' id='add-category' method='post' action='modules/Abre-Starter/newcategory.php'>
                 <div class='input-field col s11'>
+                    <input id="categorytoadd" name="categorytoadd" type="text" maxlength="200" placeholder="Add Category" autocomplete="off" required>
+                </div>
+                <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
+            </form>
+	       </div>
+		  <div class='row hide-on-large-only'>
+            <form class='' id='add-category' method='post' action='modules/Abre-Starter/newcategory.php'>
+                <div class='input-field col s10'>
                     <input id="categorytoadd" name="categorytoadd" type="text" maxlength="200" placeholder="Add Category" autocomplete="off" required>
                 </div>
                 <button class="btn-floating btn-large waves-effect waves-light" style='background-color:<?php echo $siteColor; ?>;'><i class="material-icons">add</i></button>
