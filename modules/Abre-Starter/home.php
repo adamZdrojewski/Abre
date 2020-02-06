@@ -79,7 +79,7 @@
 </body>
 
         <a class="waves-effect waves-light btn hide-on-small-only" style="background-color:<?php echo $siteColor;?>" href="/#planner/categories"><i class="material-icons left">list</i>Categories</a>
-		<a class="waves-effect waves-light btn hide-on-large-only hide-on-med-only" style="background-color:<?php echo $siteColor;?>; margin-left:auto; margin-right:auto;" href="/#planner/categories"><i class="material-icons left">list</i>Categories</a>
+		<a class="waves-effect waves-light btn hide-on-large-only hide-on-med-only" style="background-color:<?php echo $siteColor;?>; text-align:center;" href="/#planner/categories"><i class="material-icons left">list</i>Categories</a>
 
         <?php
 			
