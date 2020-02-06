@@ -68,7 +68,8 @@
                 <span style='font-size: 32px; font-weight:700'>Categories</span>
             </div>
         </div>
-		<a class="waves-effect waves-light btn" style="background-color:<?php echo $siteColor;?>; margin-bottom: 20px;" href="/#planner"><i class="material-icons left">dashboard</i>Tasks</a>
+		<div class="hide-on-small-only"><a class="waves-effect waves-light btn" style="background-color:<?php echo $siteColor;?>; margin-bottom: 20px;" href="/#planner"><i class="material-icons left">dashboard</i>Tasks</a></div>
+		<div class="hide-on-large-only hide-on-med-only center aligned"><a class="waves-effect waves-light btn" style="background-color:<?php echo $siteColor;?>; margin-bottom: 20px;" href="/#planner"><i class="material-icons left">dashboard</i>Tasks</a></div>
         <div class='row'>
             <form class='' id='add-category' method='post' action='modules/Abre-Starter/newcategory.php'>
                 <div class='input-field col s11'>
