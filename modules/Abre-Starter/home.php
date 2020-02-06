@@ -176,7 +176,7 @@
 			echo "<table id='myTable' class='tablesorter green'>";
 			echo "<thead>";
 					echo "<div class='row'>";
-					echo "<th style='font-size: 30px; width:30%;'>Name</th>";
+					echo "<th style='font-size: 30px; width:20%;'>Name</th>";
 					echo "<th style='font-size: 30px; width:20%;'>Due Date</th>";
 					echo "<th style='font-size: 30px; width:10%;' class='right-aligned'>Controls</th>";
 					echo "</div>";
@@ -184,8 +184,7 @@
 			echo "<tbody>";
 					echo "<tr>";
 					echo "<td style='width: 20%;'></td>";
-					echo "<td style='width: 10%;'></td>";
-					echo "<td style='width: 10%;'></td>";
+					echo "<td style='width: 20%;'></td>";
 					echo "<td style='width: 10%;'></td>";
 					echo "</tr>";
 			echo "</tbody>";
