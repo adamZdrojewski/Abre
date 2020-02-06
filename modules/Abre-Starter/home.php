@@ -259,7 +259,7 @@
 			
 			//Small View
 			echo "<div class='show-on-small hide-on-large-only hide-on-med-only'>";
-			echo "<table id='myTable' class='tablesorter green'>";
+			echo "<table id='myTable' class='tablesorter yellow'>";
 			echo "<thead>";
 					echo "<div class='row'>";
 					echo "<th style='font-size: 30px; width:40%;'>Name</th>";
