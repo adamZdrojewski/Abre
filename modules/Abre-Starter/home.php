@@ -81,7 +81,8 @@
         <a class="waves-effect waves-light btn" style="background-color:<?php echo $siteColor;?>" href="/#planner/categories"><i class="material-icons left">list</i>Categories</a>
 
         <?php
-			echo "<div class='hide-on-small-only'>";
+			
+			echo "<div class=''show-on-large-only'>";
 			echo "<table id='myTable' class='tablesorter'>";
 			echo "<thead>";
 					echo "<div class='row'>";
