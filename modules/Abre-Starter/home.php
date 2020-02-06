@@ -255,6 +255,89 @@
 				echo "</table>";
 			}
 			echo "</div>";
+			
+			
+			//Small View
+			echo "<div class='show-on-small hide-on-large-only hide-on-med-only'>";
+			echo "<table id='myTable' class='tablesorter green'>";
+			echo "<thead>";
+					echo "<div class='row'>";
+					echo "<th style='font-size: 30px; width:40%;'>Name</th>";
+					echo "<th style='font-size: 30px; width:10%; text-align:right;' class='right-aligned'>Controls</th>";
+					echo "</div>";
+			echo "</thead>";
+			echo "<tbody>";
+					echo "<tr>";
+					echo "<td style='width: 40%;'></td>";
+					echo "<td style='width: 10%;'></td>";
+					echo "</tr>";
+			echo "</tbody>";
+			echo "</table>";
+
+            foreach($categorylist as $currentcategory)
+			{
+				echo "<h3 class='left align' style='margin-bottom:0; font-size: 28px; font-weight: bold; padding-bottom: 0px; max-width:40%; -ms-word-break: break-all; word-break: break-all;'>{$currentcategory}</h3>";
+				echo "<table id='myTable' class='tablesorter' style='margin-top:0; margin-bottom:30px;'>";
+				echo "<tbody>";
+
+				foreach($tasklist as $currenttask)
+				{
+					$strcurrenttask = unserialize($currenttask);
+					$currentname = $strcurrenttask[0];
+					$currenttaskcategory = $strcurrenttask[1];
+					$currentpriority = $strcurrenttask[2];
+					$currentdate = $strcurrenttask[3];
+					$currentcompleted = $strcurrenttask[4];
+
+					if(strcmp($currenttaskcategory, $currentcategory) == 0)
+					{
+						if($currentcompleted == false)
+						{
+							echo "<div class='row'>";
+							echo "<tr>";
+							echo "<td style='font-size: 22px; width: 40%; max-width:40%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
+							echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>";
+							echo "<form class='' id='check-task' method='post' action='modules/Abre-Starter/checktask.php'>";
+							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
+							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>check</i></button>";
+							echo "</form>";
+							echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/edittask.php'>";
+							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
+							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>edit</i></button>";
+							echo "</form>";
+							echo "</td>";
+							echo "</tr>";
+							echo "</div>";
+
+						}
+						else
+						{
+							echo "<tr class='green'>";
+							echo "<td style='font-size: 22px; width: 20%; max-width:20%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
+							echo "<td>";
+							echo "</td>";
+							echo "<td>";
+							echo "</td>";
+							echo "<td>";
+							echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/removetask.php'>";
+							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
+							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>delete</i></button>";
+							echo "</form>";
+							echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/unchecktask.php'>";
+							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
+							echo "<button class='btn-floating waves-effect waves-light right aligned' type='submit' style='background-color: {$siteColor};'><i class='material-icons'>clear</i></button>";
+							echo "</form>";
+							echo "</td>";
+							echo "</tr>";
+						}
+
+					}
+				}
+
+				echo "</tbody>";
+				echo "</table>";
+			}
+			echo "</div>";
 
 
         ?>
