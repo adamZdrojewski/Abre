@@ -89,7 +89,8 @@
 
         <?php
 
-
+			
+			echo "<div class='hide-on-small-only'>";
             foreach($categorylist as $currentcategory)
             {
                 echo "<div class='row'>";
@@ -102,6 +103,22 @@
                 echo "</div>";
                 echo "</div>";
             }
+			echo "</div>";
+			
+			echo "<div class='hide-on-large-only hide-on-med-only'>";
+            foreach($categorylist as $currentcategory)
+            {
+                echo "<div class='row'>";
+                echo "<div class='col s12'>";
+                echo "<form class='' id='remove-category' method='post' action='modules/Abre-Starter/removecategory.php'>";
+                echo "<input type='hidden' id='category' name='category' value='".$currentcategory."'>";
+                echo "<button class='btn waves-effect waves-light col s0.75' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
+                echo "</form>";
+                echo "<p class='flow-text col s10 offset-s1' style='-ms-word-break: break-all; word-break: break-all;'>".$currentcategory."</p>";
+                echo "</div>";
+                echo "</div>";
+            }
+			echo "</div>";
 
         ?>
 
