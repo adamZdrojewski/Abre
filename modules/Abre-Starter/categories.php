@@ -99,7 +99,7 @@
                 echo "<input type='hidden' id='category' name='category' value='".$currentcategory."'>";
                 echo "<button class='btn waves-effect waves-light col s0.75' style='background-color: ".$siteColor."; width:10%: max-width:10%;'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
-                echo "<p class='flow-text col s10 offset-s1' style='-ms-word-break: break-all; word-break: break-all;'>".$currentcategory."</p>";
+                echo "<p class='flow-text col s9 offset-s1' style='-ms-word-break: break-all; word-break: break-all;'>".$currentcategory."</p>";
                 echo "</div>";
                 echo "</div>";
             }
@@ -114,7 +114,7 @@
                 echo "<input type='hidden' id='category' name='category' value='".$currentcategory."'>";
                 echo "<button class='btn waves-effect waves-light col s1' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
-                echo "<p class='flow-text col s10 offset-s1' style='-ms-word-break: break-all; word-break: break-all;'>".$currentcategory."</p>";
+                echo "<p class='flow-text col s9 offset-s1' style='-ms-word-break: break-all; word-break: break-all;'>".$currentcategory."</p>";
                 echo "</div>";
                 echo "</div>";
             }
