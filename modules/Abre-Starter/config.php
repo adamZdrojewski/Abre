@@ -28,7 +28,7 @@
 	$description="An app to help you keep track of your tasks.";
 	$version = $abre_version;
 	$repo=NULL;
-	$pageicon="code";
+	$pageicon="assignment";
 	$pagepath="planner";
 	require_once('permissions.php');
 ?>
