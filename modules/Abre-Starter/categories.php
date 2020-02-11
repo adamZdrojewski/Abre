@@ -112,7 +112,7 @@
                 echo "<div class='col s12'>";
                 echo "<form class='' id='remove-category' method='post' action='modules/Abre-Starter/removecategory.php'>";
                 echo "<input type='hidden' id='category' name='category' value='".$currentcategory."'>";
-                echo "<button class='btn waves-effect waves-light col s1' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
+                echo "<button class='btn-small waves-effect waves-light col s1' style='background-color: ".$siteColor.";'><i class='material-icons'>remove</i></button>";
                 echo "</form>";
                 echo "<p class='flow-text col s9 offset-s1' style='-ms-word-break: break-all; word-break: break-all;'>".$currentcategory."</p>";
                 echo "</div>";
