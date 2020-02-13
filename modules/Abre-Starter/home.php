@@ -130,6 +130,7 @@
 							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
 							echo "<button class='btn {$currentpriority}' type='submit' style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'></button>";
 							echo "</form>";
+							echo "</td>";
 							/*echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'><button class='btn {$currentpriority}'></button></td>";*/
 							echo "<td style='font-size: 22px; width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>{$currentdate}</td>";
 							echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>";
