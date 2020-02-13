@@ -125,7 +125,7 @@
 						{
 							echo "<div class='row'>";
 							echo "<tr>";
-							echo "<td style='font-size: 22px; width: 20%; max-width:20%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
+							echo "<td style='font-size: 22px; width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
 							echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/edittask.php'>";
 							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
 							echo "<button class='btn {$currentpriority}' type='submit' style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'></button>";
