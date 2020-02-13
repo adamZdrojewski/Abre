@@ -126,7 +126,11 @@
 							echo "<div class='row'>";
 							echo "<tr>";
 							echo "<td style='font-size: 22px; width: 20%; max-width:20%; -ms-word-break: break-all; word-break: break-all;'>{$currentname}</td>";
-							echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'><button class='btn {$currentpriority}'></button></td>";
+							echo "<form class='' id='remove-task' method='post' action='modules/Abre-Starter/edittask.php'>";
+							echo "<input type='hidden' id='task' name='task' value='{$currentname}'>";
+							echo "<button class='btn-floating {$currentpriority} waves-effect waves-light right aligned' type='submit' style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'><i class='material-icons'>edit</i></button>";
+							echo "</form>";
+							/*echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'><button class='btn {$currentpriority}'></button></td>";*/
 							echo "<td style='font-size: 22px; width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>{$currentdate}</td>";
 							echo "<td style='width: 10%; max-width:10%; -ms-word-break: break-all; word-break: break-all;'>";
 							echo "<form class='' id='check-task' method='post' action='modules/Abre-Starter/checktask.php'>";
