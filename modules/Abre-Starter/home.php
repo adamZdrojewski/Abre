@@ -22,19 +22,9 @@
 	$email = $_SESSION['useremail'];
     session_start();
 
-    //Create Table If Needed
+    //database vars
     $con = mysqli_connect($db_host, $db_user, $db_password);
     mysqli_select_db($con, $db_name);
-
-    $s ="CREATE TABLE IF NOT EXISTS Abre_Planner (
-    id int(11) unsigned NOT NULL AUTO_INCREMENT,
-    email LONGTEXT NOT NULL,
-    tasks LONGTEXT NOT NULL,
-	categories LONGTEXT NOT NULL,
-    PRIMARY KEY  (`id`)
-)";
-
-    mysqli_query($con, $s);
 
 
     //Get Task List(and categories list) / Create One If Needed

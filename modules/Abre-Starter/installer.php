@@ -36,6 +36,23 @@
 		// }
 		// $db->close();
 		//Write the Setup File
+		
+		//Create Table If Needed
+		require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
+		
+		$con = mysqli_connect($db_host, $db_user, $db_password);
+		mysqli_select_db($con, $db_name);
+
+		$s ="CREATE TABLE IF NOT EXISTS Abre_Planner (
+		id int(11) unsigned NOT NULL AUTO_INCREMENT,
+		email LONGTEXT NOT NULL,
+		tasks LONGTEXT NOT NULL,
+		categories LONGTEXT NOT NULL,
+		PRIMARY KEY  (`id`)
+		)";
+
+		mysqli_query($con, $s);
+		
 		//Mark app as installed
 		require(dirname(__FILE__) . '/../../core/abre_dbconnect.php');
 		$sql = "UPDATE apps_abre SET installed = 1 WHERE app = 'Planner' AND siteID = '".$_SESSION['siteID']."'";
